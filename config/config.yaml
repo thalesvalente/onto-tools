@@ -1,0 +1,84 @@
+# Configuracao do Sistema de Processamento de Ontologias
+
+# Ontologias disponiveis
+ontologies:
+  edo:
+    path: "../data/edo/core/"
+    description: "Ontologia do Domínio de Energia"
+
+  edogov-review:
+    path: "../data/edo/governance/review/"
+    description: "Ontologia de Governança de Dados do Domínio de Energia"
+
+# Caminhos dos artefatos de entrada e saída
+artifacts:
+  icd:
+    input: "./data/examples/icd/data.json"
+    schema: "./data/schemas/icd-schema.json"
+  mda:
+    input: "./data/examples/mda/data.json"
+    schema: "./data/schemas/mda-schema.json"
+      
+sparql_queries: "./data/templates/sparql"
+
+# Diretórios de saída do sistema
+outputs:
+  json: "./outputs/exports/json"           # Exportações JSON
+  xlsx: "./outputs/exports/xlsx"           # Exportações Excel
+  logs: "./outputs/logs"                   # Logs de auditoria e apply-log.json
+  reports: "./outputs/reports"             # Relatórios de comparação
+  ttl: "./outputs/review/ontology-review.ttl"  # Ontologia de revisão
+
+# Preposições por idioma (usadas para correção de skos:prefLabel)
+prepositions:
+  pt-br:
+    - de
+    - da
+    - do
+    - das
+    - dos
+    - em
+    - "no"
+    - na
+    - nos
+    - nas
+    - para
+  en:
+    - of
+    - in
+    - "on"
+    - at
+    - by
+    - for
+    - with
+    - about
+    - against
+    - between
+    - into
+    - through
+    - during
+    - before
+    - after
+    - above
+    - below
+    - to
+    - from
+    - up
+    - down
+    - over
+    - under
+    - again
+    - further
+    - then
+    - once
+  it:
+    - di
+    - a
+    - da
+    - in
+    - con
+    - su
+    - per
+    - tra
+    - fra
+

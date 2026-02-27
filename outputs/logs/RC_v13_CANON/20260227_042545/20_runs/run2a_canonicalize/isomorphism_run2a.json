@@ -1,0 +1,12 @@
+{
+  "are_isomorphic": true,
+  "graph_a_path": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\examples\\energy-domain-ontology.ttl",
+  "graph_b_path": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\outputs\\logs\\RC_v13_CANON\\20260227_042545\\20_runs\\run2a_canonicalize\\canonical_output_run2a.ttl",
+  "graph_a_triple_count": 6803,
+  "graph_b_triple_count": 6803,
+  "triples_only_in_a": 0,
+  "triples_only_in_b": 0,
+  "sample_diff_a": [],
+  "sample_diff_b": [],
+  "error": null
+}

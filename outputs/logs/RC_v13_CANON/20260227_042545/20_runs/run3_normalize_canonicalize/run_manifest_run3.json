@@ -1,0 +1,48 @@
+{
+  "run_id": "run3_normalize_canonicalize",
+  "timestamp": "2026-02-27T01:25:47.000000+00:00",
+  "command": "normalize_and_canonicalize",
+  "input": {
+    "path": "data/examples/energy-domain-ontology.ttl",
+    "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+    "triple_count": 6803
+  },
+  "output": {
+    "path": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\outputs\\logs\\RC_v13_CANON\\20260227_042545\\20_runs\\run3_normalize_canonicalize\\canonical_output_run3.ttl",
+    "sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+    "triple_count": 6803
+  },
+  "normalization": {
+    "mode": "validate_only",
+    "auto_fix_applied": false,
+    "detected": {
+      "total_issues": 1831,
+      "errors_count": 260,
+      "warnings_count": 1571,
+      "total_classes_checked": 737
+    },
+    "proposed": {
+      "corrections_total": 621,
+      "preflabel_count": 206,
+      "definition_count": 195,
+      "iri_count": 63,
+      "identifier_count": 58
+    },
+    "applied": {
+      "corrections_total": 0,
+      "triples_modified": 0,
+      "preflabel_fixes": 0,
+      "definition_fixes": 0,
+      "iri_replacements": 0,
+      "identifier_fixes": 0
+    }
+  },
+  "canonicalization": {
+    "is_idempotent": true,
+    "processing_time_ms": 138.0
+  },
+  "verification": {
+    "isomorphism": true
+  },
+  "duration_seconds": 0.881
+}

@@ -1,0 +1,19 @@
+{
+  "gate_id": "isomorphism",
+  "gate_name": "Semantic Preservation / RDF Isomorphism (Article Claim ii)",
+  "timestamp": "2026-02-27T04:25:50.534620+00:00",
+  "status": "PASS",
+  "evidence": {
+    "run2a_isomorphism": {
+      "are_isomorphic": true,
+      "input_triples": 6803,
+      "output_triples": 6803
+    },
+    "run3_isomorphism": {
+      "are_isomorphic": true,
+      "input_triples": 6803,
+      "output_triples": 6803
+    }
+  },
+  "article_claim": "(ii) Semantic Preservation"
+}

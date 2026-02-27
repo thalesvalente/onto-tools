@@ -1,0 +1,19 @@
+{
+  "test_suite": "tests/1-uc-ontology",
+  "timestamp": "2026-02-27T04:26:56.882557+00:00",
+  "pytest_version": "7.4.4",
+  "python_version": "3.12.12",
+  "results": {
+    "collected": 963,
+    "passed": 963,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "duration_seconds": 65.43
+  },
+  "coverage": {
+    "total_percent": 95.04,
+    "threshold_required": 95.0,
+    "passed": true
+  }
+}

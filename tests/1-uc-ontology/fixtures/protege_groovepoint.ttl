@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edo: <https://w3id.org/energy-domain/edo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+edo:GroovePoint rdf:type owl:Class ;
+                rdfs:subClassOf edo:DomainElement ;
+                dcterms:identifier "GroovePoint" ;
+                skos:prefLabel "Groove Point"@en ,
+                               "Ponto do Groove"@pt-br ;
+                skos:definition "A reference point on a groove structure."@en ,
+                                "Um ponto de referência em uma estrutura de groove."@pt-br ;
+                edo:hasAttribute edo:GrooveHeight ,
+                                 edo:GrooveMinimumSupportArea ,
+                                 edo:GrooveWidth .

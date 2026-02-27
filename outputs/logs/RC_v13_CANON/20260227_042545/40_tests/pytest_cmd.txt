@@ -1,0 +1,1 @@
+pytest tests/1-uc-ontology -v --tb=short --cov=src/onto_tools --cov-report=term-missing --cov-report=json

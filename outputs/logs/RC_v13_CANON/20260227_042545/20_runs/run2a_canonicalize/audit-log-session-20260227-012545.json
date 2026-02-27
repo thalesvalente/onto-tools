@@ -1,0 +1,66 @@
+{
+    "session_id": "20260227-012545",
+    "started_at": "2026-02-27T01:25:45.958069",
+    "ops": [
+        {
+            "batch_id": "batch-2026-02-27-0001",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 1,
+            "type": "load_ontology",
+            "status": "success",
+            "applied_at": "2026-02-27T01:25:46.138445",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:load_ontology",
+                "predicate": "details",
+                "object": "{\"file\": \"C:\\\\Users\\\\selah\\\\emprego\\\\certi\\\\bim\\\\onto-tools-artigo\\\\data\\\\examples\\\\energy-domain-ontology.ttl\", \"status\": \"success\"}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-02-27-0002",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 2,
+            "type": "canonicalize_ontology",
+            "status": "success",
+            "applied_at": "2026-02-27T01:25:46.277452",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:canonicalize_ontology",
+                "predicate": "details",
+                "object": "{\"status\": \"success\", \"is_idempotent\": true, \"triple_count\": 6803, \"prefix_count\": 35, \"processing_time_ms\": 138.04429999436252}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-02-27-0003",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 3,
+            "type": "generate_review_output",
+            "status": "success",
+            "applied_at": "2026-02-27T01:25:46.392020",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:generate_review_output",
+                "predicate": "details",
+                "object": "{\"output\": \"C:\\\\Users\\\\selah\\\\emprego\\\\certi\\\\bim\\\\onto-tools-artigo\\\\outputs\\\\logs\\\\RC_v13_CANON\\\\20260227_042545\\\\20_runs\\\\run2a_canonicalize\\\\canonical_output_run2a.ttl\", \"pre_canon_path\": null, \"status\": \"success\", \"canonized\": false, \"verification_enabled\": false, \"manifest_generated\": false}",
+                "language": ""
+            }
+        }
+    ]
+}

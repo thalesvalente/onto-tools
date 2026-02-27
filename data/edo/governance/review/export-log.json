@@ -1,0 +1,36 @@
+[
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-02-27",
+    "hour": "01:17:40",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\edo\\governance\\review\\ontology-review.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  },
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-02-27",
+    "hour": "01:18:47",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\edo\\governance\\review\\test-norm-canon.autofix.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  }
+]

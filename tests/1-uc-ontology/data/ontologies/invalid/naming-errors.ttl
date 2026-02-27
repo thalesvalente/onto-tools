@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edo: <http://energy.domain.org/edo#> .
+
+# Ontologia de teste - Com erros de nomenclatura
+
+edo:Ontology rdf:type owl:Ontology ;
+    rdfs:label "EDO Test - Invalid Naming"@en .
+
+# Classe com nome em lowercase (erro)
+edo:energySystem rdf:type owl:Class ;
+    rdfs:label "Energy System"@en ;
+    skos:prefLabel "energy system"@en ;
+    dcterms:identifier "wrong_id" .
+
+# Classe sem prefLabel
+edo:PowerPlant rdf:type owl:Class ;
+    rdfs:label "Power Plant"@en .
+
+# Propriedade com nome em PascalCase (erro - deveria ser camelCase)
+edo:HasCapacity rdf:type owl:DatatypeProperty ;
+    rdfs:label "has capacity"@en ;
+    rdfs:range xsd:decimal .
+
+# Múltiplos prefLabel no mesmo idioma (warning)
+edo:Generator rdf:type owl:Class ;
+    rdfs:label "Generator"@en ;
+    skos:prefLabel "Generator"@en ;
+    skos:prefLabel "Power Generator"@en .

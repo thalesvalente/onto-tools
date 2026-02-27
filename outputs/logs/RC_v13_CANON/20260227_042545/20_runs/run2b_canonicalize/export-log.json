@@ -1,0 +1,19 @@
+[
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-02-27",
+    "hour": "01:25:46",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\data\\examples\\energy-domain-ontology.ttl",
+      "saida": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\outputs\\logs\\RC_v13_CANON\\20260227_042545\\20_runs\\run2b_canonicalize\\canonical_output_run2b.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  }
+]

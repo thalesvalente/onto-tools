@@ -1,0 +1,101 @@
+[1m============================= test session starts =============================[0m
+collected 963 items
+
+tests\1-uc-ontology\cli\test_cli_commands.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m          [  1%][0m
+tests\1-uc-ontology\cli\test_cli_menu.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m         [  4%][0m
+tests\1-uc-ontology\cli\test_verify_commands.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [  6%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                [  7%][0m
+tests\1-uc-ontology\e2e\test_canonicalization_e2e.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m              [  8%][0m
+tests\1-uc-ontology\e2e\test_cli_simulation_scenarios.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m       [  9%][0m
+tests\1-uc-ontology\integration\test_facade_flows.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m               [  9%][0m
+tests\1-uc-ontology\integration\test_facade_normalize.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 11%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                  [ 12%][0m
+tests\1-uc-ontology\integration\test_normalization_complete.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m    [ 12%][0m
+tests\1-uc-ontology\integration\test_real_coverage.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 14%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                          [ 16%][0m
+tests\1-uc-ontology\integration\test_uc104_verification.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 17%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                     [ 17%][0m
+tests\1-uc-ontology\integration\test_verification_integration.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 18%]
+[0m[32m.[0m[32m                                                                        [ 18%][0m
+tests\1-uc-ontology\unit\test_adapters.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m              [ 20%][0m
+tests\1-uc-ontology\unit\test_audit_formatter.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 22%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                      [ 23%][0m
+tests\1-uc-ontology\unit\test_canonicalizer.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 25%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                 [ 28%][0m
+tests\1-uc-ontology\unit\test_canonicalizer_determinism_v9.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m       [ 28%][0m
+tests\1-uc-ontology\unit\test_facade.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                      [ 29%][0m
+tests\1-uc-ontology\unit\test_naming_validator.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 32%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 39%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                 [ 42%][0m
+tests\1-uc-ontology\unit\test_normalize_reporting_invariance.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 42%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                     [ 43%][0m
+tests\1-uc-ontology\unit\test_normalizer.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 46%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                         [ 51%][0m
+tests\1-uc-ontology\unit\test_ontology_graph.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 53%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                               [ 56%][0m
+tests\1-uc-ontology\unit\test_preflabel_correction.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m         [ 57%][0m
+tests\1-uc-ontology\unit\test_protege_serializer_coverage.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 58%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                  [ 59%][0m
+tests\1-uc-ontology\unit\test_protege_style_alignment.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m       [ 60%][0m
+tests\1-uc-ontology\unit\test_protege_style_serializer_snapshot.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 60%]
+[0m[32m                                                                         [ 60%][0m
+tests\1-uc-ontology\unit\test_protege_style_validity.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m         [ 61%][0m
+tests\1-uc-ontology\unit\test_quality_domainattribute_constraints.py [32m.[0m[32m.[0m[32m.[0m[32m [ 61%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                 [ 64%][0m
+tests\1-uc-ontology\unit\test_quality_ifc_constraints.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m      [ 65%][0m
+tests\1-uc-ontology\unit\test_quality_validator.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 67%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m  [ 74%][0m
+tests\1-uc-ontology\unit\test_rdflib_adapter.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 77%]
+[0m[32m.[0m[32m.[0m[32m                                                                       [ 77%][0m
+tests\1-uc-ontology\unit\test_title_case.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m      [ 80%][0m
+tests\1-uc-ontology\unit\test_uri_resolver.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 82%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                              [ 85%][0m
+tests\1-uc-ontology\unit\test_verification_evidence.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 87%]
+[0m[32m                                                                         [ 87%][0m
+tests\1-uc-ontology\unit\test_verification_hasher.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 89%]
+[0m[32m                                                                         [ 89%][0m
+tests\1-uc-ontology\unit\test_verification_idempotency.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 90%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                              [ 91%][0m
+tests\1-uc-ontology\unit\test_verification_isomorphism.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 93%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                 [ 94%][0m
+tests\1-uc-ontology\unit\test_verification_manifest.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 95%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                            [ 97%][0m
+tests\1-uc-ontology\unit\test_verification_rc_workflow.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 98%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                             [100%][0m
+
+---------- coverage: platform win32, python 3.12.12-final-0 ----------
+Name                                                         Stmts   Miss Branch BrPart   Cover   Missing
+---------------------------------------------------------------------------------------------------------
+src\onto_tools\domain\ontology\quality_validator.py            435     28    250     34  89.49%   221->exit, 271, 274, 278, 297->296, 334, 344->343, 385, 437->436, 471->470, 543, 546-553, 579->585, 620->exit, 681, 700, 718-722, 738, 762, 769, 791, 798, 816->exit, 844, 849->848, 857->869, 869->882, 882->exit, 906, 911->910, 919->931, 931->944, 944->exit, 969
+src\onto_tools\adapters\reporting\audit_formatter.py           314     21    108     19  90.05%   65, 101-104, 113-116, 137-138, 144-145, 211->241, 243->273, 268, 300, 359->375, 375->383, 383->397, 419, 422->429, 429->435, 436-438, 453, 455->457, 466
+src\onto_tools\application\verification\manifest_writer.py     132     12      6      0  91.30%   138-139, 294-300, 359-364
+src\onto_tools\application\facade.py                           244      9     90     13  93.41%   385-392, 421->425, 563->593, 596->552, 641->640, 646-651, 656->607, 680, 682-683, 735->739, 739->743
+src\onto_tools\application\verification\rc_workflow.py         145      9     28      2  93.64%   128->127, 304-310, 394, 444-446
+src\onto_tools\domain\ontology\uri_resolver.py                 108      3     62      3  96.47%   258, 264->262, 274-275
+src\onto_tools\adapters\rdf\rdflib_adapter.py                   51      2      6      0  96.49%   39-40
+src\onto_tools\domain\ontology\normalizer.py                   383     10    186      7  97.01%   37-38, 456-460, 479->478, 492->496, 506->478, 513->478, 565-566, 870-871
+src\onto_tools\domain\ontology\naming_validator.py             287      3    124      9  97.08%   152->135, 274, 394->360, 411, 429->431, 434->438, 441, 455->457, 460->464
+src\onto_tools\adapters\rdf\protege_serializer.py              160      3     62      3  97.30%   188, 247, 349
+src\onto_tools\domain\ontology\canonicalizer.py                144      2     42      3  97.31%   205->202, 303, 338
+src\onto_tools\adapters\cli\commands.py                        264      4     66      2  98.18%   156-157, 168-169
+src\onto_tools\domain\ontology\graph.py                        189      1     62      2  98.80%   94, 278->277
+src\onto_tools\__init__.py                                       1      0      0      0 100.00%
+src\onto_tools\adapters\__init__.py                              0      0      0      0 100.00%
+src\onto_tools\adapters\cli\__init__.py                          2      0      0      0 100.00%
+src\onto_tools\adapters\logging\__init__.py                      2      0      0      0 100.00%
+src\onto_tools\adapters\logging\audit_logger.py                 52      0      8      0 100.00%
+src\onto_tools\adapters\rdf\__init__.py                          0      0      0      0 100.00%
+src\onto_tools\adapters\reporting\__init__.py                    2      0      0      0 100.00%
+src\onto_tools\application\verification\__init__.py              6      0      0      0 100.00%
+src\onto_tools\application\verification\evidence_writer.py      85      0      2      0 100.00%
+src\onto_tools\application\verification\hasher.py               25      0     10      0 100.00%
+src\onto_tools\application\verification\idempotency.py          92      0     14      0 100.00%
+src\onto_tools\application\verification\isomorphism.py          79      0     22      0 100.00%
+src\onto_tools\domain\ontology\__init__.py                       6      0      0      0 100.00%
+---------------------------------------------------------------------------------------------------------
+TOTAL                                                         3208    107   1148     97  95.04%
+
+[32mRequired test coverage of 95.0% reached. Total coverage: 95.04%
+[0m
+[32m======================= [32m[1m963 passed[0m[32m in 64.87s (0:01:04)[0m[32m ========================[0m
+

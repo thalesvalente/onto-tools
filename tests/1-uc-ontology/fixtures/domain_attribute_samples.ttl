@@ -1,0 +1,292 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edo: <https://w3id.org/energy-domain/edo#> .
+
+# =============================================================================
+# DomainAttribute base class (required for inheritance detection)
+# =============================================================================
+
+edo:DomainAttribute a owl:Class ;
+    skos:prefLabel "Domain Attribute"@en ;
+    dcterms:identifier "DomainAttribute" .
+
+# Intermediate class for testing indirect subclass detection
+edo:BendingStiffenessCurveAttribute a owl:Class ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:prefLabel "Bending Stiffeness Curve Attribute"@en ;
+    dcterms:identifier "BendingStiffenessCurveAttribute" .
+
+# =============================================================================
+# Individuals for mandatory property values
+# =============================================================================
+
+edo:TypeLevelAttribute a owl:NamedIndividual ;
+    skos:prefLabel "Type Level Attribute"@en .
+
+edo:DetailedDesign a owl:NamedIndividual ;
+    skos:prefLabel "Detailed Design"@en .
+
+edo:FloatValue a owl:NamedIndividual ;
+    skos:prefLabel "Float Value"@en .
+
+edo:SingleValue a owl:NamedIndividual ;
+    skos:prefLabel "Single Value"@en .
+
+# =============================================================================
+# GOLDEN TEMPLATE: AbsoluteInsidePressure (fully compliant)
+# =============================================================================
+
+edo:AbsoluteInsidePressure a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "AbsoluteInsidePressure" ;
+    rdfs:subClassOf edo:BendingStiffenessCurveAttribute,
+        edo:DomainAttribute ;
+    skos:definition "Represents the absolute internal pressure exerted within a component or system. This property is crucial for evaluating the structural integrity and performance, ensuring that the system can withstand the specified pressure without failure, particularly in subsea environments where pressure management is critical."@en ;
+    skos:definition "Representa a pressão absoluta interna exercida dentro de um componente ou sistema."@pt-br ;
+    skos:prefLabel "Absolute Inside Pressure"@en ;
+    skos:prefLabel "Pressão Absoluta Interna"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing dcterms:accessRights
+# =============================================================================
+
+edo:MissingAccessRights a owl:Class ;
+    dcterms:identifier "MissingAccessRights" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing accessRights."@en ;
+    skos:definition "Classe de teste sem accessRights."@pt-br ;
+    skos:prefLabel "Missing Access Rights"@en ;
+    skos:prefLabel "Faltando Direitos de Acesso"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing dcterms:identifier
+# =============================================================================
+
+edo:MissingIdentifier a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing identifier."@en ;
+    skos:definition "Classe de teste sem identifier."@pt-br ;
+    skos:prefLabel "Missing Identifier"@en ;
+    skos:prefLabel "Faltando Identificador"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Identifier mismatch (doesn't match local name)
+# =============================================================================
+
+edo:IdentifierMismatch a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "WrongIdentifierValue" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class with identifier mismatch."@en ;
+    skos:definition "Classe de teste com identifier incorreto."@pt-br ;
+    skos:prefLabel "Identifier Mismatch"@en ;
+    skos:prefLabel "Identificador Incorreto"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Multiple definitions in same language
+# =============================================================================
+
+edo:TooManyDefinitions a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "TooManyDefinitions" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "First definition in English."@en ;
+    skos:definition "Second definition in English."@en ;
+    skos:definition "Definição em português."@pt-br ;
+    skos:prefLabel "Too Many Definitions"@en ;
+    skos:prefLabel "Muitas Definições"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing English definition
+# =============================================================================
+
+edo:MissingEnDefinition a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingEnDefinition" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Apenas definição em português."@pt-br ;
+    skos:prefLabel "Missing EN Definition"@en ;
+    skos:prefLabel "Faltando Definição EN"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing Portuguese definition
+# =============================================================================
+
+edo:MissingPtBrDefinition a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingPtBrDefinition" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Only English definition available."@en ;
+    skos:prefLabel "Missing PT-BR Definition"@en ;
+    skos:prefLabel "Faltando Definição PT-BR"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Duplicate prefLabel in same language
+# =============================================================================
+
+edo:DuplicatePrefLabel a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "DuplicatePrefLabel" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class with duplicate prefLabel."@en ;
+    skos:definition "Classe de teste com prefLabel duplicado."@pt-br ;
+    skos:prefLabel "Duplicate Pref Label"@en ;
+    skos:prefLabel "Another Label"@en ;
+    skos:prefLabel "Rótulo Duplicado"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing English prefLabel
+# =============================================================================
+
+edo:MissingEnPrefLabel a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingEnPrefLabel" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing English prefLabel."@en ;
+    skos:definition "Classe de teste sem prefLabel em inglês."@pt-br ;
+    skos:prefLabel "Faltando PrefLabel EN"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing Portuguese prefLabel
+# =============================================================================
+
+edo:MissingPtBrPrefLabel a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingPtBrPrefLabel" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing Portuguese prefLabel."@en ;
+    skos:definition "Classe de teste sem prefLabel em português."@pt-br ;
+    skos:prefLabel "Missing PT-BR Pref Label"@en ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing edo:hasAttributeScope
+# =============================================================================
+
+edo:MissingAttributeScope a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingAttributeScope" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing hasAttributeScope."@en ;
+    skos:definition "Classe de teste sem hasAttributeScope."@pt-br ;
+    skos:prefLabel "Missing Attribute Scope"@en ;
+    skos:prefLabel "Faltando Escopo de Atributo"@pt-br ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing edo:hasLifecycleCreationPhase
+# =============================================================================
+
+edo:MissingLifecyclePhase a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingLifecyclePhase" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing hasLifecycleCreationPhase."@en ;
+    skos:definition "Classe de teste sem hasLifecycleCreationPhase."@pt-br ;
+    skos:prefLabel "Missing Lifecycle Phase"@en ;
+    skos:prefLabel "Faltando Fase de Ciclo de Vida"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing edo:hasTypedValue
+# =============================================================================
+
+edo:MissingTypedValue a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingTypedValue" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing hasTypedValue."@en ;
+    skos:definition "Classe de teste sem hasTypedValue."@pt-br ;
+    skos:prefLabel "Missing Typed Value"@en ;
+    skos:prefLabel "Faltando Valor Tipado"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# TEST CASE: Missing edo:hasValueCardinality
+# =============================================================================
+
+edo:MissingValueCardinality a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "MissingValueCardinality" ;
+    rdfs:subClassOf edo:DomainAttribute ;
+    skos:definition "Test class missing hasValueCardinality."@en ;
+    skos:definition "Classe de teste sem hasValueCardinality."@pt-br ;
+    skos:prefLabel "Missing Value Cardinality"@en ;
+    skos:prefLabel "Faltando Cardinalidade de Valor"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue .
+
+# =============================================================================
+# TEST CASE: Indirect subclass (via BendingStiffenessCurveAttribute)
+# =============================================================================
+
+edo:IndirectSubclass a owl:Class ;
+    dcterms:accessRights "PUBLIC" ;
+    dcterms:identifier "IndirectSubclass" ;
+    rdfs:subClassOf edo:BendingStiffenessCurveAttribute ;
+    skos:definition "Test class that is an indirect subclass of DomainAttribute."@en ;
+    skos:definition "Classe de teste que é subclasse indireta de DomainAttribute."@pt-br ;
+    skos:prefLabel "Indirect Subclass"@en ;
+    skos:prefLabel "Subclasse Indireta"@pt-br ;
+    edo:hasAttributeScope edo:TypeLevelAttribute ;
+    edo:hasLifecycleCreationPhase edo:DetailedDesign ;
+    edo:hasTypedValue edo:FloatValue ;
+    edo:hasValueCardinality edo:SingleValue .
+
+# =============================================================================
+# NON-DOMAINATTRIBUTE CLASS (should not trigger DomainAttribute rules)
+# =============================================================================
+
+edo:RegularClass a owl:Class ;
+    dcterms:identifier "RegularClass" ;
+    skos:prefLabel "Regular Class"@en .

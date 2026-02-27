@@ -1,0 +1,13 @@
+{
+  "gate_id": "idempotency",
+  "gate_name": "Idempotency (Article Claim i)",
+  "timestamp": "2026-02-27T04:25:51.449779+00:00",
+  "status": "PASS",
+  "evidence": {
+    "is_idempotent": true,
+    "hashes_match": true,
+    "first_result_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+    "second_result_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49"
+  },
+  "article_claim": "(i) Idempotency"
+}

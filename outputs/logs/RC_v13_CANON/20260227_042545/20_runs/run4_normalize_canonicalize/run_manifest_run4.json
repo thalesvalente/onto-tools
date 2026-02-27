@@ -1,0 +1,49 @@
+{
+  "run_id": "run4_normalize_canonicalize",
+  "timestamp": "2026-02-27T01:25:48.000000+00:00",
+  "command": "normalize_and_canonicalize",
+  "input": {
+    "path": "data/examples/energy-domain-ontology.ttl",
+    "sha256": "a772ae732ef041b951b7af0c27d4a62a611c09c0dfc0a8d0f2477bf4eee2a8ae",
+    "triple_count": 6803
+  },
+  "output": {
+    "path": "C:\\Users\\selah\\emprego\\certi\\bim\\onto-tools-artigo\\outputs\\logs\\RC_v13_CANON\\20260227_042545\\20_runs\\run4_normalize_canonicalize\\canonical_output_run4.ttl",
+    "sha256": "b28d98ac2a22e4c763bd97ef98a37296fa089d78e681c587c90fe5700d0a498d",
+    "triple_count": 6803
+  },
+  "normalization": {
+    "mode": "auto_fix",
+    "auto_fix_applied": true,
+    "detected": {
+      "total_issues": 1831,
+      "errors_count": 260,
+      "warnings_count": 1571,
+      "total_classes_checked": 737
+    },
+    "proposed": {
+      "corrections_total": 621,
+      "preflabel_count": 206,
+      "definition_count": 195,
+      "iri_count": 63,
+      "identifier_count": 58
+    },
+    "applied": {
+      "corrections_total": 743,
+      "triples_modified": 743,
+      "preflabel_fixes": 0,
+      "definition_fixes": 0,
+      "iri_replacements": 746,
+      "identifier_fixes": 58,
+      "overlap_note": "IRI+ID operations (746+58=804) > triples (743) due to 61 overlapping fixes"
+    }
+  },
+  "canonicalization": {
+    "is_idempotent": true,
+    "processing_time_ms": 138.0
+  },
+  "verification": {
+    "isomorphism": true
+  },
+  "duration_seconds": 0.95
+}

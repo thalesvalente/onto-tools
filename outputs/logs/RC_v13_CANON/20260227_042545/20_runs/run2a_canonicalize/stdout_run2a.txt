@@ -1,0 +1,16 @@
+OntoTools RC Workflow - Run 2a Canonicalize
+============================================
+
+Input:  data/examples/energy-domain-ontology.ttl
+  SHA256: A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE
+  Triples: 6803
+
+Output: 20_runs/run2a_canonicalize/canonical_output_run2a.ttl
+  SHA256: E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49
+
+Verifications:
+  Isomorphism: PASS (6803 == 6803 triples)
+  Idempotency: PASS (hashes match)
+
+Duration: 0.138s
+Status: SUCCESS

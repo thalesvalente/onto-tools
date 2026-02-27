@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.12, pytest-7.4.4, pluggy-1.6.0
+cachedir: .pytest_cache
+rootdir: c:\Users\selah\emprego\certi\bim\onto-tools-artigo
+configfile: pytest.ini
+plugins: cov-4.1.0
+collecting ... collected 963 items
+
+tests/1-uc-ontology/cli/test_cli_commands.py::TestCLIMainGroup::test_cli_version PASSED [  0%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestCLIMainGroup::test_cli_help PASSED [  0%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestOntologyDomainCLI::test_ontology_help PASSED [  0%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestOntologyDomainCLI::test_ontology_load_success PASSED [  0%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestOntologyDomainCLI::test_ontology_normalize_success PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestOntologyDomainCLI::test_ontology_normalize_with_warnings PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestVerifyDomainCLI::test_verify_help PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestVerifyDomainCLI::test_verify_hash PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestVerifyDomainCLI::test_verify_isomorphism_pass PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestVerifyDomainCLI::test_verify_idempotency_pass PASSED [  1%]
+tests/1-uc-ontology/cli/test_cli_commands.py::TestVerifyDomainCLI::test_verify_canonicalize PASSED [  2%]
+[... 952 more PASSED lines ...]
+
+============================== 963 passed in 65.43s ==============================

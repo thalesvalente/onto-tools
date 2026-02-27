@@ -1,0 +1,43 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.12, pytest-7.4.4, pluggy-1.6.0
+cachedir: .pytest_cache
+rootdir: c:\Users\selah\emprego\certi\bim\onto-tools-artigo
+configfile: pytest.ini
+plugins: cov-4.1.0
+collecting ... collected 963 items
+
+<Package 1-uc-ontology>
+  <Package cli>
+    <Module test_cli_commands.py>
+      <Class TestCLIMainGroup>
+        <Function test_cli_version>
+        <Function test_cli_help>
+      <Class TestOntologyDomainCLI>
+        <Function test_ontology_help>
+        <Function test_ontology_load_success>
+        <Function test_ontology_reorder_success>
+        <Function test_ontology_normalize_success>
+        <Function test_ontology_normalize_with_warnings>
+      <Class TestVerifyDomainCLI>
+        <Function test_verify_help>
+        <Function test_verify_hash>
+        <Function test_verify_isomorphism_pass>
+        <Function test_verify_idempotency_pass>
+        <Function test_verify_canonicalize>
+  <Package unit>
+    <Module test_canonicalizer.py>
+      (... canonicalization unit tests ...)
+    <Module test_normalizer.py>
+      (... normalizer unit tests ...)
+    <Module test_verification_idempotency.py>
+      (... idempotency unit tests ...)
+    <Module test_verification_isomorphism.py>
+      (... isomorphism unit tests ...)
+    <Module test_verification_hasher.py>
+      (... hasher unit tests ...)
+  <Package integration>
+    (... integration tests ...)
+  <Package e2e>
+    (... end-to-end tests ...)
+
+========================= 963 items collected =========================

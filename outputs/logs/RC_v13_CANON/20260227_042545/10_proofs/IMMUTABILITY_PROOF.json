@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "type": "immutability_proof",
+    "version": "RC_v13_CANON",
+    "timestamp": "2026-02-27T04:26:57Z",
+    "purpose": "Cryptographic proof that RC artifacts were not modified after generation"
+  },
+  "protocol": {
+    "description": "Two-phase verification ensuring RC integrity",
+    "phase1": "Generate all artifacts with timestamps",
+    "phase2": "Compute final checksums after generation complete",
+    "verification": "Any modification would change file hash"
+  },
+  "key_hashes": {
+    "input_ontology": {
+      "file": "data/examples/energy-domain-ontology.ttl",
+      "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+      "triples": 6803,
+      "frozen_at": "2026-02-27T04:25:45Z"
+    },
+    "canonical_output": {
+      "sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+      "instances": [
+        "20_runs/run2a_canonicalize/canonical_output_run2a.ttl",
+        "20_runs/run2b_canonicalize/canonical_output_run2b.ttl",
+        "20_runs/run3_normalize_canonicalize/canonical_output_run3.ttl"
+      ],
+      "all_identical": true
+    },
+    "auto_fix_output": {
+      "sha256": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D",
+      "instances": [
+        "20_runs/run4_normalize_canonicalize/canonical_output_run4.ttl"
+      ],
+      "note": "Different from canon_sha256 \u2014 auto-fix modifies 743 triples"
+    },
+    "git_commit": {
+      "hash": "cc65d0898a1b6e41a9961be646f994e57b7167d2",
+      "timestamp": "2026-02-27T04:25:45Z"
+    }
+  },
+  "gates": {
+    "determinism": {
+      "status": "PASS",
+      "file": "30_gates/gate_determinism.json"
+    },
+    "isomorphism": {
+      "status": "PASS",
+      "file": "30_gates/gate_isomorphism.json"
+    },
+    "idempotency": {
+      "status": "PASS",
+      "file": "30_gates/gate_idempotency.json"
+    }
+  },
+  "tests": {
+    "pytest_passed": 963,
+    "pytest_failed": 0,
+    "coverage_percent": 95.04,
+    "coverage_threshold": 95.0,
+    "summary_file": "40_tests/pytest_summary.json"
+  },
+  "immutability_chain": {
+    "step1_input_frozen": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+    "step2_runs_executed": [
+      "run2a",
+      "run2b",
+      "run3",
+      "run4"
+    ],
+    "step3_gates_computed": [
+      "determinism",
+      "isomorphism",
+      "idempotency"
+    ],
+    "step4_tests_executed": "963 passed, 95.04% coverage",
+    "step5_final_checksums": "CHECKSUMS_SHA256.txt generated",
+    "chain_valid": true
+  },
+  "verification_command": "Get-FileHash -Algorithm SHA256 <file> | Select-Object Hash",
+  "notes": [
+    "All canonical outputs (run2a/2b/3) have identical SHA-256 proving byte-level determinism",
+    "Run4 (auto-fix) has different hash \u2014 expected, as 743 triples are modified",
+    "Input ontology hash matches RC_v12_CANON \u2014 same source ontology",
+    "Gate files contain machine-readable verification results"
+  ],
+  "conclusion": {
+    "rc_integrity": "VERIFIED",
+    "artifacts_tamper_proof": true,
+    "evidence_chain_complete": true
+  }
+}

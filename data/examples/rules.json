@@ -1,0 +1,245 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regras de Normalização TTL",
+  "description": "Define regras para normalização de arquivos Turtle (TTL) conforme UC-108",
+  "version": "1.0.0",
+  "rules": {
+    "formatting": {
+      "description": "Regras de formatação consistente",
+      "sort_prefixes_alphabetically": true,
+      "sort_triples_by_subject": true,
+      "indent_style": "spaces",
+      "indent_size": 2,
+      "line_ending": "LF",
+      "ensure_trailing_newline": true,
+      "max_line_length": 120
+    },
+    "prefixes": {
+      "description": "Prefixos obrigatórios e canonicalização",
+      "required": [
+        {"prefix": "rdf", "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"},
+        {"prefix": "rdfs", "uri": "http://www.w3.org/2000/01/rdf-schema#"},
+        {"prefix": "owl", "uri": "http://www.w3.org/2002/07/owl#"},
+        {"prefix": "xsd", "uri": "http://www.w3.org/2001/XMLSchema#"},
+        {"prefix": "nic", "uri": "http://www.w3.org/2001/nic#"}
+      ],
+      "canonicalize_uris": true,
+      "remove_unused_prefixes": false
+    },
+    "triples": {
+      "description": "Regras de normalização de triplas (UC-108 Normalizer)",
+      "remove_duplicates": false,
+      "_comment_remove_duplicates": "RDF Graph é conjunto; duplicatas são impossíveis. Removido da canonização (T-701).",
+      "normalize_literals": {
+        "_comment": "Normalização de literais foi REMOVIDA da canonização (T-701 patch-v7). Essas operações alteram o grafo RDF e violam o contrato de preservação semântica (UC-103). Se desejadas, devem ser implementadas no Normalizer (UC-108) sob governança explícita.",
+        "trim_whitespace": false,
+        "_comment_trim_whitespace": "Desativado. Whitespace pode ser semântico em alguns contextos.",
+        "normalize_language_tags": "none",
+        "_comment_normalize_language_tags": "Desativado. BCP 47 é case-insensitive, mas rdflib trata 'pt-BR' e 'pt-br' como distintos. Forçar lowercase alteraria triplas (violação de isomorfismo).",
+        "normalize_datatypes": false,
+        "_comment_normalize_datatypes": "Desativado. Canonização não deve alterar datatypes."
+      },
+      "normalize_blank_nodes": {
+        "strategy": "deterministic",
+        "prefix": "_:bn",
+        "_comment": "Rotulação determinística de bnodes pode ser implementada futuramente (ex: URDNA2015/RDFC), mas não altera o grafo (apenas labels)."
+      }
+    },
+    "ordering": {
+      "description": "Ordem de elementos no arquivo",
+      "prefixes_first": true,
+      "order_by": [
+        "subject",
+        "predicate",
+        "object"
+      ],
+      "class_declarations_before_properties": true
+    },
+    "validation": {
+      "description": "Validações durante normalização",
+      "check_utf8_encoding": true,
+      "validate_iris": true,
+      "warn_on_deprecated_features": true,
+      "skos_labels": {
+        "description": "Validação de duplicatas em skos:prefLabel",
+        "warn_duplicate_prefLabel": true,
+        "auto_fix": false
+      },
+      "skos_definitions": {
+        "description": "Validação de multiplicidade de skos:definition",
+        "max_per_class": 1,
+        "warn_if_exceeds": true,
+        "auto_fix": false
+      },
+      "ifc_constraints": {
+        "description": "Validação de classes IFC",
+        "detect_ifc_by_property_prefix": "edo:ifc",
+        "required_properties": [
+          "edo:ifc_equivalentClass",
+          "edo:ifc_objectType",
+          "edo:ifc_predefinedType",
+          "edo:hasDiscipline"
+        ],
+        "require_ifc_base_class": "edo:IfcInstanciableElement",
+        "severity_missing_property": "ERROR",
+        "severity_missing_base_class": "ERROR",
+        "auto_fix": false
+      },
+      "skos_altlabels": {
+        "description": "Validação de skos:altLabel",
+        "inherit_from_preflabel_rules": true,
+        "validate_title_case": true,
+        "multiplicity": "0..N"
+      },
+      "domain_attribute_constraints": {
+        "description": "Quality rules for classes that are subclasses of edo:DomainAttribute",
+        "class_selector": {
+          "subClassOf": "edo:DomainAttribute",
+          "include_indirect_subclasses": true
+        },
+        "access_rights": {
+          "required": true,
+          "predicate": "dcterms:accessRights",
+          "severity_missing": "WARNING"
+        },
+        "identifier": {
+          "required": true,
+          "predicate": "dcterms:identifier",
+          "must_match_local_name": true,
+          "severity_missing": "WARNING",
+          "severity_mismatch": "WARNING"
+        },
+        "definitions": {
+          "predicate": "skos:definition",
+          "require_en": true,
+          "require_pt_br": true,
+          "warn_if_more_than_one_per_lang": true,
+          "severity_missing_required_lang": "WARNING",
+          "severity_too_many_per_lang": "WARNING",
+          "normalize_acronyms": true,
+          "normalize_acronyms_description": "Acrônimos registrados em naming_syntax.acronyms serão convertidos para UPPERCASE",
+          "auto_fix": false,
+          "auto_fix_description": "Quando false, gera warnings ao invés de aplicar correções automaticamente. Correções incluem: ponto final, acrônimos em UPPERCASE"
+        },
+        "pref_labels": {
+          "predicate": "skos:prefLabel",
+          "require_en": true,
+          "require_pt_br": true,
+          "warn_on_duplicate_per_lang": true,
+          "severity_missing_required_lang": "WARNING",
+          "severity_duplicate": "WARNING"
+        },
+        "mandatory_properties": {
+          "required_predicates": [
+            "edo:hasAttributeScope",
+            "edo:hasLifecycleCreationPhase",
+            "edo:hasTypedValue",
+            "edo:hasValueCardinality"
+          ],
+          "severity_missing": "WARNING"
+        }
+      }
+    },
+    "naming_syntax": {
+      "description": "Validação sintática de convenções de nomenclatura OWL",
+      "auto_fix": true,
+      "acronyms": {
+        "description": "Registro de acrônimos que devem permanecer em UPPERCASE em prefLabels e nomes de classes",
+        "list": [
+          "PLEM", "PLET", "ROV", "BAP", "UNS", "TH", "I-TUBE",
+          "HCR", "H2S", "CO2", "CH4", "H2O", "API", "IFC", "FPSO", "BOP",
+          "MCV", "PSV", "SDV", "ESD", "HIPPS", "SCSSV",
+          "ESP", "PCP", "BCS", "GLV", "BHP", "BHT", "TVD", "MD",
+          "OD", "ID", "WT", "SMYS", "SMTS", "SCM", "SDU",
+          "IMUX", "HPU", "MCS", "HVAC", "HP", "LP", "HCM"
+        ],
+        "ambiguous": {
+          "description": "Acrônimos que também são palavras comuns em português. Só aplicar UPPERCASE quando for palavra isolada como primeira palavra ou entre parênteses",
+          "list": ["SEM"]
+        }
+      },
+      "stopwords": {
+        "description": "Artigos e preposições que devem permanecer minúsculos exceto quando iniciam frases",
+        "en": ["a", "an", "the", "at", "by", "in", "of", "on", "to", "and", "or", "vs", "for", "nor", "but", "yet", "so", "per", "up", "from", "into", "upon", "with", "as"],
+        "pt_br": ["a", "o", "as", "os", "de", "do", "da", "dos", "das", "em", "no", "na", "nos", "nas", "por", "pelo", "pela", "pelos", "pelas", "com", "para", "sobre", "sob", "e", "ou", "à", "às", "ao", "aos", "um", "uma", "uns", "umas", "que", "até", "sem", "dum", "duma", "nem", "mas", "se", "entre", "perante", "após"]
+      },
+      "quoted_letters": {
+        "description": "Letras entre aspas simples que devem ser maiúsculas",
+        "list": ["Y", "T"]
+      },
+      "owl_classes": {
+        "description": "Convenções para nomes de classes OWL",
+        "pattern": "PascalCase",
+        "regex": "^[A-Z][a-zA-Z0-9]*$",
+        "must_match_identifier": true,
+        "examples": ["AbandonmentCap", "AnodeCollarSet", "AnchoringCollar"],
+        "invalid_examples": ["abandonmentCap", "Abandonment_Cap", "ABANDONMENT_CAP"]
+      },
+      "owl_properties": {
+        "description": "Convenções para nomes de propriedades OWL",
+        "pattern": "lowerCamelCase",
+        "regex": "^[a-z][a-zA-Z0-9]*$",
+        "allowed_prefixes": ["has", "is", "applies", "specifi", "default", "valid"],
+        "exclude_from_validation": [
+          "ifc_equivalentClass",
+          "ifc_objectType",
+          "ifc_predefinedType",
+          "has_Lifecycle_Creation_Phase"
+        ],
+        "examples": ["hasAttribute", "appliesTo", "isSpare"],
+        "invalid_examples": ["HasAttribute", "has_attribute", "HAS_ATTRIBUTE"]
+      },
+      "skos_preflabels": {
+        "description": "Convenções para skos:prefLabel - usa acronyms, stopwords e quoted_letters definidos acima",
+        "auto_fix": false,
+        "required_languages": ["en", "pt-br"],
+        "regex": "^[A-ZÀ-ÖØ-Þ][a-zA-ZÀ-ÖØ-öø-ÿ0-9-()/']*( [A-Za-zÀ-ÖØ-öø-ÿ0-9-()/']+)*$",
+        "regex_description": "Title Case: primeira palavra capitalizada (inclui acentos), palavras separadas por espaço, permite hífens, parênteses, barra e apóstrofo",
+        "language_tags_lowercase": true,
+        "validate_title_case": true,
+        "compound_words": {
+          "description": "Regras para palavras compostas em prefLabels",
+          "hyphenated": {
+            "description": "Palavras compostas por hífen: ambas ficam com iniciais maiúsculas",
+            "rule": "Capitalize both parts",
+            "examples": ["O-Ring", "Pull-In", "Run-of-River"]
+          },
+          "apostrophe_preposition": {
+            "description": "Preposição + apóstrofo + palavra: preposição minúscula, palavra capitalizada",
+            "rule": "Preposition lowercase, following word capitalized",
+            "prefixes": ["d'", "l'"],
+            "examples": ["d'Água", "l'État"]
+          }
+        },
+        "english": {
+          "pattern": "APA Title Case",
+          "description": "APA Style: palavras ≥4 letras capitalizadas, stopwords em minúsculo quando não primeira palavra. Acrônimos sempre UPPERCASE. 'Y' e 'T' entre aspas devem ser maiúsculos.",
+          "min_capitalize_length": 4,
+          "technical_corrections": {
+            "0-ring": "O-Ring"
+          },
+          "examples": ["Abandonment Cap", "Anode Collar Set", "Bending Moment vs Shear Force Table", "Pull-In Force", "O-Ring System", "HCR Hose", "PLET Connector", "'Y' Connector", "Run-of-River Hydropower"]
+        },
+        "portuguese": {
+          "pattern": "Grammar-based Title Case",
+          "description": "Baseado em gramática: primeira palavra capitalizada, stopwords (artigos/preposições) em minúsculo. Acrônimos sempre UPPERCASE. 'Y' e 'T' entre aspas devem ser maiúsculos. Preposição+apóstrofo fica minúscula (d'Água).",
+          "examples": ["Capa de Abandono", "Conjunto de Colares de Anodo", "Tabela de Momento de Curvatura", "Bomba-Relógio", "d'Água", "Mangueira HCR", "Conector em 'Y'", "Hidrelétrica a Fio d'Água"]
+        },
+        "no_underscores": true,
+        "no_trailing_periods": true
+      },
+      "dcterms_identifier": {
+        "description": "Validação de dcterms:identifier para classes OWL",
+        "must_exist_for_classes": true,
+        "must_match_local_name": true,
+        "severity_when_missing": "ERROR",
+        "severity_when_mismatch": "ERROR",
+        "pattern": "PascalCase",
+        "regex": "^[A-Z][a-zA-Z0-9]*$",
+        "description_text": "Valor deve seguir Title Case (PascalCase) como as classes OWL e ser idêntico ao nome local da URI",
+        "examples": ["AbandonmentCap", "SubseaPump", "HydraulicSystem"],
+        "invalid_examples": ["abandonmentCap", "subsea_pump", "HYDRAULIC_SYSTEM"]
+      }
+    }
+  }
+}

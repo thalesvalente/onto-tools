@@ -1,0 +1,23 @@
+name: onto-tools-artigo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # --- Base ---
+  - rdflib>=7.0,<8.0              # RDF graph manipulation (RF-101, RF-103, RF-105, RF-106)
+  - pyyaml>=6.0,<7.0              # Configuration file parsing (RF-101, RNF-120)
+  - openpyxl>=3.1,<4.0            # Excel read/write (RF-304, RF-305, RF-306, RF-401, RF-502)
+  # --- CLI ---
+  - click>=8.1,<9.0               # CLI framework (RES-116)
+  - tqdm>=4.66,<5.0               # Progress bars (RNF-116)
+  # --- Qualidade ---
+  - pip
+  - pip:
+      - jsonschema>=4.20,<5.0     # JSON Schema validation (RF-402, UC-402)
+      - genson>=1.2,<2.0          # JSON Schema inference from data (UC-402)
+      - deepdiff>=6.7,<7.0        # Deep structural comparison (UC-402)
+      - frictionless>=5.0,<6.0    # Table Schema + CSVW validation (RF-402)
+      # --- Testes ---
+      - pytest>=7.4,<8.0          # Test framework (RNF-115)
+      - pytest-cov>=4.1,<5.0      # Coverage measurement (RNF-115)
+      - ruff>=0.1,<1.0            # Linter and formatter (RNF-202, RNF-112)

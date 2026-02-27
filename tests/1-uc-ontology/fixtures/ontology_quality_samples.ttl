@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edo: <https://w3id.org/energy-domain/edo#> .
+
+# =============================================================================
+# FIXTURES PARA TESTES DE QUALIDADE DE ONTOLOGIA
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Classe com múltiplos prefLabel no mesmo idioma (WARNING)
+# Nota: Triplas RDF idênticas são armazenadas uma única vez (set).
+# Este caso testa MÚLTIPLOS prefLabels DIFERENTES no mesmo idioma.
+# -----------------------------------------------------------------------------
+edo:FunctionLine a owl:Class ;
+    skos:prefLabel "Function Line"@en ;
+    skos:prefLabel "Function Line Alt"@en ;  # MÚLTIPLO - deve gerar WARNING (2 prefLabels em @en)
+    skos:prefLabel "Linha de Função"@pt-br ;
+    dcterms:identifier "FunctionLine" .
+
+# -----------------------------------------------------------------------------
+# 2. Classe com múltiplas definitions (mais de 1 por idioma)
+# -----------------------------------------------------------------------------
+edo:MultipleDefinitionClass a owl:Class ;
+    skos:prefLabel "Multiple Definition Class"@en ;
+    skos:definition "First definition in English."@en ;
+    skos:definition "Second definition in English."@en ;  # DUPLICADO - deve gerar WARNING
+    dcterms:identifier "MultipleDefinitionClass" .
+
+# -----------------------------------------------------------------------------
+# 3. Classe sem dcterms:identifier
+# -----------------------------------------------------------------------------
+edo:ComponentElement a owl:Class ;
+    skos:prefLabel "Component Element"@en ;
+    skos:prefLabel "Elemento de Componente"@pt-br .
+    # SEM dcterms:identifier - deve gerar ERROR
+
+# -----------------------------------------------------------------------------
+# 4. Classe com identifier que não corresponde ao local name
+# -----------------------------------------------------------------------------
+edo:CommissioningElement a owl:Class ;
+    skos:prefLabel "Commissioning Element"@en ;
+    dcterms:identifier "CommissioningElementWrong" .  # MISMATCH - deve gerar ERROR
+
+# -----------------------------------------------------------------------------
+# 5. Classe IFC sem propriedades obrigatórias
+# -----------------------------------------------------------------------------
+edo:IncompleteIfcClass a owl:Class ;
+    skos:prefLabel "Incomplete IFC Class"@en ;
+    dcterms:identifier "IncompleteIfcClass" ;
+    edo:ifc_objectType "IfcPipe" .  # Tem ifc_objectType, mas falta outros
+    # FALTAM: edo:ifc_equivalentClass, edo:ifc_predefinedType, edo:hasDiscipline
+    # E NÃO herda de edo:IfcInstanciableElement
+
+# -----------------------------------------------------------------------------
+# 6. Classe IFC completa (para comparação)
+# -----------------------------------------------------------------------------
+edo:CompleteIfcClass a owl:Class ;
+    rdfs:subClassOf edo:IfcInstanciableElement ;
+    skos:prefLabel "Complete IFC Class"@en ;
+    dcterms:identifier "CompleteIfcClass" ;
+    edo:ifc_equivalentClass "IfcPipeSegment" ;
+    edo:ifc_objectType "IfcPipeSegment" ;
+    edo:ifc_predefinedType "RIGIDSEGMENT" ;
+    edo:hasDiscipline edo:Piping .
+
+# -----------------------------------------------------------------------------
+# 7. Classe com altLabel que viola Title Case
+# -----------------------------------------------------------------------------
+edo:AltLabelViolationClass a owl:Class ;
+    skos:prefLabel "Alt Label Violation Class"@en ;
+    skos:altLabel "wrong title case"@en ;  # VIOLAÇÃO - deve gerar WARNING
+    skos:altLabel "ALSO WRONG"@en ;  # VIOLAÇÃO - deve gerar WARNING
+    dcterms:identifier "AltLabelViolationClass" .
+
+# -----------------------------------------------------------------------------
+# 8. Classe com altLabel correto
+# -----------------------------------------------------------------------------
+edo:CorrectAltLabelClass a owl:Class ;
+    skos:prefLabel "Correct Alt Label Class"@en ;
+    skos:altLabel "Alternative Name"@en ;
+    skos:altLabel "Another Alternative"@en ;
+    dcterms:identifier "CorrectAltLabelClass" .
+
+# -----------------------------------------------------------------------------
+# 9. Classe completamente válida (sem issues)
+# -----------------------------------------------------------------------------
+edo:ValidClass a owl:Class ;
+    skos:prefLabel "Valid Class"@en ;
+    skos:prefLabel "Classe Válida"@pt-br ;
+    skos:definition "A completely valid class for testing."@en ;
+    dcterms:identifier "ValidClass" .
+
+# -----------------------------------------------------------------------------
+# Classe base IFC (para referência)
+# -----------------------------------------------------------------------------
+edo:IfcInstanciableElement a owl:Class ;
+    skos:prefLabel "IFC Instanciable Element"@en ;
+    dcterms:identifier "IfcInstanciableElement" .
+
+# -----------------------------------------------------------------------------
+# Disciplina (para referência)
+# -----------------------------------------------------------------------------
+edo:Piping a owl:NamedIndividual ;
+    skos:prefLabel "Piping"@en .

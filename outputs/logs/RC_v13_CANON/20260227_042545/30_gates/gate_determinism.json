@@ -1,0 +1,12 @@
+{
+  "gate_id": "determinism",
+  "gate_name": "Byte-level Determinism (Article Claim iii)",
+  "timestamp": "2026-02-27T04:25:47.173567+00:00",
+  "status": "PASS",
+  "evidence": {
+    "run2a_output_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+    "run2b_output_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+    "hashes_match": true
+  },
+  "article_claim": "(iii) Determinism"
+}

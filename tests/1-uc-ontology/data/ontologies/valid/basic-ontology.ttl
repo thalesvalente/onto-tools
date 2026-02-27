@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edo: <http://energy.domain.org/edo#> .
+
+# Ontologia de teste - Básica válida
+edo:Ontology rdf:type owl:Ontology ;
+    rdfs:label "Energy Domain Ontology - Test"@en ;
+    dcterms:title "EDO Test Ontology"@en ;
+    owl:versionInfo "1.0.0" .
+
+# Classes válidas
+edo:EnergySystem rdf:type owl:Class ;
+    rdfs:label "Energy System"@en ;
+    skos:prefLabel "Energy System"@en ;
+    skos:prefLabel "Sistema de Energia"@pt-br ;
+    skos:definition "A system that produces, transforms or consumes energy."@en ;
+    dcterms:identifier "EnergySystem" .
+
+edo:RenewableEnergy rdf:type owl:Class ;
+    rdfs:subClassOf edo:EnergySystem ;
+    rdfs:label "Renewable Energy"@en ;
+    skos:prefLabel "Renewable Energy"@en ;
+    skos:prefLabel "Energia Renovável"@pt-br ;
+    skos:definition "Energy from renewable sources."@en ;
+    dcterms:identifier "RenewableEnergy" .
+
+edo:SolarEnergy rdf:type owl:Class ;
+    rdfs:subClassOf edo:RenewableEnergy ;
+    rdfs:label "Solar Energy"@en ;
+    skos:prefLabel "Solar Energy"@en ;
+    skos:prefLabel "Energia Solar"@pt-br ;
+    skos:definition "Energy derived from the sun."@en ;
+    dcterms:identifier "SolarEnergy" .
+
+# Propriedades válidas
+edo:hasCapacity rdf:type owl:DatatypeProperty ;
+    rdfs:label "has capacity"@en ;
+    skos:prefLabel "Has Capacity"@en ;
+    rdfs:domain edo:EnergySystem ;
+    rdfs:range xsd:decimal ;
+    dcterms:identifier "hasCapacity" .
+
+edo:producesEnergy rdf:type owl:ObjectProperty ;
+    rdfs:label "produces energy"@en ;
+    skos:prefLabel "Produces Energy"@en ;
+    rdfs:domain edo:EnergySystem ;
+    rdfs:range edo:EnergySystem ;
+    dcterms:identifier "producesEnergy" .
