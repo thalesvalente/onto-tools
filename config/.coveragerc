@@ -1,0 +1,79 @@
+[run]
+# Branch coverage habilitado
+branch = True
+
+# Diretório fonte a analisar (nova estrutura src/)
+source = src/onto_tools
+
+# Omitir arquivos/diretórios
+omit =
+    */tests/*
+    */test_*
+    */__pycache__/*
+    */venv/*
+    */env/*
+    */.venv/*
+    */site-packages/*
+    */dist/*
+    */build/*
+    */.pytest_cache/*
+    */conftest.py
+    # Entry points triviais
+    */onto_tools/__main__.py
+    */onto_tools/cli_menu.py
+    # Menu TUI (fora do escopo do artigo)
+    */onto_tools/adapters/cli/menu.py
+
+[report]
+# Meta mínima de cobertura (falha se < 95%)
+fail_under = 95.0
+
+# Precisão das porcentagens
+precision = 2
+
+# Mostrar linhas faltantes
+show_missing = True
+
+# Pular arquivos com 100% de cobertura no relatório
+skip_covered = False
+
+# Ordenar por cobertura (arquivos com menor cobertura primeiro)
+sort = Cover
+
+# Excluir linhas do relatório de cobertura
+exclude_lines =
+    # Pragmas padrão
+    pragma: no cover
+    
+    # Blocos defensivos não testáveis
+    def __repr__
+    if self.debug:
+    if settings.DEBUG
+    raise AssertionError
+    raise NotImplementedError
+    
+    # Código não executável
+    if 0:
+    if False:
+    if __name__ == .__main__.:
+    
+    # Type checking
+    if TYPE_CHECKING:
+    @abstractmethod
+    @abc.abstractmethod
+    
+    # Ellipsis de protocolo
+    \.\.\.
+    pass
+
+[html]
+# Diretório do relatório HTML
+directory = coverage/htmlcov
+
+[xml]
+# Arquivo do relatório XML (para CI/CD)
+output = coverage/coverage.xml
+
+[json]
+# Arquivo do relatório JSON
+output = coverage/coverage.json

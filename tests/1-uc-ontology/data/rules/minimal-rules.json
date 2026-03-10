@@ -1,0 +1,20 @@
+{
+  "prefixes": {
+    "required": []
+  },
+  "triples": {
+    "remove_duplicates": true,
+    "normalize_literals": {
+      "trim_whitespace": true,
+      "normalize_language_tags": "lowercase"
+    }
+  },
+  "ordering": {},
+  "formatting": {
+    "sort_prefixes_alphabetically": true
+  },
+  "validation": {},
+  "naming_syntax": {
+    "auto_fix": true
+  }
+}

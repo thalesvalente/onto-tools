@@ -1,0 +1,134 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onto-tools"
+version = "3.0.0"
+description = "Sistema de Gerenciamento de Ontologias"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "CERTI BIM Team"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "rdflib>=7.0,<8.0",
+    "pyyaml>=6.0,<7.0",
+    "openpyxl>=3.1,<4.0",
+    "click>=8.1,<9.0",
+    "tqdm>=4.66,<5.0",
+    "jsonschema>=4.20,<5.0",
+    "genson>=1.2,<2.0",
+    "deepdiff>=6.7,<7.0",
+    "frictionless>=5.0,<6.0",
+    "pytest>=7.4,<8.0",
+    "pytest-cov>=4.1,<5.0",
+    "ruff>=0.1,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+    "wexpect>=4.0; platform_system=='Windows'",
+]
+
+[project.scripts]
+ontotools = "onto_tools.adapters.cli.commands:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests*", "docs*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+    "--showlocals",
+    "-v",
+    "--tb=short",
+    "--color=yes",
+]
+markers = [
+    "unit: Unit tests - testes isolados de funções/classes puras",
+    "integration: Integration tests - testes de fluxos sem TUI",
+    "e2e: End-to-end tests - testes de usuário via TUI (Wexpect)",
+    "smoke: Smoke tests - testes rápidos de sanidade",
+    "regression: Regression tests - testes de bugs corrigidos",
+    "slow: Tests that take significant time to run",
+    "wexpect: Tests using Wexpect for CLI automation",
+    "critical: Critical path tests (P0)",
+    "high: High priority tests (P1)",
+    "medium: Medium priority tests (P2)",
+    "low: Low priority tests (P3)",
+]
+console_output_style = "progress"
+log_cli = false
+log_cli_level = "INFO"
+norecursedirs = [
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "*.egg-info",
+    "htmlcov",
+    ".coverage",
+    "outputs",
+    "reports",
+    "coverage",
+    "docs",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["src/onto_tools"]
+omit = [
+    "*/tests/*",
+    "*/test_*.py",
+    "*/__pycache__/*",
+    "*/site-packages/*",
+]
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+skip_covered = false
+fail_under = 95
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]  # unused imports
+"tests/*" = ["N802", "N803"]  # test naming conventions
