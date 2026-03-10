@@ -1,0 +1,177 @@
+[
+  {
+    "run_id": "20260310_184803",
+    "timestamp": "2026-03-10T18:48:03.103557+00:00",
+    "command": "generate_review_output",
+    "inputs": [
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+        "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+        "size_bytes": 658838,
+        "format": "turtle"
+      }
+    ],
+    "outputs": [
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon_pre-canon.ttl",
+        "sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+        "size_bytes": 454510,
+        "format": "turtle",
+        "artifact_type": "pre_canon_snapshot"
+      },
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon.ttl",
+        "sha256": "3E07F6587B77C9FC20697DF9E627A0714F34B3FAAD8BCB5CBD335CA4801DFC32",
+        "size_bytes": 603781,
+        "format": "turtle",
+        "artifact_type": "canonical_ontology"
+      }
+    ],
+    "verifications": [
+      {
+        "check_type": "isomorphism",
+        "passed": true,
+        "details": {
+          "passed": true,
+          "pre_canon_path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon_pre-canon.ttl",
+          "pre_canon_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+          "output_path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon.ttl",
+          "output_hash": "3E07F6587B77C9FC20697DF9E627A0714F34B3FAAD8BCB5CBD335CA4801DFC32",
+          "input_triples": 6803,
+          "output_triples": 6803,
+          "error": null,
+          "graph_modified_from_original": false,
+          "artifacts": {
+            "original": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+              "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE"
+            },
+            "pre_canon_snapshot": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon_pre-canon.ttl",
+              "sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+              "description": "Estado do grafo antes da canonização"
+            },
+            "canonical_output": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon.ttl",
+              "sha256": "3E07F6587B77C9FC20697DF9E627A0714F34B3FAAD8BCB5CBD335CA4801DFC32",
+              "description": "Ontologia canonizada (formato Protégé)"
+            }
+          }
+        }
+      },
+      {
+        "check_type": "idempotency",
+        "passed": true,
+        "details": {
+          "passed": true,
+          "is_idempotent": true,
+          "is_fully_consistent": true,
+          "saved_matches_first": true,
+          "hashes_match": true,
+          "first_result_hash": "3E07F6587B77C9FC20697DF9E627A0714F34B3FAAD8BCB5CBD335CA4801DFC32",
+          "second_result_hash": "3E07F6587B77C9FC20697DF9E627A0714F34B3FAAD8BCB5CBD335CA4801DFC32"
+        }
+      }
+    ],
+    "environment": {
+      "python_version": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:38:32) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows 11",
+      "hostname": "Megazord01",
+      "cwd": "H:\\certi\\bim\\onto-tools-prp",
+      "ontotools_version": "3.0.0"
+    },
+    "parameters": {},
+    "duration_seconds": 1.4820725917816162,
+    "success": true,
+    "error": null
+  },
+  {
+    "run_id": "20260310_190130",
+    "timestamp": "2026-03-10T19:01:30.070634+00:00",
+    "command": "generate_review_output",
+    "inputs": [
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+        "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+        "size_bytes": 658838,
+        "format": "turtle"
+      }
+    ],
+    "outputs": [
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon_pre-canon.ttl",
+        "sha256": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D",
+        "size_bytes": 454333,
+        "format": "turtle",
+        "artifact_type": "pre_canon_snapshot"
+      },
+      {
+        "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon.ttl",
+        "sha256": "3124EE977AC83F57A7DA70170AD3D83FB34D09D6564D1F293E34F737934B9440",
+        "size_bytes": 602997,
+        "format": "turtle",
+        "artifact_type": "canonical_ontology"
+      }
+    ],
+    "verifications": [
+      {
+        "check_type": "isomorphism",
+        "passed": true,
+        "details": {
+          "passed": true,
+          "pre_canon_path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon_pre-canon.ttl",
+          "pre_canon_hash": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D",
+          "output_path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon.ttl",
+          "output_hash": "3124EE977AC83F57A7DA70170AD3D83FB34D09D6564D1F293E34F737934B9440",
+          "input_triples": 6803,
+          "output_triples": 6803,
+          "error": null,
+          "graph_modified_from_original": true,
+          "note": "O grafo foi modificado desde o carregamento original. A verificação de isomorfismo compara o estado atual do grafo (pré-canonização) com o output canonizado, confirmando que a canonização preservou a equivalência semântica.",
+          "original_hash": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+          "original_path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+          "artifacts": {
+            "original": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+              "sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE"
+            },
+            "pre_canon_snapshot": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon_pre-canon.ttl",
+              "sha256": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D",
+              "description": "Estado do grafo antes da canonização"
+            },
+            "canonical_output": {
+              "path": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon.ttl",
+              "sha256": "3124EE977AC83F57A7DA70170AD3D83FB34D09D6564D1F293E34F737934B9440",
+              "description": "Ontologia canonizada (formato Protégé)"
+            }
+          }
+        }
+      },
+      {
+        "check_type": "idempotency",
+        "passed": true,
+        "details": {
+          "passed": true,
+          "is_idempotent": true,
+          "is_fully_consistent": true,
+          "saved_matches_first": true,
+          "hashes_match": true,
+          "first_result_hash": "3124EE977AC83F57A7DA70170AD3D83FB34D09D6564D1F293E34F737934B9440",
+          "second_result_hash": "3124EE977AC83F57A7DA70170AD3D83FB34D09D6564D1F293E34F737934B9440"
+        }
+      }
+    ],
+    "environment": {
+      "python_version": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:38:32) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows 11",
+      "hostname": "Megazord01",
+      "cwd": "H:\\certi\\bim\\onto-tools-prp",
+      "ontotools_version": "3.0.0"
+    },
+    "parameters": {},
+    "duration_seconds": 1.397719383239746,
+    "success": true,
+    "error": null
+  }
+]

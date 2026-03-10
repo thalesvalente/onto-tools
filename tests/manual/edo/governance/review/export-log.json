@@ -1,0 +1,70 @@
+[
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-03-10",
+    "hour": "15:48:01",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-canon.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  },
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-03-10",
+    "hour": "15:53:58",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-disabled.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  },
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-03-10",
+    "hour": "15:55:07",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  },
+  {
+    "onto_name": "energy-domain-ontology",
+    "onto_version": "1.0",
+    "date": "2026-03-10",
+    "hour": "16:01:28",
+    "system_name": "OntoTools",
+    "system_version": "3.0",
+    "contexto_execucao": {
+      "filtro": [],
+      "entrada": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\core\\energy-domain-ontology.ttl",
+      "saida": "H:\\certi\\bim\\onto-tools-prp\\data\\edo\\governance\\review\\test-norm-autofix-enabled-canon.ttl"
+    },
+    "metricas": {
+      "triples_exportadas": 6803,
+      "tempo_execucao_segundos": 0.0
+    }
+  }
+]

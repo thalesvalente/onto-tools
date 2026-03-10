@@ -1,0 +1,7668 @@
+# 📋 Relatório de Normalização de Ontologia
+**Arquivo:** `audit-log-session-20260310-155442.json`
+## 📊 Sumário Executivo
+- **Operação:** Carregamento de Ontologia- **Arquivo:** `energy-domain-ontology.ttl`- **Status:** ✅ success- **Data/Hora:** 2026-03-10T15:54:42.356765
+
+- **Operação:** Normalização- **Status:** ⚠️ success- **Modo:** 🔧 Auto-fix (correções aplicadas)- **Total de Issues:** 1831- **Erros:** 260- **Total de Avisos:** 1571- **Correções Aplicadas:**  - 🔧 IRIs corrigidas: 63 entidades (746 ocorrências/operações)  - 📝 Identificadores corrigidos: 58 entidades  - 🏷️ PrefLabels corrigidos: 0 (0 entidades)  - 📖 Definitions corrigidas: 0 (0 entidades)  - 📊 Total de triplas modificadas: 743
+### 📋 Tabela V — Métricas de Normalização (Referência Artigo)
+| Métrica | Auto-fix habilitado (mec.) |
+|---------|----------------------|
+| Total de issues detectados | 1,831 |
+| Erros | 260 |
+| Avisos | 1,571 |
+| Correções mecânicas propostas (IRI + id.) | 804 operações |
+| ↳ IRI: 746 ocorrências (63 entidades) + id.: 58 | |
+| Correções semânticas propostas (prefLabel + def.) | 621 triplas |
+| Triplas modificadas por correções mecânicas | 743 |
+| Correções semânticas aplicadas | 0 (bloqueado) |
+- **Data/Hora:** 2026-03-10T15:54:48.668019
+
+### 🔧 Correções de IRI Aplicadas
+
+> **Formato:** Número sequencial, nome original, nome corrigido, e quantas vezes a IRI aparece na ontologia
+
+| # | **Original** | **Corrigido** | **Ocorrências** |
+|:-:|--------------|---------------|:---------------:|
+| 1 | BendingMomentTable_BendingMoment | BendingMomentTableBendingMoment | 12 |
+| 2 | BendingMomentTable_Curvature | BendingMomentTableCurvature | 12 |
+| 3 | BendMomentVsShearForceTable_BendingMoment | BendMomentVsShearForceTableBendingMoment | 12 |
+| 4 | BendMomentVsShearForceTable_Condition | BendMomentVsShearForceTableCondition | 12 |
+| 5 | BendMomentVsShearForceTable_ShearForce | BendMomentVsShearForceTableShearForce | 13 |
+| 6 | DiffusionTable_DiffusionCoefficient | DiffusionTableDiffusionCoefficient | 12 |
+| 7 | DiffusionTable_MoleculeIdentifier | DiffusionTableMoleculeIdentifier | 13 |
+| 8 | DiffusionTable_PolymerState | DiffusionTablePolymerState | 13 |
+| 9 | DiffusionTable_Temperature | DiffusionTableTemperature | 12 |
+| 10 | DomainAnnotation | domainAnnotation | 4 |
+| 11 | DomainAuxiliarAnnotation | domainAuxiliarAnnotation | 9 |
+| 12 | DomainAuxiliarProperty | domainAuxiliarProperty | 1 |
+| 13 | DomainEngineeringAnnotation | domainEngineeringAnnotation | 14 |
+| 14 | DomainRelationship | domainRelationship | 2 |
+| 15 | DrawingDimensionsTable_DimensionDescription | DrawingDimensionsTableDimensionDescription | 13 |
+| 16 | DrawingDimensionsTable_DimensionName | DrawingDimensionsTableDimensionName | 12 |
+| 17 | DrawingDimensionsTable_DimensionUnit | DrawingDimensionsTableDimensionUnit | 13 |
+| 18 | DrawingDimensionsTable_DimensionValue | DrawingDimensionsTableDimensionValue | 12 |
+| 19 | EarlyLeakMaxPressTable_Press | EarlyLeakMaxPressTablePress | 13 |
+| 20 | EarlyLeakMaxPressTable_PressIntValStrat | EarlyLeakMaxPressTablePressIntValStrat | 13 |
+| 21 | EarlyLeakMaxPressTable_PressValRef | EarlyLeakMaxPressTablePressValRef | 13 |
+| 22 | EarlyLeakMaxPressTable_PressValRefMult | EarlyLeakMaxPressTablePressValRefMult | 13 |
+| 23 | EarlyLeakMaxPressTable_TensLimit | EarlyLeakMaxPressTableTensLimit | 13 |
+| 24 | EarlyLeakMaxPressTable_TensLimitValRef | EarlyLeakMaxPressTableTensLimitValRef | 12 |
+| 25 | EarlyLeakNomPressTable_Press | EarlyLeakNomPressTablePress | 13 |
+| 26 | EarlyLeakNomPressTable_PressIntValStrat | EarlyLeakNomPressTablePressIntValStrat | 13 |
+| 27 | EarlyLeakNomPressTable_PressValRef | EarlyLeakNomPressTablePressValRef | 13 |
+| 28 | EarlyLeakNomPressTable_PressValRefMult | EarlyLeakNomPressTablePressValRefMult | 12 |
+| 29 | EarlyLeakNomPressTable_TensLimit | EarlyLeakNomPressTableTensLimit | 13 |
+| 30 | EarlyLeakNomPressTable_TensLimitValRef | EarlyLeakNomPressTableTensLimitValRef | 12 |
+| 31 | EModVsTempTable_ElasticityModulus | EmodVsTempTableElasticityModulus | 13 |
+| 32 | EModVsTempTable_Temperature | EmodVsTempTableTemperature | 11 |
+| 33 | FrictionCoefficientTighteningTable_CoefficientOfFriction | FrictionCoefficientTighteningTableCoefficientOfFriction | 12 |
+| 34 | FrictionCoefficientTighteningTable_TighteningPerTrack | FrictionCoefficientTighteningTableTighteningPerTrack | 12 |
+| 35 | InternalIncidentalPressureTable_PositionReference | InternalIncidentalPressureTablePositionReference | 13 |
+| 36 | InternalIncidentalPressureTable_Pressure | InternalIncidentalPressureTablePressure | 12 |
+| 37 | InternalIncidentalPressureTable_VPosWRTWaterline | InternalIncidentalPressureTableVposWrtwaterline | 13 |
+| 38 | LayingMinimumRadiusTable_AbsoluteExternalPressure | LayingMinimumRadiusTableAbsoluteExternalPressure | 12 |
+| 39 | LayingMinimumRadiusTable_AbsoluteInternalPressure | LayingMinimumRadiusTableAbsoluteInternalPressure | 12 |
+| 40 | LayingMinimumRadiusTable_Compression | LayingMinimumRadiusTableCompression | 13 |
+| 41 | LayingMinimumRadiusTable_MinimumAllowableBendingRadius | LayingMinimumRadiusTableMinimumAllowableBendingRadius | 12 |
+| 42 | LayingMinimumRadiusTable_SectionSupportedByRigidSupport | LayingMinimumRadiusTableSectionSupportedByRigidSupport | 12 |
+| 43 | LayingMinimumRadiusTable_TensileArmourAnnulusCondition | LayingMinimumRadiusTableTensileArmourAnnulusCondition | 13 |
+| 44 | MaxDesignAbsIntPresTable_PositionReference | MaxDesignAbsIntPresTablePositionReference | 13 |
+| 45 | MaxDesignAbsIntPresTable_Pressure | MaxDesignAbsIntPresTablePressure | 12 |
+| 46 | MaxDesignAbsIntPresTable_VPosWRTWaterline | MaxDesignAbsIntPresTableVposWrtwaterline | 13 |
+| 47 | MaximumAllowableTensionTable_MaximumAllowableTensile | MaximumAllowableTensionTableMaximumAllowableTensile | 12 |
+| 48 | MaximumAllowableTensionTable_PulleyRadius | MaximumAllowableTensionTablePulleyRadius | 12 |
+| 49 | MaximumAllowableTensionTable_PulleyVAngle | MaximumAllowableTensionTablePulleyVangle | 12 |
+| 50 | MaximumAllowableTighteningTable_AxialLoad | MaximumAllowableTighteningTableAxialLoad | 12 |
+| 51 | MaximumAllowableTighteningTable_TighteningPerTrack | MaximumAllowableTighteningTableTighteningPerTrack | 12 |
+| 52 | PermeabilityTable_MoleculeIdentifier | PermeabilityTableMoleculeIdentifier | 13 |
+| 53 | PermeabilityTable_PermeabilityCoefficient | PermeabilityTablePermeabilityCoefficient | 12 |
+| 54 | PermeabilityTable_PolymerState | PermeabilityTablePolymerState | 13 |
+| 55 | PermeabilityTable_Temperature | PermeabilityTableTemperature | 12 |
+| 56 | Planned_Start_Timestamp | PlannedStartTimestamp | 9 |
+| 57 | SolubilityTable_MoleculeIdentifier | SolubilityTableMoleculeIdentifier | 13 |
+| 58 | SolubilityTable_PolymerState | SolubilityTablePolymerState | 12 |
+| 59 | SolubilityTable_SolubilityCoefficient | SolubilityTableSolubilityCoefficient | 12 |
+| 60 | SolubilityTable_Temperature | SolubilityTableTemperature | 12 |
+| 61 | StrandsTable_SpareQuantity | StrandsTableSpareQuantity | 12 |
+| 62 | StrandsTable_StrandsLength | StrandsTableStrandsLength | 12 |
+| 63 | StrandsTable_StrandsQuantity | StrandsTableStrandsQuantity | 12 |
+
+### 📝 Correções de dcterms:identifier Aplicadas
+
+> **Total:** 58 correções
+
+> **Formato:** Nome da entidade, seguido do valor incorreto (❌) e valor corrigido (✅)
+
+**BendingMomentTable_BendingMoment**
+- ❌ `BendingMomentTable_BendingMoment`
+- ✅ `BendingMomentTableBendingMoment`
+
+**BendingMomentTable_Curvature**
+- ❌ `BendingMomentTable_Curvature`
+- ✅ `BendingMomentTableCurvature`
+
+**BendMomentVsShearForceTable_BendingMoment**
+- ❌ `BendMomentVsShearForceTable_BendingMoment`
+- ✅ `BendMomentVsShearForceTableBendingMoment`
+
+**BendMomentVsShearForceTable_Condition**
+- ❌ `BendMomentVsShearForceTable_Condition`
+- ✅ `BendMomentVsShearForceTableCondition`
+
+**BendMomentVsShearForceTable_ShearForce**
+- ❌ `BendMomentVsShearForceTable_ShearForce`
+- ✅ `BendMomentVsShearForceTableShearForce`
+
+**DiffusionTable_DiffusionCoefficient**
+- ❌ `DiffusionTable_DiffusionCoefficient`
+- ✅ `DiffusionTableDiffusionCoefficient`
+
+**DiffusionTable_MoleculeIdentifier**
+- ❌ `DiffusionTable_MoleculeIdentifier`
+- ✅ `DiffusionTableMoleculeIdentifier`
+
+**DiffusionTable_PolymerState**
+- ❌ `DiffusionTable_PolymerState`
+- ✅ `DiffusionTablePolymerState`
+
+**DiffusionTable_Temperature**
+- ❌ `DiffusionTable_Temperature`
+- ✅ `DiffusionTableTemperature`
+
+**DrawingDimensionsTable_DimensionDescription**
+- ❌ `DrawingDimensionsTable_DimensionDescription`
+- ✅ `DrawingDimensionsTableDimensionDescription`
+
+**DrawingDimensionsTable_DimensionName**
+- ❌ `DrawingDimensionsTable_DimensionName`
+- ✅ `DrawingDimensionsTableDimensionName`
+
+**DrawingDimensionsTable_DimensionUnit**
+- ❌ `DrawingDimensionsTable_DimensionUnit`
+- ✅ `DrawingDimensionsTableDimensionUnit`
+
+**DrawingDimensionsTable_DimensionValue**
+- ❌ `DrawingDimensionsTable_DimensionValue`
+- ✅ `DrawingDimensionsTableDimensionValue`
+
+**EarlyLeakMaxPressTable_Press**
+- ❌ `EarlyLeakMaxPressTable_Press`
+- ✅ `EarlyLeakMaxPressTablePress`
+
+**EarlyLeakMaxPressTable_PressIntValStrat**
+- ❌ `EarlyLeakMaxPressTable_PressIntValStrat`
+- ✅ `EarlyLeakMaxPressTablePressIntValStrat`
+
+**EarlyLeakMaxPressTable_PressValRef**
+- ❌ `EarlyLeakMaxPressTable_PressValRef`
+- ✅ `EarlyLeakMaxPressTablePressValRef`
+
+**EarlyLeakMaxPressTable_PressValRefMult**
+- ❌ `EarlyLeakMaxPressTable_PressValRefMult`
+- ✅ `EarlyLeakMaxPressTablePressValRefMult`
+
+**EarlyLeakMaxPressTable_TensLimit**
+- ❌ `EarlyLeakMaxPressTable_TensLimit`
+- ✅ `EarlyLeakMaxPressTableTensLimit`
+
+**EarlyLeakMaxPressTable_TensLimitValRef**
+- ❌ `EarlyLeakMaxPressTable_TensLimitValRef`
+- ✅ `EarlyLeakMaxPressTableTensLimitValRef`
+
+**EarlyLeakNomPressTable_Press**
+- ❌ `EarlyLeakNomPressTable_Press`
+- ✅ `EarlyLeakNomPressTablePress`
+
+**EarlyLeakNomPressTable_PressIntValStrat**
+- ❌ `EarlyLeakNomPressTable_PressIntValStrat`
+- ✅ `EarlyLeakNomPressTablePressIntValStrat`
+
+**EarlyLeakNomPressTable_PressValRef**
+- ❌ `EarlyLeakNomPressTable_PressValRef`
+- ✅ `EarlyLeakNomPressTablePressValRef`
+
+**EarlyLeakNomPressTable_PressValRefMult**
+- ❌ `EarlyLeakNomPressTable_PressValRefMult`
+- ✅ `EarlyLeakNomPressTablePressValRefMult`
+
+**EarlyLeakNomPressTable_TensLimit**
+- ❌ `EarlyLeakNomPressTable_TensLimit`
+- ✅ `EarlyLeakNomPressTableTensLimit`
+
+**EarlyLeakNomPressTable_TensLimitValRef**
+- ❌ `EarlyLeakNomPressTable_TensLimitValRef`
+- ✅ `EarlyLeakNomPressTableTensLimitValRef`
+
+**EModVsTempTable_ElasticityModulus**
+- ❌ `EModVsTempTable_ElasticityModulus`
+- ✅ `EmodVsTempTableElasticityModulus`
+
+**EModVsTempTable_Temperature**
+- ❌ `EModVsTempTable_Temperature`
+- ✅ `EmodVsTempTableTemperature`
+
+**FrictionCoefficientTighteningTable_CoefficientOfFriction**
+- ❌ `FrictionCoefficientTighteningTable_CoefficientOfFriction`
+- ✅ `FrictionCoefficientTighteningTableCoefficientOfFriction`
+
+**FrictionCoefficientTighteningTable_TighteningPerTrack**
+- ❌ `FrictionCoefficientTighteningTable_TighteningPerTrack`
+- ✅ `FrictionCoefficientTighteningTableTighteningPerTrack`
+
+**InternalIncidentalPressureTable_PositionReference**
+- ❌ `InternalIncidentalPressureTable_PositionReference`
+- ✅ `InternalIncidentalPressureTablePositionReference`
+
+**InternalIncidentalPressureTable_Pressure**
+- ❌ `InternalIncidentalPressureTable_Pressure`
+- ✅ `InternalIncidentalPressureTablePressure`
+
+**InternalIncidentalPressureTable_VPosWRTWaterline**
+- ❌ `InternalIncidentalPressureTable_VPosWRTWaterline`
+- ✅ `InternalIncidentalPressureTableVposWrtwaterline`
+
+**LayingMinimumRadiusTable_AbsoluteExternalPressure**
+- ❌ `LayingMinimumRadiusTable_AbsoluteExternalPressure`
+- ✅ `LayingMinimumRadiusTableAbsoluteExternalPressure`
+
+**LayingMinimumRadiusTable_AbsoluteInternalPressure**
+- ❌ `LayingMinimumRadiusTable_AbsoluteInternalPressure`
+- ✅ `LayingMinimumRadiusTableAbsoluteInternalPressure`
+
+**LayingMinimumRadiusTable_Compression**
+- ❌ `LayingMinimumRadiusTable_Compression`
+- ✅ `LayingMinimumRadiusTableCompression`
+
+**LayingMinimumRadiusTable_MinimumAllowableBendingRadius**
+- ❌ `LayingMinimumRadiusTable_MinimumAllowableBendingRadius`
+- ✅ `LayingMinimumRadiusTableMinimumAllowableBendingRadius`
+
+**LayingMinimumRadiusTable_SectionSupportedByRigidSupport**
+- ❌ `LayingMinimumRadiusTable_SectionSupportedByRigidSupport`
+- ✅ `LayingMinimumRadiusTableSectionSupportedByRigidSupport`
+
+**LayingMinimumRadiusTable_TensileArmourAnnulusCondition**
+- ❌ `LayingMinimumRadiusTable_TensileArmourAnnulusCondition`
+- ✅ `LayingMinimumRadiusTableTensileArmourAnnulusCondition`
+
+**MaxDesignAbsIntPresTable_PositionReference**
+- ❌ `MaxDesignAbsIntPresTable_PositionReference`
+- ✅ `MaxDesignAbsIntPresTablePositionReference`
+
+**MaxDesignAbsIntPresTable_Pressure**
+- ❌ `MaxDesignAbsIntPresTable_Pressure`
+- ✅ `MaxDesignAbsIntPresTablePressure`
+
+**MaxDesignAbsIntPresTable_VPosWRTWaterline**
+- ❌ `MaxDesignAbsIntPresTable_VPosWRTWaterline`
+- ✅ `MaxDesignAbsIntPresTableVposWrtwaterline`
+
+**MaximumAllowableTensionTable_MaximumAllowableTensile**
+- ❌ `MaximumAllowableTensionTable_MaximumAllowableTensile`
+- ✅ `MaximumAllowableTensionTableMaximumAllowableTensile`
+
+**MaximumAllowableTensionTable_PulleyRadius**
+- ❌ `MaximumAllowableTensionTable_PulleyRadius`
+- ✅ `MaximumAllowableTensionTablePulleyRadius`
+
+**MaximumAllowableTensionTable_PulleyVAngle**
+- ❌ `MaximumAllowableTensionTable_PulleyVAngle`
+- ✅ `MaximumAllowableTensionTablePulleyVangle`
+
+**MaximumAllowableTighteningTable_AxialLoad**
+- ❌ `MaximumAllowableTighteningTable_AxialLoad`
+- ✅ `MaximumAllowableTighteningTableAxialLoad`
+
+**MaximumAllowableTighteningTable_TighteningPerTrack**
+- ❌ `MaximumAllowableTighteningTable_TighteningPerTrack`
+- ✅ `MaximumAllowableTighteningTableTighteningPerTrack`
+
+**PermeabilityTable_MoleculeIdentifier**
+- ❌ `PermeabilityTable_MoleculeIdentifier`
+- ✅ `PermeabilityTableMoleculeIdentifier`
+
+**PermeabilityTable_PermeabilityCoefficient**
+- ❌ `PermeabilityTable_PermeabilityCoefficient`
+- ✅ `PermeabilityTablePermeabilityCoefficient`
+
+**PermeabilityTable_PolymerState**
+- ❌ `PermeabilityTable_PolymerState`
+- ✅ `PermeabilityTablePolymerState`
+
+**PermeabilityTable_Temperature**
+- ❌ `PermeabilityTable_Temperature`
+- ✅ `PermeabilityTableTemperature`
+
+**Planned_Start_Timestamp**
+- ❌ `Planned_Start_Timestamp`
+- ✅ `PlannedStartTimestamp`
+
+**SolubilityTable_MoleculeIdentifier**
+- ❌ `SolubilityTable_MoleculeIdentifier`
+- ✅ `SolubilityTableMoleculeIdentifier`
+
+**SolubilityTable_PolymerState**
+- ❌ `SolubilityTable_PolymerState`
+- ✅ `SolubilityTablePolymerState`
+
+**SolubilityTable_SolubilityCoefficient**
+- ❌ `SolubilityTable_SolubilityCoefficient`
+- ✅ `SolubilityTableSolubilityCoefficient`
+
+**SolubilityTable_Temperature**
+- ❌ `SolubilityTable_Temperature`
+- ✅ `SolubilityTableTemperature`
+
+**StrandsTable_SpareQuantity**
+- ❌ `StrandsTable_SpareQuantity`
+- ✅ `StrandsTableSpareQuantity`
+
+**StrandsTable_StrandsLength**
+- ❌ `StrandsTable_StrandsLength`
+- ✅ `StrandsTableStrandsLength`
+
+**StrandsTable_StrandsQuantity**
+- ❌ `StrandsTable_StrandsQuantity`
+- ✅ `StrandsTableStrandsQuantity`
+
+
+## 🔍 Issues de Qualidade (Requerem Decisão do Especialista)
+
+*Estes issues NÃO são corrigidos automaticamente. Requerem análise do especialista em ontologias.*
+
+### 🏷️ Issues de DomainAttribute
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ⚠️ Avisos para Revisão (510)
+
+- **`AbsoluteInsidePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AbsoluteInsidePressure' não possui skos:definition em português (@pt-br)
+- **`AbsoluteOutsidePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AbsoluteOutsidePressure' não possui skos:definition em português (@pt-br)
+- **`AnodeCollarsAxialSpacing`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AnodeCollarsAxialSpacing' não possui skos:definition em português (@pt-br)
+- **`AnodeCollarsQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AnodeCollarsQuantity' não possui skos:definition em português (@pt-br)
+- **`AssemblyShouldObeyModelPolarity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AssemblyShouldObeyModelPolarity' não possui skos:definition em português (@pt-br)
+- **`AssemblyTorque`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AssemblyTorque' não possui skos:definition em português (@pt-br)
+- **`BendingMomentTableBendingMoment`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingMomentTableBendingMoment' não possui skos:definition em português (@pt-br)
+- **`BendingMomentTableCurvature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingMomentTableCurvature' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:accessRights
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui dcterms:accessRights
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui dcterms:identifier
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui dcterms:accessRights
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:definition em inglês (@en)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui dcterms:identifier
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceTableBendingMoment`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableBendingMoment' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceTableCondition`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableCondition' não possui skos:definition em português (@pt-br)
+- **`BoreDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BoreDiameter' não possui skos:definition em português (@pt-br)
+- **`CalculatedAbsoluteBurstPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CalculatedAbsoluteBurstPressure' não possui skos:definition em português (@pt-br)
+- **`ClampInternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ClampInternalDiameter' não possui skos:definition em português (@pt-br)
+- **`CO2VolumePercentage`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CO2VolumePercentage' não possui skos:definition em português (@pt-br)
+- **`CollarInternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CollarInternalDiameter' não possui skos:definition em português (@pt-br)
+- **`CompositeLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CompositeLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`CriticalCurvatureOfSlipping`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CriticalCurvatureOfSlipping' não possui skos:definition em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui dcterms:accessRights
+- **`CrushingCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui dcterms:identifier
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DamagingPullInStraightLine`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DamagingPullInStraightLine' não possui skos:definition em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui dcterms:accessRights
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:definition em inglês (@en)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui dcterms:identifier
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DiffusionTableColumn`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+- **`DiffusionTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DiffusionTableDiffusionCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionTableDiffusionCoefficient' não possui skos:definition em português (@pt-br)
+- **`DiffusionTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionTableTemperature' não possui skos:definition em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui dcterms:accessRights
+- **`DimensionsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:definition em inglês (@en)
+- **`DimensionsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:definition em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui dcterms:identifier
+- **`DimensionsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`DimensionsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DisplacedVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DisplacedVolume' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui dcterms:accessRights
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:definition em inglês (@en)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui dcterms:identifier
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DrawingDimensionsTableDimensionName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableDimensionName' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableDimensionValue`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableDimensionValue' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakMaxPressTableTensLimitValRef`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakNomPressTablePressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTablePressValRefMult' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableTensLimitValRef`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:accessRights
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em inglês (@en)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:identifier
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EModVsTempTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui dcterms:accessRights
+- **`EModVsTempTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em inglês (@en)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em português (@pt-br)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui dcterms:identifier
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EmodVsTempTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EmodVsTempTableTemperature' não possui skos:definition em português (@pt-br)
+- **`EmodVsTempTableTemperature`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EmodVsTempTableTemperature' não possui skos:prefLabel em português (@pt-br)
+- **`ErosionalVelocity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ErosionalVelocity' não possui skos:definition em português (@pt-br)
+- **`ExternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ExternalDiameter' não possui skos:definition em português (@pt-br)
+- **`FatMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FatMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`FatNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FatNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui dcterms:accessRights
+- **`FlangeAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'FlangeAttribute' não possui skos:definition em inglês (@en)
+- **`FlangeAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeAttribute' não possui skos:definition em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui dcterms:identifier
+- **`FlangeAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'FlangeAttribute' não possui skos:prefLabel em inglês (@en)
+- **`FlangeAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'FlangeAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`FlangeFaceType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeFaceType' não possui skos:definition em português (@pt-br)
+- **`FlangeType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeType' não possui skos:definition em português (@pt-br)
+- **`FlexibleStructureServicesList`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlexibleStructureServicesList' não possui skos:definition em português (@pt-br)
+- **`FrictionCoefficientTighteningTableCoefficientOfFriction`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FrictionCoefficientTighteningTableCoefficientOfFriction' não possui skos:definition em português (@pt-br)
+- **`FrictionCoefficientTighteningTableTighteningPerTrack`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FrictionCoefficientTighteningTableTighteningPerTrack' não possui skos:definition em português (@pt-br)
+- **`FullyThreaded`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FullyThreaded' não possui skos:definition em português (@pt-br)
+- **`GalvanicMaterial`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GalvanicMaterial' não possui skos:definition em português (@pt-br)
+- **`GrooveDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveDiameter' não possui skos:definition em português (@pt-br)
+- **`GrooveHeight`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveHeight' não possui skos:definition em português (@pt-br)
+- **`GrooveMinimumSupportArea`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveMinimumSupportArea' não possui skos:definition em português (@pt-br)
+- **`GrooveSupportSurfaceDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveSupportSurfaceDiameter' não possui skos:definition em português (@pt-br)
+- **`H2SVolumeConcentration`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'H2SVolumeConcentration' não possui skos:definition em português (@pt-br)
+- **`HasFaceORing`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasFaceORing' não possui skos:definition em português (@pt-br)
+- **`HasModaSensor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasModaSensor' não possui skos:definition em português (@pt-br)
+- **`HasN2InjectionPort`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasN2InjectionPort' não possui skos:definition em português (@pt-br)
+- **`HasThermalInsulation`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'HasThermalInsulation' não possui skos:definition em inglês (@en)
+- **`HasThermalInsulation`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasThermalInsulation' não possui skos:definition em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui dcterms:accessRights
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:definition em inglês (@en)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:definition em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui dcterms:identifier
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:prefLabel em inglês (@en)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`IndividualAnodeMass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IndividualAnodeMass' não possui skos:definition em português (@pt-br)
+- **`InsideTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InsideTemperature' não possui skos:definition em português (@pt-br)
+- **`IntermediateValuesStrategy`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IntermediateValuesStrategy' não possui skos:definition em português (@pt-br)
+- **`InternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalDiameter' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:accessRights
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTablePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTablePressure' não possui skos:definition em português (@pt-br)
+- **`InternalVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalVolume' não possui skos:definition em português (@pt-br)
+- **`IsSpare`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IsSpare' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui dcterms:accessRights
+- **`LayerGeometryAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em inglês (@en)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui dcterms:identifier
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayerGeometryCrossSection`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryCrossSection' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryInertiaX`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryInertiaX' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryInertiaY`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryInertiaY' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryManufacturer`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryManufacturer' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryName' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryProfileThickness' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileWidth`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryProfileWidth' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryThickness' não possui skos:definition em português (@pt-br)
+- **`LayerThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerThickness' não possui skos:definition em português (@pt-br)
+- **`LayerWatertight`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerWatertight' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayingMinimumRadiusTableAbsoluteExternalPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableAbsoluteExternalPressure' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableAbsoluteInternalPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableAbsoluteInternalPressure' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:accessRights
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayingMinimumRadiusTableMinimumAllowableBendingRadius`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableMinimumAllowableBendingRadius' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableSectionSupportedByRigidSupport`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableSectionSupportedByRigidSupport' não possui skos:definition em português (@pt-br)
+- **`LinearMass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LinearMass' não possui skos:definition em português (@pt-br)
+- **`Lubricant`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Lubricant' não possui skos:definition em português (@pt-br)
+- **`LubricantFrictionFactor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LubricantFrictionFactor' não possui skos:definition em português (@pt-br)
+- **`ManufacturerDefinedMaterialName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturerDefinedMaterialName' não possui skos:definition em português (@pt-br)
+- **`ManufacturingDate`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturingDate' não possui skos:definition em português (@pt-br)
+- **`ManufacturingNonConformities`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturingNonConformities' não possui skos:definition em português (@pt-br)
+- **`Mass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Mass' não possui skos:definition em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui dcterms:accessRights
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:definition em inglês (@en)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:definition em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui dcterms:identifier
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:prefLabel em inglês (@en)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaterialRequest`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialRequest' não possui skos:definition em português (@pt-br)
+- **`MaterialRequestRev`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialRequestRev' não possui skos:definition em português (@pt-br)
+- **`MaterialSupplierName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialSupplierName' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:accessRights
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTablePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTablePressure' não possui skos:definition em português (@pt-br)
+- **`MaxDesignPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignPressure' não possui skos:definition em português (@pt-br)
+- **`MaxDynamicLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDynamicLoad' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensileForStraightLine`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensileForStraightLine' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTableMaximumAllowableTensile`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTableMaximumAllowableTensile' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTablePulleyRadius`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTablePulleyRadius' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTablePulleyVangle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTablePulleyVangle' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTighteningTableAxialLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTighteningTableAxialLoad' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTighteningTableTighteningPerTrack`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTighteningTableTighteningPerTrack' não possui skos:definition em português (@pt-br)
+- **`MaximumAmbientTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAmbientTemperature' não possui skos:definition em português (@pt-br)
+- **`MaximumTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumTemperature' não possui skos:definition em português (@pt-br)
+- **`MaximumThermalExchangeCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumThermalExchangeCoefficient' não possui skos:definition em português (@pt-br)
+- **`MaxLengthTolerance`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxLengthTolerance' não possui skos:definition em português (@pt-br)
+- **`MetallicLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`MetallicLayerPitch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicLayerPitch' não possui skos:definition em português (@pt-br)
+- **`MetallicStrandLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicStrandLength' não possui skos:definition em português (@pt-br)
+- **`MetallicStrandSpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicStrandSpareQuantity' não possui skos:definition em português (@pt-br)
+- **`MinimumBendingRadiusForStorage`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumBendingRadiusForStorage' não possui skos:definition em português (@pt-br)
+- **`MinimumTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumTemperature' não possui skos:definition em português (@pt-br)
+- **`MinimumThermalExchangeCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumThermalExchangeCoefficient' não possui skos:definition em português (@pt-br)
+- **`ModulusOfElasticity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ModulusOfElasticity' não possui skos:definition em português (@pt-br)
+- **`NominalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'NominalDiameter' não possui skos:definition em português (@pt-br)
+- **`NominalLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'NominalLength' não possui skos:definition em português (@pt-br)
+- **`OffLeakPLevMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OffLeakPLevMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`OffLeakPLevNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OffLeakPLevNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`OuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OuterDiameter' não possui skos:definition em português (@pt-br)
+- **`OutsideTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OutsideTemperature' não possui skos:definition em português (@pt-br)
+- **`PartNumber`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PartNumber' não possui skos:definition em português (@pt-br)
+- **`PermeabilityCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+- **`PermeabilityCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PermeabilityTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui dcterms:accessRights
+- **`PermeabilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em inglês (@en)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui dcterms:identifier
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PermeabilityTablePermeabilityCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTablePermeabilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`PitchToleranceClass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PitchToleranceClass' não possui skos:definition em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em inglês (@en)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:prefLabel em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PlannedStartTimestamp' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`PolymericLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PolymericLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`PostSlippingBendingStiffness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PostSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`PreSlippingBendingStiffness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PreSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`ProjectCode`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ProjectCode' não possui skos:definition em português (@pt-br)
+- **`ProjectDrawingRevision`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ProjectDrawingRevision' não possui skos:definition em português (@pt-br)
+- **`PullingHeadType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PullingHeadType' não possui skos:definition em português (@pt-br)
+- **`Quantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Quantity' não possui skos:definition em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui dcterms:accessRights
+- **`RingGasketAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:definition em inglês (@en)
+- **`RingGasketAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:definition em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui dcterms:identifier
+- **`RingGasketAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em inglês (@en)
+- **`RingGasketAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`RingGasketInnerDIameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketInnerDIameter' não possui skos:definition em português (@pt-br)
+- **`RingGasketMaterial`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketMaterial' não possui skos:definition em português (@pt-br)
+- **`RingGasketOuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketOuterDiameter' não possui skos:definition em português (@pt-br)
+- **`RingGasketPressureRating`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketPressureRating' não possui skos:definition em português (@pt-br)
+- **`RingGasketSpecification`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketSpecification' não possui skos:definition em português (@pt-br)
+- **`RingGasketStandard`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketStandard' não possui skos:definition em português (@pt-br)
+- **`RingGasketType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketType' não possui skos:definition em português (@pt-br)
+- **`RiserConfiguration`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RiserConfiguration' não possui skos:definition em português (@pt-br)
+- **`RuptDefAlongFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RuptDefAlongFibers' não possui skos:definition em português (@pt-br)
+- **`RuptDefPerpendFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RuptDefPerpendFibers' não possui skos:definition em português (@pt-br)
+- **`SafeWorkingLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SafeWorkingLoad' não possui skos:definition em português (@pt-br)
+- **`SerialNumber`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SerialNumber' não possui skos:definition em português (@pt-br)
+- **`ShackleInnerDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleInnerDiameter' não possui skos:definition em português (@pt-br)
+- **`ShackleOpeningWidth`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleOpeningWidth' não possui skos:definition em português (@pt-br)
+- **`ShackleOuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleOuterDiameter' não possui skos:definition em português (@pt-br)
+- **`ShackleThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleThickness' não possui skos:definition em português (@pt-br)
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`SolubilityTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui dcterms:accessRights
+- **`SolubilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:definition em inglês (@en)
+- **`SolubilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui dcterms:identifier
+- **`SolubilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`SolubilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`SolubilityTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`SolubilityTablePolymerState`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTablePolymerState' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableSolubilityCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableSolubilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`SpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SpareQuantity' não possui skos:definition em português (@pt-br)
+- **`SpoolingTension`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SpoolingTension' não possui skos:definition em português (@pt-br)
+- **`StrandsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableAttribute' não possui skos:definition em português (@pt-br)
+- **`StrandsTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`StrandsTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui dcterms:accessRights
+- **`StrandsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:definition em inglês (@en)
+- **`StrandsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:definition em português (@pt-br)
+- **`StrandsTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui dcterms:identifier
+- **`StrandsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`StrandsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`StrandsTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`StrandsTableSpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableSpareQuantity' não possui skos:definition em português (@pt-br)
+- **`StrandsTableStrandsLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableStrandsLength' não possui skos:definition em português (@pt-br)
+- **`StrandsTableStrandsQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableStrandsQuantity' não possui skos:definition em português (@pt-br)
+- **`StressAtDesignPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StressAtDesignPressure' não possui skos:definition em português (@pt-br)
+- **`StrIntOffPLevMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOffPLevMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOffPLevNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOffPLevNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOnNoTensMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOnNoTensMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOnNoTensNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOnNoTensNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StructureCode`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StructureCode' não possui skos:definition em português (@pt-br)
+- **`SubProjectId`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SubProjectId' não possui skos:definition em português (@pt-br)
+- **`SupplierProvidedMaterialName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SupplierProvidedMaterialName' não possui skos:definition em português (@pt-br)
+- **`TapesQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TapesQuantity' não possui skos:definition em português (@pt-br)
+- **`TechnicalNotes`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TechnicalNotes' não possui skos:definition em português (@pt-br)
+- **`TensileArmourFreeAnnulusVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileArmourFreeAnnulusVolume' não possui skos:definition em português (@pt-br)
+- **`TensileWireLayAngle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileWireLayAngle' não possui skos:definition em português (@pt-br)
+- **`TensileWiresCount`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileWiresCount' não possui skos:definition em português (@pt-br)
+- **`TensionerPadsOpeningAngle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensionerPadsOpeningAngle' não possui skos:definition em português (@pt-br)
+- **`ThreadPitch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadPitch' não possui skos:definition em português (@pt-br)
+- **`ThreadsPerInch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadsPerInch' não possui skos:definition em português (@pt-br)
+- **`ThreadStandard`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadStandard' não possui skos:definition em português (@pt-br)
+- **`UltTensStrAlongFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UltTensStrAlongFibers' não possui skos:definition em português (@pt-br)
+- **`UltTensStrPerpendFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UltTensStrPerpendFibers' não possui skos:definition em português (@pt-br)
+- **`UnifilarDiagram`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UnifilarDiagram' não possui skos:definition em português (@pt-br)
+- **`UnifilarDiagramRev`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UnifilarDiagramRev' não possui skos:definition em português (@pt-br)
+- **`UpperItubeDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UpperItubeDiameter' não possui skos:definition em português (@pt-br)
+- **`UtilizationFactor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UtilizationFactor' não possui skos:definition em português (@pt-br)
+- **`WireRopeQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WireRopeQuantity' não possui skos:definition em português (@pt-br)
+- **`WireRopeSlingLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WireRopeSlingLength' não possui skos:definition em português (@pt-br)
+- **`WorkingLoadLimit`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WorkingLoadLimit' não possui skos:definition em português (@pt-br)
+
+### 🏗️ Issues de Classes IFC
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ❌ Erros Críticos (94)
+
+- **`AbandonmentCap`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbandonmentCap`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbrasionProtector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbrasionProtector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`BendRestrictor`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningActivity`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningActivity`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningContract`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningContract`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningDigitalProcessStep`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningDigitalProcessStep`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningEvidence`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningEvidence`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningIssue`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningIssue`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningItemCheck`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningItemCheck`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningLoopCheck`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningLoopCheck`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningPerson`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPerson`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningPreservationOrder`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPreservationOrder`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProgram`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProgram`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProject`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProject`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningResponsibleActor`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleActor`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningResponsibleGroup`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleGroup`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningTask`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningTask`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CompositeMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`DimensionsDrawing`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`DynamicUmbilicalSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ElectricalJumperConnector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalJumperConnector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ElectricalPowerJumperConnector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalPowerJumperConnector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Filler`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlangeAdapter`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeAdapter`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlangeConnection`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlowlineSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStab`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStab`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStabReceptacle`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStabReceptacle`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`IfcInstanciableElement`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`IfcInstanciableElement`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`IntermediateBendStiffener`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`MetallicMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`PolymericMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Project`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`Project`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`QuickConnectCoupling`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`QuickConnectCoupling`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`RigidJoint`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`RigidJoint`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`RiserSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`StaticUmbilicalSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaFlexiblePipesBsddDictionary`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaFlexiblePipesBsddDictionary`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaOilField`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaUmbilical`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaUmbilicalBsddDictionary`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaUmbilicalBsddDictionary`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`ThreadedFitting`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ThreadedFitting`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`TopBendStiffener`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalBundle`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`UmbilicalLocation`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalPullingHead`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`UmbilicalPullingHead`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalStructure`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`WeldedConnection`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`WeldedConnection`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`WetChristmasTree`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`WetChristmasTree`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+
+### 📋 Issues Gerais (Classes/Propriedades)
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ❌ Erros Críticos (166)
+
+- **`AdministrativeAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AdministrativeAttribute' não possui dcterms:identifier
+- **`AnyURIType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AnyURIType' não possui dcterms:identifier
+- **`ArchitecturalEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ArchitecturalEngineering' não possui dcterms:identifier
+- **`AttributeClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeClassification' não possui dcterms:identifier
+- **`AttributeDomainCategory`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeDomainCategory' não possui dcterms:identifier
+- **`AttributeNature`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeNature' não possui dcterms:identifier
+- **`AttributeScope`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeScope' não possui dcterms:identifier
+- **`AttributesGroup`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributesGroup' não possui dcterms:identifier
+- **`AttributeValueCardinality`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeValueCardinality' não possui dcterms:identifier
+- **`AutomationControlEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AutomationControlEngineering' não possui dcterms:identifier
+- **`Base64BinaryType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Base64BinaryType' não possui dcterms:identifier
+- **`BasicDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BasicDesign' não possui dcterms:identifier
+- **`BatchLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BatchLevelAttribute' não possui dcterms:identifier
+- **`BendingStiffnessCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+- **`BendingStiffnessTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendingStiffnessTableColumn' não possui dcterms:identifier
+- **`BendMomentVsShearForceCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendMomentVsShearForceCurveAttribute' não possui dcterms:identifier
+- **`BendMomentVsShearForceTableColumn`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+- **`Biomass`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Biomass' não possui dcterms:identifier
+- **`BooleanValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BooleanValue' não possui dcterms:identifier
+- **`CalculatedValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CalculatedValue' não possui dcterms:identifier
+- **`CivilEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CivilEngineering' não possui dcterms:identifier
+- **`Commissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Commissioning' não possui dcterms:identifier
+- **`CommissioningElement`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'CommissioningObject' não corresponde ao local name 'CommissioningElement'
+- **`ComponentElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ComponentElement' não possui dcterms:identifier
+- **`ConceptualDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConceptualDesign' não possui dcterms:identifier
+- **`ConceptualMarker`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConceptualMarker' não possui dcterms:identifier
+- **`ConstructionPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConstructionPhase' não possui dcterms:identifier
+- **`ConsumableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConsumableElement' não possui dcterms:identifier
+- **`ContentManagementAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ContentManagementAttribute' não possui dcterms:identifier
+- **`CrushingCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingCurveAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+- **`DataType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DataType' não possui dcterms:identifier
+- **`DateTimeValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DateTimeValue' não possui dcterms:identifier
+- **`DateValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DateValue' não possui dcterms:identifier
+- **`DecimalValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DecimalValue' não possui dcterms:identifier
+- **`DeclaredValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DeclaredValue' não possui dcterms:identifier
+- **`Decommissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Decommissioning' não possui dcterms:identifier
+- **`DecommissioningPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DecommissioningPhase' não possui dcterms:identifier
+- **`DesignConditionAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DesignConditionAttribute' não possui dcterms:identifier
+- **`DesignPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DesignPhase' não possui dcterms:identifier
+- **`DetailedDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DetailedDesign' não possui dcterms:identifier
+- **`DiffusionCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DiffusionCurveAttribute' não possui dcterms:identifier
+- **`DiffusionTableColumn`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+- **`DimensionalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DimensionalAttribute' não possui dcterms:identifier
+- **`DimensionsTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DimensionsTableColumn' não possui dcterms:identifier
+- **`Domain`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Domain' não possui dcterms:identifier
+- **`DomainAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainAttribute' não possui dcterms:identifier
+- **`DomainClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainClassification' não possui dcterms:identifier
+- **`DomainElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainElement' não possui dcterms:identifier
+- **`DoubleValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DoubleValue' não possui dcterms:identifier
+- **`Downstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Downstream' não possui dcterms:identifier
+- **`DrawingDimensionsTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DrawingDimensionsTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakMaxPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakNomPressTableColumn' não possui dcterms:identifier
+- **`ElectricalEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ElectricalEngineering' não possui dcterms:identifier
+- **`ElementClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ElementClassification' não possui dcterms:identifier
+- **`EModVsTempCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EModVsTempCurveAttribute' não possui dcterms:identifier
+- **`EModVsTempTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EModVsTempTableColumn' não possui dcterms:identifier
+- **`EnergyStorage`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EnergyStorage' não possui dcterms:identifier
+- **`EquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EquipmentEngineering' não possui dcterms:identifier
+- **`ExternalReference`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ExternalReference' não possui dcterms:identifier
+- **`Fabrication`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Fabrication' não possui dcterms:identifier
+- **`FabricationComponent`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FabricationComponent' não possui dcterms:identifier
+- **`FEED`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FEED' não possui dcterms:identifier
+- **`FinancialAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FinancialAttribute' não possui dcterms:identifier
+- **`FlangeAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FlangeAttribute' não possui dcterms:identifier
+- **`FlexibleStructure`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FlexibleStructure' não possui dcterms:identifier
+- **`FloatValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FloatValue' não possui dcterms:identifier
+- **`FunctionalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FunctionalAttribute' não possui dcterms:identifier
+- **`Geothermal`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Geothermal' não possui dcterms:identifier
+- **`HistoricalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HistoricalAttribute' não possui dcterms:identifier
+- **`HVACEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HVACEngineering' não possui dcterms:identifier
+- **`HydrogenEnergy`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HydrogenEnergy' não possui dcterms:identifier
+- **`Hydropower`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Hydropower' não possui dcterms:identifier
+- **`HydrostaticPressureTestsAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HydrostaticPressureTestsAttribute' não possui dcterms:identifier
+- **`IdentificationAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IdentificationAttribute' não possui dcterms:identifier
+- **`IfcInstanciableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IfcInstanciableElement' não possui dcterms:identifier
+- **`ImportedValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ImportedValue' não possui dcterms:identifier
+- **`Installation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Installation' não possui dcterms:identifier
+- **`InstanceLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstanceLevelAttribute' não possui dcterms:identifier
+- **`InstanciableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstanciableElement' não possui dcterms:identifier
+- **`InstrumentationEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstrumentationEngineering' não possui dcterms:identifier
+- **`InternalIncidentalPressureCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+- **`InternalIncidentalPressureTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+- **`IntValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IntValue' não possui dcterms:identifier
+- **`LayerGeometryAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayerGeometryAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+- **`LifecyclePhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LifecyclePhase' não possui dcterms:identifier
+- **`LocationType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LocationType' não possui dcterms:identifier
+- **`LongValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LongValue' não possui dcterms:identifier
+- **`Maintenance`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Maintenance' não possui dcterms:identifier
+- **`MaterialManufacturerAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaterialManufacturerAttribute' não possui dcterms:identifier
+- **`MaterialType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaterialType' não possui dcterms:identifier
+- **`MaxDesignAbsIntPresCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+- **`MaxDesignAbsIntPresTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+- **`MeasuredValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MeasuredValue' não possui dcterms:identifier
+- **`Midstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Midstream' não possui dcterms:identifier
+- **`MultiValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MultiValue' não possui dcterms:identifier
+- **`Nuclear`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Nuclear' não possui dcterms:identifier
+- **`NuclearFuelCycle`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'NuclearFuelCycle' não possui dcterms:identifier
+- **`NuclearPowerGeneration`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'NuclearPowerGeneration' não possui dcterms:identifier
+- **`Offshore`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Offshore' não possui dcterms:identifier
+- **`OilAndGas`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'OilAndGas' não possui dcterms:identifier
+- **`Onshore`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Onshore' não possui dcterms:identifier
+- **`Operation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Operation' não possui dcterms:identifier
+- **`OperationPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'OperationPhase' não possui dcterms:identifier
+- **`PackageEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PackageEquipmentEngineering' não possui dcterms:identifier
+- **`PartElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PartElement' não possui dcterms:identifier
+- **`PerformanceAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PerformanceAttribute' não possui dcterms:identifier
+- **`PermeabilityCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+- **`PermeabilityTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PermeabilityTableColumn' não possui dcterms:identifier
+- **`PhysicalPropertyAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PhysicalPropertyAttribute' não possui dcterms:identifier
+- **`Port`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Port' não possui dcterms:identifier
+- **`PreCommissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PreCommissioning' não possui dcterms:identifier
+- **`ProcessEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessEngineering' não possui dcterms:identifier
+- **`ProcessPipeSpec`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessPipeSpec' não possui dcterms:identifier
+- **`ProcessPipingEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessPipingEngineering' não possui dcterms:identifier
+- **`Procurement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Procurement' não possui dcterms:identifier
+- **`ProvenanceAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProvenanceAttribute' não possui dcterms:identifier
+- **`Recycling`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Recycling' não possui dcterms:identifier
+- **`ReferenceDocument`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ReferenceDocument' não possui dcterms:identifier
+- **`Renewable`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Renewable' não possui dcterms:identifier
+- **`RingGasketAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'RingGasketAttribute' não possui dcterms:identifier
+- **`RotatingEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'RotatingEquipmentEngineering' não possui dcterms:identifier
+- **`SafetyLossPreventionEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SafetyLossPreventionEngineering' não possui dcterms:identifier
+- **`SingleValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SingleValue' não possui dcterms:identifier
+- **`Solar`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Solar' não possui dcterms:identifier
+- **`SolubilityCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+- **`SolubilityTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SolubilityTableColumn' não possui dcterms:identifier
+- **`SpatialAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SpatialAttribute' não possui dcterms:identifier
+- **`Specification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Specification' não possui dcterms:identifier
+- **`StaticEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StaticEquipmentEngineering' não possui dcterms:identifier
+- **`Status`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Status' não possui dcterms:identifier
+- **`StrandsTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StrandsTableColumn' não possui dcterms:identifier
+- **`StringValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StringValue' não possui dcterms:identifier
+- **`StructuralEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StructuralEngineering' não possui dcterms:identifier
+- **`SubseaEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaEngineering' não possui dcterms:identifier
+- **`SubseaFlexiblePipesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaFlexiblePipesEngineering' não possui dcterms:identifier
+- **`SubseaManifoldsEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaManifoldsEngineering' não possui dcterms:identifier
+- **`SubseaRigidPipesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaRigidPipesEngineering' não possui dcterms:identifier
+- **`SubseaRigidPipeSpec`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaRigidPipeSpec' não possui dcterms:identifier
+- **`SubseaStructuresEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaStructuresEngineering' não possui dcterms:identifier
+- **`SubseaUmbilicalsEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaUmbilicalsEngineering' não possui dcterms:identifier
+- **`Table`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Table' não possui dcterms:identifier
+- **`TableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TableColumn' não possui dcterms:identifier
+- **`TechnicalDiscipline`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TechnicalDiscipline' não possui dcterms:identifier
+- **`ThermalPower`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ThermalPower' não possui dcterms:identifier
+- **`TimeValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TimeValue' não possui dcterms:identifier
+- **`ToBeDeprecated`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ToBeDeprecated' não possui dcterms:identifier
+- **`Transportation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Transportation' não possui dcterms:identifier
+- **`TypeLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TypeLevelAttribute' não possui dcterms:identifier
+- **`Upstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Upstream' não possui dcterms:identifier
+- **`UtilityPipingEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'UtilityPipingEngineering' não possui dcterms:identifier
+- **`ValueNature`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ValueNature' não possui dcterms:identifier
+- **`ValueOrigin`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ValueOrigin' não possui dcterms:identifier
+- **`Version`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Version' não possui dcterms:identifier
+- **`WetChristmasTreesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'WetChristmasTreesEngineering' não possui dcterms:identifier
+- **`Wind`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Wind' não possui dcterms:identifier
+
+#### ⚠️ Avisos para Revisão (697)
+
+- **`Accessory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula atuada externamente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'atuada' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Externally-actuated valve'@en não corresponde ao padrão esperado. Causa: palavra 'actuated' em 'Externally-actuated' deve começar com maiúscula
+- **`ActuatedValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Externally-actuated'→'Externally-Actuated', 'valve'→'Valve'; [pt-br] Title Case: 'atuada'→'Atuada', 'externamente'→'Externamente'
+- **`Anchor`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`appliesTo`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ArmorPot`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AssemblyTorque`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Torque de montagem'@pt-br não corresponde ao padrão esperado. Causa: palavra 'montagem' deve começar com maiúscula (não é stopword)
+- **`AssemblyTorque`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'montagem'→'Montagem'
+- **`Asset`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`AttributeDomainCategory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AttributeScope`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AuxiliaryModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AuxiliaryModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo auxiliar'@pt-br não corresponde ao padrão esperado. Causa: palavra 'auxiliar' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Auxiliary module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`AuxiliaryModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'auxiliar'→'Auxiliar'
+- **`AxialStiffnessUnderCompressionAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`AxialStiffnessUnderCompressionAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`AxialStiffnessUnderTensionAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`BatchLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`BendMomentVsShearForceTable_BendingMoment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexão'→'Flexão'
+- **`BendMomentVsShearForceTable_Condition`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexível'→'Flexível', 'dados'→'Dados', 'curva'→'Curva'
+- **`BendMomentVsShearForceTable_ShearForce`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`BendMomentVsShearForceTableBendingMoment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Momento de flexão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flexão' deve começar com maiúscula (não é stopword)
+- **`BendMomentVsShearForceTableColumn`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Bending moment vs Shear Force Table'@en não corresponde ao padrão esperado. Causa: palavra 'moment' deve começar com maiúscula (não é stopword)
+- **`BendMomentVsShearForceTableColumn`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'moment'→'Moment'
+- **`BendMomentVsShearForceTableCondition`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Condição do flexível para os dados da curva'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flexível' deve começar com maiúscula (não é stopword)
+- **`BlockValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`BlockValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula de bloqueio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Block valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`BlockValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'bloqueio'→'Bloqueio'
+- **`BOP`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Blowout preventer'@en não corresponde ao padrão esperado. Causa: palavra 'preventer' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Blowout preventer'@pt-br não corresponde ao padrão esperado. Causa: palavra 'preventer' deve começar com maiúscula (não é stopword)
+- **`BOP`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'preventer'→'Preventer'; [pt-br] Title Case: 'preventer'→'Preventer'
+- **`BsddDataDictionary`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'BSDD'→'Bsdd'; [pt-br] Title Case: 'BSDD'→'Bsdd'
+- **`BuoyancyTank`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tanque de flutuação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flutuação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Buoyancy tank'@en não corresponde ao padrão esperado. Causa: palavra 'tank' deve começar com maiúscula (não é stopword)
+- **`BuoyancyTank`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tank'→'Tank'; [pt-br] Title Case: 'flutuação'→'Flutuação'
+- **`CalculatedValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`CarcassLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`CasingHanger`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suspensor de revestimento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'revestimento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Casing hanger'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+- **`CasingHanger`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger'; [pt-br] Title Case: 'revestimento'→'Revestimento'
+- **`ChainSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tramo de corrente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'corrente' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Chain segment'@en não corresponde ao padrão esperado. Causa: palavra 'segment' deve começar com maiúscula (não é stopword)
+- **`ChainSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'segment'→'Segment'; [pt-br] Title Case: 'corrente'→'Corrente'
+- **`CheckValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChemicalInjectionUnit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChemicalInjectionUnit`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Unidade de injeção de químicos'@pt-br não corresponde ao padrão esperado. Causa: palavra 'injeção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Chemical injection unit'@en não corresponde ao padrão esperado. Causa: palavra 'injection' deve começar com maiúscula (não é stopword)
+- **`ChemicalInjectionUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'injection'→'Injection', 'unit'→'Unit'; [pt-br] Title Case: 'injeção'→'Injeção', 'químicos'→'Químicos'
+- **`ChokeModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChokeModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de choke'@pt-br não corresponde ao padrão esperado. Causa: palavra 'choke' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Choke module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`ChokeModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'choke'→'Choke'
+- **`ChokeValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ClampInternalDiameter`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ClampInternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno do clamp'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`ClampInternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno', 'clamp'→'Clamp'
+- **`Component`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ComponentDevice`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ConnectionModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ConnectionModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Connection module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`ConnectionModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão'
+- **`CreatorId`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Creator Id'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`CreatorId`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID
+- **`CriticalCurvatureOfSlipping`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Curvatura crítica de escorregamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'crítica' deve começar com maiúscula (não é stopword)
+- **`CriticalCurvatureOfSlipping`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'crítica'→'Crítica', 'escorregamento'→'Escorregamento'
+- **`CrossoverModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`CrossoverModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cross-over module'@en não corresponde ao padrão esperado. Causa: palavra 'over' em 'Cross-over' deve começar com maiúscula
+  - skos:prefLabel 'Módulo de cross-over'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cross' em 'cross-over' deve começar com maiúscula
+- **`CrossoverModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Cross-over'→'Cross-Over', 'module'→'Module'; [pt-br] Title Case: 'cross-over'→'Cross-Over'
+- **`DeclaredValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DeploymentAccessory`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deployment accessory'@en não corresponde ao padrão esperado. Causa: palavra 'accessory' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Acessório de lançamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lançamento' deve começar com maiúscula (não é stopword)
+- **`DeploymentAccessory`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'lançamento'→'Lançamento'
+- **`DiffusionTable_DiffusionCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'difusão'→'Difusão'
+- **`DiffusionTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`DiffusionTable_PolymerState`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DiffusionTableColumn`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DiffusionTableDiffusionCoefficient`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Coeficiente de difusão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'difusão' deve começar com maiúscula (não é stopword)
+- **`DimensionalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DimensioningCriteria`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DistributionModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`DistributionModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de distribuição'@pt-br não corresponde ao padrão esperado. Causa: palavra 'distribuição' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Distribution module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`DistributionModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'distribuição'→'Distribuição'
+- **`DragAnchor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Drag anchor'@en não corresponde ao padrão esperado. Causa: palavra 'anchor' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Âncora de arrasto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'arrasto' deve começar com maiúscula (não é stopword)
+- **`DragAnchor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'anchor'→'Anchor'; [pt-br] Title Case: 'arrasto'→'Arrasto'
+- **`DrawingDimensionsTable_DimensionDescription`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DrawingDimensionsTable_DimensionName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'dimensão'→'Dimensão'
+- **`DrawingDimensionsTable_DimensionValue`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'dimensão'→'Dimensão'
+- **`DrawingDimensionsTableDimensionName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome da dimensão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dimensão' deve começar com maiúscula (não é stopword)
+- **`DrawingDimensionsTableDimensionValue`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Valor da dimensão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dimensão' deve começar com maiúscula (não é stopword)
+- **`DynamicUmbilicalSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DynamicUmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho dinâmico de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dinâmico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Dynamic umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`DynamicUmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'umbilical'→'Umbilical', 'span'→'Span'; [pt-br] Title Case: 'dinâmico'→'Dinâmico', 'umbilical'→'Umbilical'
+- **`EarlyLeakMaxPressTable_Press`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressIntValStrat`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressValRefMult`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_TensLimit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_Press`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressIntValStrat`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_TensLimit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ElasticityModulusAt23Degrees`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ElasticityModulusAt23Degrees`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`ElectricalCable`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo elétrico', 'Cabo Elétrico']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Electrical cable', 'Electrical Cable']
+- **`ElectricalCable`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cabo elétrico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical cable'@en não corresponde ao padrão esperado. Causa: palavra 'cable' deve começar com maiúscula (não é stopword)
+- **`ElectricalCable`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'cable'→'Cable'; [pt-br] Title Case: 'elétrico'→'Elétrico'
+- **`ElectricalJumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ElectricalJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Jumper elétrico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+- **`ElectricalJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'elétrico'→'Elétrico'
+- **`ElectricalPowerJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Jumper elétrico de potência'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical power jumper'@en não corresponde ao padrão esperado. Causa: palavra 'power' deve começar com maiúscula (não é stopword)
+- **`ElectricalPowerJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'power'→'Power', 'jumper'→'Jumper'; [pt-br] Title Case: 'elétrico'→'Elétrico', 'potência'→'Potência'
+- **`ElectronicDevice`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Electronic device'@en não corresponde ao padrão esperado. Causa: palavra 'device' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Dispositivo eletrônico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'eletrônico' deve começar com maiúscula (não é stopword)
+- **`ElectronicDevice`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'device'→'Device'; [pt-br] Title Case: 'eletrônico'→'Eletrônico'
+- **`EModVsTempTable_ElasticityModulus`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EndFitting`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'End fitting'@en não corresponde ao padrão esperado. Causa: palavra 'fitting' deve começar com maiúscula (não é stopword)
+- **`EndFitting`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'fitting'→'Fitting'
+- **`Equipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`EquipmentLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ErosionalVelocity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Velocidade erosional'@pt-br não corresponde ao padrão esperado. Causa: palavra 'erosional' deve começar com maiúscula (não é stopword)
+- **`ErosionalVelocity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'erosional'→'Erosional'
+- **`ExecutiveProjectRevision`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ExternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`ExternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo'
+- **`FatMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FiberRopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tramo de cabo de fibra'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Fiber rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'rope' deve começar com maiúscula (não é stopword)
+- **`FiberRopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'rope'→'Rope', 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo', 'fibra'→'Fibra'
+- **`Filler`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Preenchimento', 'Enchimento']
+- **`FinancialAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlexibleStructure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FlexibleStructure'→'Flexiblestructure'
+- **`FloatingProductionUnit`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'FPSO'@en não segue Title Case
+  - skos:altLabel 'FPU'@en não segue Title Case
+  - skos:altLabel 'FLNG'@en não segue Title Case
+- **`FloatingProductionUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(UEP)'→'(uep)'
+- **`FlowbaseRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de BAP'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flowbase running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+- **`FlowbaseRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`FlowConnector`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Equipamento de controle de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow control equipment'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`FlowControlEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'equipment'→'Equipment'; [pt-br] Title Case: 'controle'→'Controle', 'fluxo'→'Fluxo'
+- **`FlowControlModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de controle de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow control module'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`FlowControlModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'fluxo'→'Fluxo'
+- **`FlowLineMandrel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowLineMandrel`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Mandril das linhas de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linhas' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow line mandrel'@en não corresponde ao padrão esperado. Causa: palavra 'line' deve começar com maiúscula (não é stopword)
+- **`FlowLineMandrel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'line'→'Line', 'mandrel'→'Mandrel'; [pt-br] Title Case: 'linhas'→'Linhas', 'fluxo'→'Fluxo'
+- **`FlowlineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowlineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho flowline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flowline' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flowline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'flowline'→'Flowline'
+- **`FrictionCoefBetweenPipeAndTensioner`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'And'→'and'
+- **`FrictionCoefficientTighteningTable_CoefficientOfFriction`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'
+- **`FrictionCoefficientTighteningTable_TighteningPerTrack`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'; [pt-br] Title Case: 'lagarta'→'Lagarta'
+- **`FrictionCoefficientTighteningTableTighteningPerTrack`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Aperto por lagarta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lagarta' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estrutura inferior de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inferior' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'FSHR lower assembly'@en não corresponde ao padrão esperado. Causa: palavra 'lower' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'lower'→'Lower', 'assembly'→'Assembly'; [pt-br] Title Case: 'inferior'→'Inferior', 'RHAS'→'Rhas'
+- **`FSHRUpperAssembly`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estrutura de topo de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'topo' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'FSHR upper assembly'@en não corresponde ao padrão esperado. Causa: palavra 'upper' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'upper'→'Upper', 'assembly'→'Assembly'; [pt-br] Title Case: 'topo'→'Topo', 'RHAS'→'Rhas'
+- **`FunctionalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FunctionLine`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Linha Funcional', 'Linha de função']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Function Line', 'Function line']
+- **`FunctionLine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Function line'@en não corresponde ao padrão esperado. Causa: palavra 'line' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Linha de função'@pt-br não corresponde ao padrão esperado. Causa: palavra 'função' deve começar com maiúscula (não é stopword)
+- **`FunctionLine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'line'→'Line'; [pt-br] Title Case: 'função'→'Função'
+- **`GroovePoint`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`GrooveSupportSurfaceDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro da superfície de apoio do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'superfície' deve começar com maiúscula (não é stopword)
+- **`GrooveSupportSurfaceDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'superfície'→'Superfície', 'apoio'→'Apoio', 'acessório'→'Acessório'
+- **`GrooveSupportSurfaceFilletRadius`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`GrooveSupportSurfaceFilletRadius`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(Superfície'→'(superfície'
+- **`GroutBag`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Grout bag'@en não corresponde ao padrão esperado. Causa: palavra 'bag' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Grout bag'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bag' deve começar com maiúscula (não é stopword)
+- **`GroutBag`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'bag'→'Bag'; [pt-br] Title Case: 'bag'→'Bag'
+- **`GrvCntrPntDstnceFrmTermFlange`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`GrvCntrPntDstnceFrmTermFlange`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'From'→'from'
+- **`GuideBase`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Base-guia'@pt-br não corresponde ao padrão esperado. Causa: palavra 'guia' em 'Base-guia' deve começar com maiúscula
+  - skos:prefLabel 'Guide base'@en não corresponde ao padrão esperado. Causa: palavra 'base' deve começar com maiúscula (não é stopword)
+- **`GuideBase`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'Base-guia'→'Base-Guia'
+- **`HangOffCollar`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Hang-Off Device'@en não segue Title Case
+  - skos:altLabel 'Hang-Off Clamp'@en não segue Title Case
+- **`HangOffCollar`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeCategory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeGroup`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeScope`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasDiscipline`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasDomain`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLifecycleCreationPhase`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLifecycleUsagePhase`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLocationType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HasModaSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'MODA'→'Moda'
+- **`hasSubDomain`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HasThermalInsulation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Possui isolamento térmico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'isolamento' deve começar com maiúscula (não é stopword)
+- **`HasThermalInsulation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'isolamento'→'Isolamento', 'térmico'→'Térmico'
+- **`hasValueCardinality`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão horizontal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Horizontal connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`HCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'connection'→'Connection', 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão', 'horizontal'→'Horizontal'
+- **`HCRHose`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`HCRHose`** — `MULTIPLE_DEFINITION`
+  - Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`HistoricalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HPHousing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'High-pressure housing'@en não corresponde ao padrão esperado. Causa: palavra 'pressure' em 'High-pressure' deve começar com maiúscula
+  - skos:prefLabel 'Alojador de alta pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'alta' deve começar com maiúscula (não é stopword)
+- **`HPHousing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'High-pressure'→'High-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'alta'→'Alta', 'pressão'→'Pressão'
+- **`Hub`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubBlockCap`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubBlockCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hub block cap'@en não corresponde ao padrão esperado. Causa: palavra 'block' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Capa de bloqueio de hub'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+- **`HubBlockCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'block'→'Block', 'cap'→'Cap'; [pt-br] Title Case: 'bloqueio'→'Bloqueio', 'hub'→'Hub'
+- **`HubProtectionCap`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubProtectionCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Capa de proteção de hub'@pt-br não corresponde ao padrão esperado. Causa: palavra 'proteção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Hub protection cap'@en não corresponde ao padrão esperado. Causa: palavra 'protection' deve começar com maiúscula (não é stopword)
+- **`HubProtectionCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'protection'→'Protection', 'cap'→'Cap'; [pt-br] Title Case: 'proteção'→'Proteção', 'hub'→'Hub'
+- **`HydraulicJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hydraulic jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper hidráulico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'hidráulico' deve começar com maiúscula (não é stopword)
+- **`HydraulicJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'hidráulico'→'Hidráulico'
+- **`HydraulicPowerUnit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HydraulicPowerUnit`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hydraulic power unit'@en não corresponde ao padrão esperado. Causa: palavra 'power' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Unidade de potência hidráulica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'potência' deve começar com maiúscula (não é stopword)
+- **`HydraulicPowerUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'power'→'Power', 'unit'→'Unit'; [pt-br] Title Case: 'potência'→'Potência', 'hidráulica'→'Hidráulica'
+- **`HydrostaticCollapseAbsPressDry`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`IdentificationAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IdInUnifilarDiagram`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Id In Unifilar Diagram'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`IdInUnifilarDiagram`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID
+- **`ifc_equivalentClass`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ifc_objectType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ifc_predefinedType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ImportedValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IMUX`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IMUX`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'IWIS multiplexer'@en não corresponde ao padrão esperado. Causa: palavra 'multiplexer' deve começar com maiúscula (não é stopword)
+- **`IMUX`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'IWIS'→'Iwis', 'multiplexer'→'Multiplexer'; [pt-br] Title Case: 'IWIS'→'Iwis'
+- **`InlineT`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`InlineT`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel ''T' em linha'@pt-br não corresponde ao padrão esperado. Causa: formato não corresponde ao padrão Title Case esperado
+  - skos:prefLabel 'Inline tee'@en não corresponde ao padrão esperado. Causa: palavra 'tee' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel ''T' em linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+- **`InlineT`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tee'→'Tee'; [pt-br] Title Case: ''T''→''t'', 'linha'→'Linha'
+- **`InlineValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula inline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inline' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Inline valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`InlineValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'inline'→'Inline'
+- **`InlineY`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`InlineY`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel ''Y' em linha'@pt-br não corresponde ao padrão esperado. Causa: formato não corresponde ao padrão Title Case esperado
+  - skos:prefLabel 'Inline wye'@en não corresponde ao padrão esperado. Causa: palavra 'wye' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel ''Y' em linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+- **`InlineY`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'wye'→'Wye'; [pt-br] Title Case: ''Y''→''y'', 'linha'→'Linha'
+- **`InstanceLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IntegratedPipe`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Integrated pipe', 'Integrated Pipe']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubo Integrado', 'Duto integrado']
+- **`IntegratedPipe`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Integrated pipe'@en não corresponde ao padrão esperado. Causa: palavra 'pipe' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Duto integrado'@pt-br não corresponde ao padrão esperado. Causa: palavra 'integrado' deve começar com maiúscula (não é stopword)
+- **`IntegratedPipe`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pipe'→'Pipe'; [pt-br] Title Case: 'integrado'→'Integrado'
+- **`InternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`InternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno'
+- **`InternalIncidentalPressureTable_PositionReference`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`InternalIncidentalPressureTable_VPosWRTWaterline`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with', 'To'→'to'; [pt-br] Title Case: 'D'Água'→'d'Água'
+- **`InternalVolume`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Volume interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`InternalVolume`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno'
+- **`IsSpare`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'É um sobressalente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sobressalente' deve começar com maiúscula (não é stopword)
+- **`IsSpare`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'sobressalente'→'Sobressalente'
+- **`ITube`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'I-tube'@pt-br não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+  - skos:prefLabel 'I-tube'@en não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+- **`ITube`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: TUBE; [pt-br] acrônimos: TUBE
+- **`Jumper`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Flying lead'@en não segue Title Case
+- **`Jumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`Jumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Signal/control jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper de controle/sinal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle/sinal' deve começar com maiúscula (não é stopword)
+- **`Jumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'controle/sinal'→'Controle/sinal'
+- **`LayerAnnular`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerAnnularType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerContinuity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerGeometryInertiaY`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Inércia  Y da Geometria da Camada'@pt-br não corresponde ao padrão esperado. Causa: contém espaços múltiplos consecutivos
+- **`LayerGeometryInertiaY`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] formatação de texto
+- **`LayerThickness`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Espessura da camada'@pt-br não corresponde ao padrão esperado. Causa: palavra 'camada' deve começar com maiúscula (não é stopword)
+- **`LayerThickness`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'camada'→'Camada'
+- **`LayingMinimumRadiusTable_AbsoluteExternalPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'absoluta'→'Absoluta'
+- **`LayingMinimumRadiusTable_AbsoluteInternalPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interna'→'Interna', 'absoluta'→'Absoluta'
+- **`LayingMinimumRadiusTable_SectionSupportedByRigidSupport`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'By'→'by'
+- **`LayingMinimumRadiusTable_TensileArmourAnnulusCondition`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayingMinimumRadiusTableAbsoluteExternalPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressão Externa absoluta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'absoluta' deve começar com maiúscula (não é stopword)
+- **`LayingMinimumRadiusTableAbsoluteInternalPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressão interna absoluta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interna' deve começar com maiúscula (não é stopword)
+- **`LimpTorsionalStiffnessAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LimpTorsionalStiffnessAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`LinearLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LinearObject`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`LineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho de linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Line span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`LineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'linha'→'Linha'
+- **`LineTermination`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LineTerminationModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de terminação de linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Line termination module'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+- **`LineTerminationModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'linha'→'Linha'
+- **`Location`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LogicalElement`** — `MULTIPLE_DEFINITION`
+  - Classe tem 2 skos:definition para idioma 'pt-br' (máximo: 1)
+  - Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`LogicCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Logic cap'@en não corresponde ao padrão esperado. Causa: palavra 'cap' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Capa lógica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lógica' deve começar com maiúscula (não é stopword)
+- **`LogicCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'cap'→'Cap'; [pt-br] Title Case: 'lógica'→'Lógica'
+- **`LongTermFloatDensity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LPHousing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Alojador de baixa pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'baixa' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Low-pressure housing'@en não corresponde ao padrão esperado. Causa: palavra 'pressure' em 'Low-pressure' deve começar com maiúscula
+- **`LPHousing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Low-pressure'→'Low-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'baixa'→'Baixa', 'pressão'→'Pressão'
+- **`LubricantFrictionFactor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Fator de atrito do lubrificante'@pt-br não corresponde ao padrão esperado. Causa: palavra 'atrito' deve começar com maiúscula (não é stopword)
+- **`LubricantFrictionFactor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'atrito'→'Atrito', 'lubrificante'→'Lubrificante'
+- **`Manifold`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ManufacturerDefinedMaterialName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome do material conforme designado pelo fabricante do item final'@pt-br não corresponde ao padrão esperado. Causa: palavra 'material' deve começar com maiúscula (não é stopword)
+- **`ManufacturerDefinedMaterialName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'material'→'Material', 'conforme'→'Conforme', 'designado'→'Designado'
+- **`MasterControlStation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MasterControlStation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Master control station'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Estação de controle mestra'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+- **`MasterControlStation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'station'→'Station'; [pt-br] Title Case: 'controle'→'Controle', 'mestra'→'Mestra'
+- **`MaterialRequest`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(RM)'→'(rm)'
+- **`MaterialRequestRev`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(RM)'→'(rm)'
+- **`MaterialSupplierName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome da empresa responsável por fornecer o material'@pt-br não corresponde ao padrão esperado. Causa: palavra 'empresa' deve começar com maiúscula (não é stopword)
+- **`MaterialSupplierName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'empresa'→'Empresa', 'responsável'→'Responsável', 'fornecer'→'Fornecer'
+- **`Mattress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MaxDesignAbsIntPresTable_PositionReference`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MaxDesignAbsIntPresTable_VPosWRTWaterline`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with', 'To'→'to'; [pt-br] Title Case: 'D'Água'→'d'Água'
+- **`MaxDynamicLoad`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(MDL)'→'(mdl)'; [pt-br] Title Case: '(MDL)'→'(mdl)'
+- **`MaximumAllowableTensileForStraightLine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'For'→'for'
+- **`MaximumAllowableTighteningTable_TighteningPerTrack`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'
+- **`MaximumAmbientTemperature`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Temperatura ambiente máxima'@pt-br não corresponde ao padrão esperado. Causa: palavra 'ambiente' deve começar com maiúscula (não é stopword)
+- **`MaximumAmbientTemperature`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'ambiente'→'Ambiente', 'máxima'→'Máxima'
+- **`MaximumThermalExchangeCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(TEC)'→'(tec)'; [pt-br] Title Case: '(TEC)'→'(tec)'
+- **`MaxPermissibleDeformationDynamic`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MaxPermissibleDeformationStatic`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MeasuredValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MetallicStrandLength`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`MetallicTubing`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubulação Metálica', 'Tubulação metálica']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Metallic tubing', 'Metallic Tubing']
+- **`MetallicTubing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Metallic tubing'@en não corresponde ao padrão esperado. Causa: palavra 'tubing' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tubulação metálica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'metálica' deve começar com maiúscula (não é stopword)
+- **`MetallicTubing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tubing'→'Tubing'; [pt-br] Title Case: 'metálica'→'Metálica'
+- **`MinimumBendingRadiusForStorage`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'For'→'for'
+- **`MinimumTemperature`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`MinimumThermalExchangeCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(TEC)'→'(tec)'; [pt-br] Title Case: '(TEC)'→'(tec)'
+- **`ModulusOfElasticity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de elasticidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elasticidade' deve começar com maiúscula (não é stopword)
+- **`ModulusOfElasticity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'elasticidade'→'Elasticidade'
+- **`NumberOfChokeValves`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfChokeValves`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número de válvulas de estrangulamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'válvulas' deve começar com maiúscula (não é stopword)
+- **`NumberOfChokeValves`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'válvulas'→'Válvulas', 'estrangulamento'→'Estrangulamento'
+- **`NumberOfRemoteProcessIsolationValves`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfRemoteProcessIsolationValves`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número de válvulas de isolamento de processo remoto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'válvulas' deve começar com maiúscula (não é stopword)
+- **`NumberOfRemoteProcessIsolationValves`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'válvulas'→'Válvulas', 'isolamento'→'Isolamento', 'processo'→'Processo'
+- **`OffLeakPLevMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OpenReceptacle`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Open receptacle'@en não corresponde ao padrão esperado. Causa: palavra 'receptacle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Receptáculo aberto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'aberto' deve começar com maiúscula (não é stopword)
+- **`OpenReceptacle`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'receptacle'→'Receptacle'; [pt-br] Title Case: 'aberto'→'Aberto'
+- **`OpticalFiberCable`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Optical Fiber Cable', 'Optical fiber cable']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo de Fibra Óptica', 'Cabo de fibra ótica']
+- **`OpticalFiberCable`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Optical fiber cable'@en não corresponde ao padrão esperado. Causa: palavra 'fiber' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Cabo de fibra ótica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'fibra' deve começar com maiúscula (não é stopword)
+- **`OpticalFiberCable`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'fiber'→'Fiber', 'cable'→'Cable'; [pt-br] Title Case: 'fibra'→'Fibra', 'ótica'→'Ótica'
+- **`OuterDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`OuterDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo'
+- **`PartNumber`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número da peça do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'peça' deve começar com maiúscula (não é stopword)
+- **`PartNumber`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'peça'→'Peça', 'acessório'→'Acessório'
+- **`PerformanceAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PermeabilityCurveAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PermeabilityTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`PermeabilityTable_PolymerState`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PhysicalConnection`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PhysicalPropertyAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`Piggable`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipelineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipelineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pipeline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho de duto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'duto' deve começar com maiúscula (não é stopword)
+- **`PipelineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'duto'→'Duto'
+- **`PipeSectionApplication`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PipeSegment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PipingSpool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipingSpool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Piping spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho de tubulação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'tubulação' deve começar com maiúscula (não é stopword)
+- **`PipingSpool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'spool'→'Spool'; [pt-br] Title Case: 'tubulação'→'Tubulação'
+- **`PlasticHose`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Mangueira plástica', 'Mangueira Plástica']
+- **`PlasticHose`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Mangueira plástica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'plástica' deve começar com maiúscula (não é stopword)
+- **`PlasticHose`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'plástica'→'Plástica'
+- **`PLEM`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PLET`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PointLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PoissonRatioAt23Degrees`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PoissonRatioAt23Degrees`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`PowerMachine`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PowerMachine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Máquina de potência'@pt-br não corresponde ao padrão esperado. Causa: palavra 'potência' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Power machine'@en não corresponde ao padrão esperado. Causa: palavra 'machine' deve começar com maiúscula (não é stopword)
+- **`PowerMachine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'machine'→'Machine'; [pt-br] Title Case: 'potência'→'Potência'
+- **`PressureComponent`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Component de contenção de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'contenção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure-containing component'@en não corresponde ao padrão esperado. Causa: palavra 'containing' em 'Pressure-containing' deve começar com maiúscula
+- **`PressureComponent`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Pressure-containing'→'Pressure-Containing', 'component'→'Component'; [pt-br] Title Case: 'contenção'→'Contenção', 'pressão'→'Pressão'
+- **`PressureEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PressureEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressure-containing equipment'@en não corresponde ao padrão esperado. Causa: palavra 'containing' em 'Pressure-containing' deve começar com maiúscula
+  - skos:prefLabel 'Equipamentos de contenção de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'contenção' deve começar com maiúscula (não é stopword)
+- **`PressureEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Pressure-containing'→'Pressure-Containing', 'equipment'→'Equipment'; [pt-br] Title Case: 'contenção'→'Contenção', 'pressão'→'Pressão'
+- **`PressureSensor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Sensor de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure sensor'@en não corresponde ao padrão esperado. Causa: palavra 'sensor' deve começar com maiúscula (não é stopword)
+- **`PressureSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'sensor'→'Sensor'; [pt-br] Title Case: 'pressão'→'Pressão'
+- **`ProcessingModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ProcessingModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Processing module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo de processamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'processamento' deve começar com maiúscula (não é stopword)
+- **`ProcessingModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'processamento'→'Processamento'
+- **`ProjectAcronym`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ProjectCode`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Código Identificador único do projeto da operadora da Interligação Submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'único' deve começar com maiúscula (não é stopword)
+- **`ProjectCode`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'único'→'Único', 'projeto'→'Projeto', 'operadora'→'Operadora'
+- **`ProjectDrawingCode`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PullInCollar`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Pull-In Clamp'@en não segue Title Case
+- **`PumpingModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PumpingModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pumping module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo de bombeamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bombeamento' deve começar com maiúscula (não é stopword)
+- **`PumpingModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'bombeamento'→'Bombeamento'
+- **`QuickDisconnectionTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de desconexão rápida'@pt-br não corresponde ao padrão esperado. Causa: palavra 'desconexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Quick disconnection tool'@en não corresponde ao padrão esperado. Causa: palavra 'disconnection' deve começar com maiúscula (não é stopword)
+- **`QuickDisconnectionTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'disconnection'→'Disconnection', 'tool'→'Tool'; [pt-br] Title Case: 'desconexão'→'Desconexão', 'rápida'→'Rápida'
+- **`ReliefValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ReliefValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula de alívio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'alívio' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Relief valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`ReliefValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'alívio'→'Alívio'
+- **`RigidJumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RigidJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Rigid jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper rígido'@pt-br não corresponde ao padrão esperado. Causa: palavra 'rígido' deve começar com maiúscula (não é stopword)
+- **`RigidJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'rígido'→'Rígido'
+- **`RingGasket`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'O-Ring'@en não segue Title Case
+  - skos:altLabel ' Seal Ring'@en não segue Title Case
+- **`RiserBalcony`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`RiserSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RiserSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho riser'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Riser span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`RiserSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'riser'→'Riser'
+- **`RiserSupport`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RiserSupport`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suporte de riser'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Riser support'@en não corresponde ao padrão esperado. Causa: palavra 'support' deve começar com maiúscula (não é stopword)
+- **`RiserSupport`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'support'→'Support'; [pt-br] Title Case: 'riser'→'Riser'
+- **`RiserSupportBuoy`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Riser support buoy'@en não corresponde ao padrão esperado. Causa: palavra 'support' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Bóia de sustentação de risers'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sustentação' deve começar com maiúscula (não é stopword)
+- **`RiserSupportBuoy`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'support'→'Support', 'buoy'→'Buoy'; [pt-br] Title Case: 'sustentação'→'Sustentação', 'risers'→'Risers'
+- **`RoboticActuator`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RoboticActuator`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Atuador robótico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'robótico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Robotic actuator'@en não corresponde ao padrão esperado. Causa: palavra 'actuator' deve começar com maiúscula (não é stopword)
+- **`RoboticActuator`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'actuator'→'Actuator'; [pt-br] Title Case: 'robótico'→'Robótico'
+- **`RopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'segment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tramo de cabo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+- **`RopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo'
+- **`RotatingMachine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Máquina rotativa'@pt-br não corresponde ao padrão esperado. Causa: palavra 'rotativa' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Rotating machine'@en não corresponde ao padrão esperado. Causa: palavra 'machine' deve começar com maiúscula (não é stopword)
+- **`RotatingMachine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'machine'→'Machine'; [pt-br] Title Case: 'rotativa'→'Rotativa'
+- **`ROVTool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ROVTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'ROV tool'@en não corresponde ao padrão esperado. Causa: palavra 'tool' deve começar com maiúscula (não é stopword)
+- **`ROVTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tool'→'Tool'
+- **`RunningTool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta submarina de instalação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'submarina' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Subsea running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+- **`RunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'submarina'→'Submarina', 'instalação'→'Instalação'
+- **`RunOfRiver`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hidrelétrica a Fio d’Água'@pt-br não corresponde ao padrão esperado. Causa: contém caracteres inválidos: ['’']
+  - skos:prefLabel 'Hidrelétrica a Fio d’Água'@pt-br não corresponde ao padrão esperado. Causa: palavra 'd’Água' deve começar com maiúscula (não é stopword)
+- **`RunOfRiver`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Run-of-River'→'Run-Of-River'; [pt-br] Title Case: 'd’Água'→'D’água'
+- **`RuptDefAlongFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deformação de Ruptura longitudinalmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'longitudinalmente' deve começar com maiúscula (não é stopword)
+- **`RuptDefAlongFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'longitudinalmente'→'Longitudinalmente', 'fibras'→'Fibras'
+- **`RuptDefPerpendFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deformação de Ruptura perpendicularmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'perpendicularmente' deve começar com maiúscula (não é stopword)
+- **`RuptDefPerpendFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'To'→'to'; [pt-br] Title Case: 'perpendicularmente'→'Perpendicularmente', 'fibras'→'Fibras'
+- **`SandDetector`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Detector de areia'@pt-br não corresponde ao padrão esperado. Causa: palavra 'areia' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Sand detector'@en não corresponde ao padrão esperado. Causa: palavra 'detector' deve começar com maiúscula (não é stopword)
+- **`SandDetector`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'detector'→'Detector'; [pt-br] Title Case: 'areia'→'Areia'
+- **`SCM`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de controle submarino'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Subsea control module'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`SCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'submarino'→'Submarino'
+- **`SCMMB`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SCMMB`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'SCM mounting base'@en não corresponde ao padrão esperado. Causa: palavra 'mounting' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Base de montagem de SCM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'montagem' deve começar com maiúscula (não é stopword)
+- **`SCMMB`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'mounting'→'Mounting', 'base'→'Base'; [pt-br] Title Case: 'montagem'→'Montagem'
+- **`SCMRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'SCM running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Ferramenta de instalação de SCM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+- **`SCMRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`SDU`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Subsea distribution unit'@en não corresponde ao padrão esperado. Causa: palavra 'distribution' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Unidade de distribuição submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'distribuição' deve começar com maiúscula (não é stopword)
+- **`SDU`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'distribution'→'Distribution', 'unit'→'Unit'; [pt-br] Title Case: 'distribuição'→'Distribuição', 'submarina'→'Submarina'
+- **`SEM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Subsea electronic module'@en não corresponde ao padrão esperado. Causa: palavra 'electronic' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo eletrônico submarino'@pt-br não corresponde ao padrão esperado. Causa: palavra 'eletrônico' deve começar com maiúscula (não é stopword)
+- **`SEM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'electronic'→'Electronic', 'module'→'Module'; [pt-br] Title Case: 'eletrônico'→'Eletrônico', 'submarino'→'Submarino'
+- **`SeparatorVessel`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Seaparator vessel'@en não corresponde ao padrão esperado. Causa: palavra 'vessel' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Vaso separador'@pt-br não corresponde ao padrão esperado. Causa: palavra 'separador' deve começar com maiúscula (não é stopword)
+- **`SeparatorVessel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'vessel'→'Vessel'; [pt-br] Title Case: 'separador'→'Separador'
+- **`Service`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`Shackle`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'D-Shackle'@en não segue Title Case
+  - skos:altLabel 'U-Bolt'@en não segue Title Case
+- **`Shackle`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ShackleInnerDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno da furação do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`ShackleInnerDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno', 'furação'→'Furação', 'olhal'→'Olhal'
+- **`ShackleOuterDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`ShackleOuterDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo', 'olhal'→'Olhal'
+- **`ShackleThickness`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Espessura do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'olhal' deve começar com maiúscula (não é stopword)
+- **`ShackleThickness`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'olhal'→'Olhal'
+- **`ShearableRiserJoint`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Junta riser cisalhável'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Shearable riser joint'@en não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+- **`ShearableRiserJoint`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'riser'→'Riser', 'joint'→'Joint'; [pt-br] Title Case: 'riser'→'Riser', 'cisalhável'→'Cisalhável'
+- **`Socket`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SolidLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SolubilityCurveAttribute`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(Specific'→'(specific'; [pt-br] Title Case: '(Específica'→'(específica'
+- **`SolubilityTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`SolubilityTable_SolubilityCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'solubilidade'→'Solubilidade'
+- **`SolubilityTableSolubilityCoefficient`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Coeficiente de solubilidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'solubilidade' deve começar com maiúscula (não é stopword)
+- **`SpecialRequirements`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpecificHeatCapacity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpecificWeight`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpliceBox`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Splice box'@en não corresponde ao padrão esperado. Causa: palavra 'box' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Caixa de emenda'@pt-br não corresponde ao padrão esperado. Causa: palavra 'emenda' deve começar com maiúscula (não é stopword)
+- **`SpliceBox`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'box'→'Box'; [pt-br] Title Case: 'emenda'→'Emenda'
+- **`StaticUmbilicalSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StaticUmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Static umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho estático de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estático' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'umbilical'→'Umbilical', 'span'→'Span'; [pt-br] Title Case: 'estático'→'Estático', 'umbilical'→'Umbilical'
+- **`StiffTorsionalStiffnessAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StiffTorsionalStiffnessAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StorageAccessory`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Storage/transportation accessory'@en não corresponde ao padrão esperado. Causa: palavra 'accessory' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Acessório de armazenamento/transporte'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento/transporte' deve começar com maiúscula (não é stopword)
+- **`StorageAccessory`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'armazenamento/transporte'→'Armazenamento/transporte'
+- **`StorageBox`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Caixa de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Storage box'@en não corresponde ao padrão esperado. Causa: palavra 'box' deve começar com maiúscula (não é stopword)
+- **`StorageBox`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'box'→'Box'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StorageSkid`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StorageSkid`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Storage skid'@en não corresponde ao padrão esperado. Causa: palavra 'skid' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Skid de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+- **`StorageSkid`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'skid'→'Skid'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StorageSpool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StorageSpool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Carretel de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Storage spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'spool'→'Spool'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StressAtDesignPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão na pressão de projeto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+- **`StressAtDesignPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'; [pt-br] Title Case: 'pressão'→'Pressão', 'projeto'→'Projeto'
+- **`StrIntOffPLevMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOnNoTensMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`Structure`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StructureApplicationsList`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StructureCode`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Código da estrutura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estrutura' deve começar com maiúscula (não é stopword)
+- **`StructureCode`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'estrutura'→'Estrutura'
+- **`SubProjectId`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Id do Subprojeto'@pt-br não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+  - skos:prefLabel 'Sub Project Id'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`SubProjectId`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID; [pt-br] acrônimos: ID
+- **`SubseaEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SuctionPile`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SuctionPile`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suction pile'@en não corresponde ao padrão esperado. Causa: palavra 'pile' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Estaca de sucção'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sucção' deve começar com maiúscula (não é stopword)
+- **`SuctionPile`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pile'→'Pile'; [pt-br] Title Case: 'sucção'→'Sucção'
+- **`SupplierProvidedMaterialName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome do material conforme designado pelo fornecedor original do material'@pt-br não corresponde ao padrão esperado. Causa: palavra 'material' deve começar com maiúscula (não é stopword)
+- **`SupplierProvidedMaterialName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'material'→'Material', 'conforme'→'Conforme', 'designado'→'Designado'
+- **`SupportRegion`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Região de suporte no Modelo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'suporte' deve começar com maiúscula (não é stopword)
+- **`SupportRegion`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'suporte'→'Suporte'
+- **`TapesQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] whitespace extra
+- **`TapesQuantity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Quantidade de fitas'@pt-br não corresponde ao padrão esperado. Causa: palavra 'fitas' deve começar com maiúscula (não é stopword)
+- **`TapesQuantity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'fitas'→'Fitas'
+- **`TemperatureSensor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Temperature sensor'@en não corresponde ao padrão esperado. Causa: palavra 'sensor' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Sensor de temperatura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'temperatura' deve começar com maiúscula (não é stopword)
+- **`TemperatureSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'sensor'→'Sensor'; [pt-br] Title Case: 'temperatura'→'Temperatura'
+- **`TensileArmourAnnulusCondition`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensileArmourFreeAnnulusVolume`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Volume livre do anular das armaduras de tração'@pt-br não corresponde ao padrão esperado. Causa: palavra 'livre' deve começar com maiúscula (não é stopword)
+- **`TensileArmourFreeAnnulusVolume`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'livre'→'Livre', 'anular'→'Anular', 'armaduras'→'Armaduras'
+- **`TensionerPadsMaterial`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensionerPadsShape`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensionerTracksQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TestBase`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Base de teste'@pt-br não corresponde ao padrão esperado. Causa: palavra 'teste' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Test base'@en não corresponde ao padrão esperado. Causa: palavra 'base' deve começar com maiúscula (não é stopword)
+- **`TestBase`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'teste'→'Teste'
+- **`TestConditions`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TestEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Test equipment'@en não corresponde ao padrão esperado. Causa: palavra 'equipment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Equipamento de teste'@pt-br não corresponde ao padrão esperado. Causa: palavra 'teste' deve começar com maiúscula (não é stopword)
+- **`TestEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'equipment'→'Equipment'; [pt-br] Title Case: 'teste'→'Teste'
+- **`ThermalConductivityCoefficient`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ThreadsPerInch`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ThreadsPerInch`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'
+- **`TieIn`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tie-in'@pt-br não corresponde ao padrão esperado. Causa: palavra 'in' em 'Tie-in' deve começar com maiúscula
+- **`TieIn`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Tie-in'→'Tie-In'; [pt-br] Title Case: 'Tie-in'→'Tie-In'
+- **`TieInEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tie-in equipment'@en não corresponde ao padrão esperado. Causa: palavra 'equipment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Equipamento de interligação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interligação' deve começar com maiúscula (não é stopword)
+- **`TieInEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Tie-in'→'Tie-In', 'equipment'→'Equipment'; [pt-br] Title Case: 'interligação'→'Interligação'
+- **`TorpedoPile`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`TorpedoPile`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estaca-torpedo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'torpedo' em 'Estaca-torpedo' deve começar com maiúscula
+  - skos:prefLabel 'Torpedo pile'@en não corresponde ao padrão esperado. Causa: palavra 'pile' deve começar com maiúscula (não é stopword)
+- **`TorpedoPile`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pile'→'Pile'; [pt-br] Title Case: 'Estaca-torpedo'→'Estaca-Torpedo'
+- **`TPT`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Sensor de pressão e temperatura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure and temperature sensor'@en não corresponde ao padrão esperado. Causa: palavra 'temperature' deve começar com maiúscula (não é stopword)
+- **`TPT`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'temperature'→'Temperature', 'sensor'→'Sensor'; [pt-br] Title Case: 'pressão'→'Pressão', 'temperatura'→'Temperatura'
+- **`TransportLineSegment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TreeRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de ANM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wet Christmas tree running tool'@en não corresponde ao padrão esperado. Causa: palavra 'tree' deve começar com maiúscula (não é stopword)
+- **`TreeRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tree'→'Tree', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação', 'ANM'→'Anm'
+- **`TrianglePlate`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Triangle plate'@en não corresponde ao padrão esperado. Causa: palavra 'plate' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Placa triangular'@pt-br não corresponde ao padrão esperado. Causa: palavra 'triangular' deve começar com maiúscula (não é stopword)
+- **`TrianglePlate`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'plate'→'Plate'; [pt-br] Title Case: 'triangular'→'Triangular'
+- **`TubingHanger`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`TubingHanger`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tubing hanger'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Suspensor de coluna'@pt-br não corresponde ao padrão esperado. Causa: palavra 'coluna' deve começar com maiúscula (não é stopword)
+- **`TubingHanger`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger'; [pt-br] Title Case: 'coluna'→'Coluna'
+- **`TubingHangerRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de TH'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tubing hanger running tool'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+- **`TubingHangerRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`TypeLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UltimateTensileStress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`UltTensStrAlongFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão máxima de tração longitudinalmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'máxima' deve começar com maiúscula (não é stopword)
+- **`UltTensStrAlongFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'máxima'→'Máxima', 'tração'→'Tração', 'longitudinalmente'→'Longitudinalmente'
+- **`UltTensStrPerpendFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão máxima de tração perpendicularmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'máxima' deve começar com maiúscula (não é stopword)
+- **`UltTensStrPerpendFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'To'→'to'; [pt-br] Title Case: 'máxima'→'Máxima', 'tração'→'Tração', 'perpendicularmente'→'Perpendicularmente'
+- **`UmbilicalComponent`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Umbilical component', 'Umbilical Component']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Componente Umbilical', 'Componente de umbilical']
+- **`UmbilicalComponent`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical component'@en não corresponde ao padrão esperado. Causa: palavra 'component' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Componente de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`UmbilicalComponent`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'component'→'Component'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UmbilicalLocation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical location'@en não corresponde ao padrão esperado. Causa: palavra 'location' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Local de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`UmbilicalLocation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'location'→'Location'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UmbilicalPullingHead`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Cabeça de Manuseio para Umbilical'@pt-br não segue Title Case
+- **`UmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`UmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UpperItubeDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro do I-TUBE superior'@pt-br não corresponde ao padrão esperado. Causa: palavra 'superior' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Upper I-tube Diameter'@en não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+- **`UpperItubeDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: TUBE; [pt-br] Title Case: 'superior'→'Superior'
+- **`UTA`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UTA`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical termination assembly'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Conjunto de terminação de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+- **`UTA`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'assembly'→'Assembly'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`UTM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de terminação de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Umbilical termination module'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+- **`UTM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`validValues`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ValueOrigin`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`VCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão vertical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Vertical connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`VCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'connection'→'Connection', 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão', 'vertical'→'Vertical'
+- **`WasteToEnergy`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Energia a partir de Resíduos'@pt-br não corresponde ao padrão esperado. Causa: palavra 'partir' deve começar com maiúscula (não é stopword)
+- **`WasteToEnergy`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'partir'→'Partir'
+- **`WearBushing`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`WearBushingRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de BD'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wear bushing running tool'@en não corresponde ao padrão esperado. Causa: palavra 'bushing' deve começar com maiúscula (não é stopword)
+- **`WearBushingRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'bushing'→'Bushing', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação', 'BD'→'Bd'
+- **`Wellhead`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cabeça de poço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'poço' deve começar com maiúscula (não é stopword)
+- **`Wellhead`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'poço'→'Poço'
+- **`WetChristmasTree`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`WetChristmasTree`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Árvore de Natal molhada'@pt-br não corresponde ao padrão esperado. Causa: palavra 'molhada' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wet Christmas tree'@en não corresponde ao padrão esperado. Causa: palavra 'tree' deve começar com maiúscula (não é stopword)
+- **`WetChristmasTree`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tree'→'Tree'; [pt-br] Title Case: 'molhada'→'Molhada'
+- **`WireRopeQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`WireRopeQuantity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Quantidade de cordas de Aço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cordas' deve começar com maiúscula (não é stopword)
+- **`WireRopeQuantity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'cordas'→'Cordas'
+- **`WireRopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Wire rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'rope' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tramo de cabo de aço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+- **`WireRopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'rope'→'Rope', 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo', 'aço'→'Aço'
+- **`WireRopeSlingDiameter`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`WorkingLoadLimit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(WLL)'→'(wll)'
+- **`WoundLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+
+#### 📖 Legenda dos Códigos
+
+**DomainAttribute:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `DOMAINATTR_ACCESSRIGHTS_MISSING` | DomainAttribute não possui dcterms:accessRights |
+| `DOMAINATTR_IDENTIFIER_MISSING` | DomainAttribute não possui dcterms:identifier |
+| `DOMAINATTR_IDENTIFIER_MISMATCH` | dcterms:identifier não corresponde ao local name |
+| `DOMAINATTR_DEFINITION_MISSING_EN` | Falta skos:definition em inglês (@en) |
+| `DOMAINATTR_DEFINITION_MISSING_PT_BR` | Falta skos:definition em português (@pt-br) |
+| `DOMAINATTR_DEFINITION_TOO_MANY_PER_LANG` | Múltiplos skos:definition no mesmo idioma |
+| `DOMAINATTR_PREFLABEL_MISSING_EN` | Falta skos:prefLabel em inglês (@en) |
+| `DOMAINATTR_PREFLABEL_MISSING_PT_BR` | Falta skos:prefLabel em português (@pt-br) |
+| `DOMAINATTR_PREFLABEL_DUPLICATE_PER_LANG` | Múltiplos skos:prefLabel no mesmo idioma |
+| `DOMAINATTR_PROPERTY_MISSING` | Propriedade obrigatória ausente (hasAttributeScope, etc.) |
+
+**Classes IFC:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `IFC_REQUIRED_PROPERTY_MISSING` | Classe IFC sem propriedade obrigatória |
+| `IFC_BASE_CLASS_MISSING` | Classe IFC não herda da classe base esperada |
+
+**Geral:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `CLASS_IDENTIFIER_MISSING` | Classe não possui dcterms:identifier |
+| `CLASS_IDENTIFIER_MISMATCH` | dcterms:identifier não corresponde ao local name |
+| `MULTIPLE_PREFLABEL_SAME_LANG` | Múltiplos skos:prefLabel no mesmo idioma |
+| `MULTIPLE_DEFINITION` | Múltiplos skos:definition no mesmo idioma |
+| `ALTLABEL_TITLECASE_VIOLATION` | skos:altLabel não segue Title Case |
+| `PREFLABEL_FORMAT_INVALID` | skos:prefLabel não corresponde ao padrão esperado |
+| `PREFLABEL_NEEDS_CORRECTION` | skos:prefLabel precisa correção (capitalização, acrônimos) |
+| `DEFINITION_NEEDS_CORRECTION` | skos:definition precisa correção (ponto final, acrônimos) |
+
+### 📈 Estatísticas de Erros por Categoria
+#### Por Severidade:
+- 🟡 **WARNING:** 1207 ocorrências
+- 🔴 **ERROR:** 260 ocorrências
+
+#### Top 10 Regras/Códigos Mais Violados:
+- `PREFLABEL_FORMAT_INVALID`: 267 ocorrências
+- `PREFLABEL_NEEDS_CORRECTION`: 206 ocorrências
+- `DOMAINATTR_DEFINITION_MISSING_PT_BR`: 203 ocorrências
+- `DEFINITION_NEEDS_CORRECTION`: 195 ocorrências
+- `CLASS_IDENTIFIER_MISSING`: 159 ocorrências
+- `DOMAINATTR_PROPERTY_MISSING`: 142 ocorrências
+- `IFC_REQUIRED_PROPERTY_MISSING`: 62 ocorrências
+- `DOMAINATTR_DEFINITION_MISSING_EN`: 33 ocorrências
+- `DOMAINATTR_PREFLABEL_MISSING_PT_BR`: 33 ocorrências
+- `IFC_BASE_CLASS_MISSING`: 32 ocorrências
+
+---
+
+## 🔍 Detalhamento de Erros
+
+### 📏 Regra: **`ALTLABEL_TITLECASE_VIOLATION`** (12 ocorrências)
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FPSO'@en não segue Title Case
+  - Correção: `Fpso`
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FPU'@en não segue Title Case
+  - Correção: `Fpu`
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FLNG'@en não segue Title Case
+  - Correção: `Flng`
+- **`RingGasket`**
+  - Problema: skos:altLabel 'O-Ring'@en não segue Title Case
+  - Correção: `O-ring`
+- **`RingGasket`**
+  - Problema: skos:altLabel ' Seal Ring'@en não segue Title Case
+  - Correção: `Seal Ring`
+- **`UmbilicalPullingHead`**
+  - Problema: skos:altLabel 'Cabeça de Manuseio para Umbilical'@pt-br não segue Title Case
+  - Correção: `Cabeça De Manuseio Para Umbilical`
+- **`Shackle`**
+  - Problema: skos:altLabel 'D-Shackle'@en não segue Title Case
+  - Correção: `D-shackle`
+- **`Shackle`**
+  - Problema: skos:altLabel 'U-Bolt'@en não segue Title Case
+  - Correção: `U-bolt`
+- **`Jumper`**
+  - Problema: skos:altLabel 'Flying lead'@en não segue Title Case
+  - Correção: `Flying Lead`
+- **`HangOffCollar`**
+  - Problema: skos:altLabel 'Hang-Off Device'@en não segue Title Case
+  - Correção: `Hang-off Device`
+- **`HangOffCollar`**
+  - Problema: skos:altLabel 'Hang-Off Clamp'@en não segue Title Case
+  - Correção: `Hang-off Clamp`
+- **`PullInCollar`**
+  - Problema: skos:altLabel 'Pull-In Clamp'@en não segue Title Case
+  - Correção: `Pull-in Clamp`
+
+### 📏 Regra: **`CLASS_IDENTIFIER_MISMATCH`** (7 ocorrências)
+- **`InternalIncidentalPressureCurveAttribute`**
+  - Problema: dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+  - Correção: `InternalIncidentalPressureCurveAttribute`
+- **`DiffusionTableColumn`**
+  - Problema: dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+  - Correção: `DiffusionTableColumn`
+- **`MaxDesignAbsIntPresCurveAttribute`**
+  - Problema: dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+  - Correção: `MaxDesignAbsIntPresCurveAttribute`
+- **`CommissioningElement`**
+  - Problema: dcterms:identifier 'CommissioningObject' não corresponde ao local name 'CommissioningElement'
+  - Correção: `CommissioningElement`
+- **`PermeabilityCurveAttribute`**
+  - Problema: dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+  - Correção: `PermeabilityCurveAttribute`
+- **`BendMomentVsShearForceTableColumn`**
+  - Problema: dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+  - Correção: `BendMomentVsShearForceTableColumn`
+- **`SolubilityCurveAttribute`**
+  - Problema: dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+  - Correção: `SolubilityCurveAttribute`
+
+### 📏 Regra: **`CLASS_IDENTIFIER_MISSING`** (159 ocorrências)
+*Mostrando 20 de 159 exemplos*
+- **`Base64BinaryType`**
+  - Problema: Classe 'Base64BinaryType' não possui dcterms:identifier
+  - Correção: `Base64BinaryType`
+- **`DecimalValue`**
+  - Problema: Classe 'DecimalValue' não possui dcterms:identifier
+  - Correção: `DecimalValue`
+- **`ConstructionPhase`**
+  - Problema: Classe 'ConstructionPhase' não possui dcterms:identifier
+  - Correção: `ConstructionPhase`
+- **`PermeabilityTableColumn`**
+  - Problema: Classe 'PermeabilityTableColumn' não possui dcterms:identifier
+  - Correção: `PermeabilityTableColumn`
+- **`PartElement`**
+  - Problema: Classe 'PartElement' não possui dcterms:identifier
+  - Correção: `PartElement`
+- **`FunctionalAttribute`**
+  - Problema: Classe 'FunctionalAttribute' não possui dcterms:identifier
+  - Correção: `FunctionalAttribute`
+- **`Downstream`**
+  - Problema: Classe 'Downstream' não possui dcterms:identifier
+  - Correção: `Downstream`
+- **`PackageEquipmentEngineering`**
+  - Problema: Classe 'PackageEquipmentEngineering' não possui dcterms:identifier
+  - Correção: `PackageEquipmentEngineering`
+- **`EModVsTempTableColumn`**
+  - Problema: Classe 'EModVsTempTableColumn' não possui dcterms:identifier
+  - Correção: `EModVsTempTableColumn`
+- **`ImportedValue`**
+  - Problema: Classe 'ImportedValue' não possui dcterms:identifier
+  - Correção: `ImportedValue`
+- **`StrandsTableColumn`**
+  - Problema: Classe 'StrandsTableColumn' não possui dcterms:identifier
+  - Correção: `StrandsTableColumn`
+- **`PhysicalPropertyAttribute`**
+  - Problema: Classe 'PhysicalPropertyAttribute' não possui dcterms:identifier
+  - Correção: `PhysicalPropertyAttribute`
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: Classe 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+  - Correção: `MaxDesignAbsIntPresTableColumn`
+- **`AttributeNature`**
+  - Problema: Classe 'AttributeNature' não possui dcterms:identifier
+  - Correção: `AttributeNature`
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: Classe 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+  - Correção: `InternalIncidentalPressureTableColumn`
+- **`Geothermal`**
+  - Problema: Classe 'Geothermal' não possui dcterms:identifier
+  - Correção: `Geothermal`
+- **`InstrumentationEngineering`**
+  - Problema: Classe 'InstrumentationEngineering' não possui dcterms:identifier
+  - Correção: `InstrumentationEngineering`
+- **`StringValue`**
+  - Problema: Classe 'StringValue' não possui dcterms:identifier
+  - Correção: `StringValue`
+- **`Operation`**
+  - Problema: Classe 'Operation' não possui dcterms:identifier
+  - Correção: `Operation`
+- **`LongValue`**
+  - Problema: Classe 'LongValue' não possui dcterms:identifier
+  - Correção: `LongValue`
+
+### 📏 Regra: **`DEFINITION_NEEDS_CORRECTION`** (195 ocorrências)
+*Mostrando 20 de 195 exemplos*
+- **`Hub`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DynamicUmbilicalSpan`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`GrvCntrPntDstnceFrmTermFlange`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final
+- **`FlowLineMandrel`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressValRef`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttributeScope`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfRemoteProcessIsolationValves`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HydraulicPowerUnit`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLocationType`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`validValues`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`LongTermFloatDensity`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttributeGroup`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UTA`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StrIntOffPLevNomPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensileArmourAnnulusCondition`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPressValRef`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`Accessory`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MaxPermissibleDeformationDynamic`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+
+### 📏 Regra: **`DOMAINATTR_ACCESSRIGHTS_MISSING`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui dcterms:accessRights
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui dcterms:accessRights
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui dcterms:accessRights
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:accessRights
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:accessRights
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui dcterms:accessRights
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui dcterms:accessRights
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui dcterms:accessRights
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:accessRights
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:accessRights
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui dcterms:accessRights
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:accessRights
+
+### 📏 Regra: **`DOMAINATTR_DEFINITION_MISSING_EN`** (33 ocorrências)
+*Mostrando 20 de 33 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em inglês (@en)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em inglês (@en)
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em inglês (@en)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:definition em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em inglês (@en)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em inglês (@en)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em inglês (@en)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em inglês (@en)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em inglês (@en)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em inglês (@en)
+
+### 📏 Regra: **`DOMAINATTR_DEFINITION_MISSING_PT_BR`** (203 ocorrências)
+*Mostrando 20 de 203 exemplos*
+- **`MetallicStrandLength`**
+  - Problema: DomainAttribute 'MetallicStrandLength' não possui skos:definition em português (@pt-br)
+- **`ProjectCode`**
+  - Problema: DomainAttribute 'ProjectCode' não possui skos:definition em português (@pt-br)
+- **`NominalDiameter`**
+  - Problema: DomainAttribute 'NominalDiameter' não possui skos:definition em português (@pt-br)
+- **`UtilizationFactor`**
+  - Problema: DomainAttribute 'UtilizationFactor' não possui skos:definition em português (@pt-br)
+- **`PolymericLayerMaterialType`**
+  - Problema: DomainAttribute 'PolymericLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`IndividualAnodeMass`**
+  - Problema: DomainAttribute 'IndividualAnodeMass' não possui skos:definition em português (@pt-br)
+- **`InternalDiameter`**
+  - Problema: DomainAttribute 'InternalDiameter' não possui skos:definition em português (@pt-br)
+- **`PostSlippingBendingStiffness`**
+  - Problema: DomainAttribute 'PostSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableSolubilityCoefficient`**
+  - Problema: DomainAttribute 'SolubilityTableSolubilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`FlangeFaceType`**
+  - Problema: DomainAttribute 'FlangeFaceType' não possui skos:definition em português (@pt-br)
+- **`PartNumber`**
+  - Problema: DomainAttribute 'PartNumber' não possui skos:definition em português (@pt-br)
+- **`H2SVolumeConcentration`**
+  - Problema: DomainAttribute 'H2SVolumeConcentration' não possui skos:definition em português (@pt-br)
+- **`LinearMass`**
+  - Problema: DomainAttribute 'LinearMass' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableTemperature`**
+  - Problema: DomainAttribute 'PermeabilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`IsSpare`**
+  - Problema: DomainAttribute 'IsSpare' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryManufacturer`**
+  - Problema: DomainAttribute 'LayerGeometryManufacturer' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableTensLimitValRef`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileThickness`**
+  - Problema: DomainAttribute 'LayerGeometryProfileThickness' não possui skos:definition em português (@pt-br)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em português (@pt-br)
+
+### 📏 Regra: **`DOMAINATTR_IDENTIFIER_MISMATCH`** (6 ocorrências)
+- **`InternalIncidentalPressureCurveAttribute`**
+  - Problema: dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+  - Correção: `InternalIncidentalPressureCurveAttribute`
+- **`DiffusionTableColumn`**
+  - Problema: dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+  - Correção: `DiffusionTableColumn`
+- **`MaxDesignAbsIntPresCurveAttribute`**
+  - Problema: dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+  - Correção: `MaxDesignAbsIntPresCurveAttribute`
+- **`PermeabilityCurveAttribute`**
+  - Problema: dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+  - Correção: `PermeabilityCurveAttribute`
+- **`BendMomentVsShearForceTableColumn`**
+  - Problema: dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+  - Correção: `BendMomentVsShearForceTableColumn`
+- **`SolubilityCurveAttribute`**
+  - Problema: dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+  - Correção: `SolubilityCurveAttribute`
+
+### 📏 Regra: **`DOMAINATTR_IDENTIFIER_MISSING`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui dcterms:identifier
+  - Correção: `PermeabilityTableColumn`
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui dcterms:identifier
+  - Correção: `EModVsTempTableColumn`
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui dcterms:identifier
+  - Correção: `StrandsTableColumn`
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+  - Correção: `MaxDesignAbsIntPresTableColumn`
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+  - Correção: `InternalIncidentalPressureTableColumn`
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+  - Correção: `CrushingFrictionCoefficientTighteningTableColumn`
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTighteningAttribute`
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+  - Correção: `EarlyLeakNomPressTableAttribute`
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+  - Correção: `LayingMinimumRadiusCurveAttribute`
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTensionAttribute`
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui dcterms:identifier
+  - Correção: `RingGasketAttribute`
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui dcterms:identifier
+  - Correção: `CrushingCurveAttribute`
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui dcterms:identifier
+  - Correção: `SolubilityTableColumn`
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+  - Correção: `BendingStiffnessCurveAttribute`
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:identifier
+  - Correção: `EModVsTempCurveAttribute`
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+  - Correção: `LayingMinimumRadiusTableColumn`
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui dcterms:identifier
+  - Correção: `LayerGeometryAttribute`
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui dcterms:identifier
+  - Correção: `DimensionsTableColumn`
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+  - Correção: `EarlyLeakMaxPressTableAttribute`
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTighteningTableColumn`
+
+### 📏 Regra: **`DOMAINATTR_PREFLABEL_MISSING_EN`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em inglês (@en)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+
+### 📏 Regra: **`DOMAINATTR_PREFLABEL_MISSING_PT_BR`** (33 ocorrências)
+*Mostrando 20 de 33 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui skos:prefLabel em português (@pt-br)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EmodVsTempTableTemperature`**
+  - Problema: DomainAttribute 'EmodVsTempTableTemperature' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em português (@pt-br)
+
+### 📏 Regra: **`DOMAINATTR_PROPERTY_MISSING`** (142 ocorrências)
+*Mostrando 20 de 142 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+
+### 📏 Regra: **`IFC_BASE_CLASS_MISSING`** (32 ocorrências)
+*Mostrando 20 de 32 exemplos*
+- **`AbandonmentCap`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`Project`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbrasionProtector`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaFlexiblePipesBsddDictionary`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStab`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningActivity`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`ThreadedFitting`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProject`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProgram`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeAdapter`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalPowerJumperConnector`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`IfcInstanciableElement`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningItemCheck`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`UmbilicalPullingHead`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPerson`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleActor`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeConnection`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleGroup`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningEvidence`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningIssue`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+
+### 📏 Regra: **`IFC_REQUIRED_PROPERTY_MISSING`** (62 ocorrências)
+*Mostrando 20 de 62 exemplos*
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbandonmentCap`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Project`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`Project`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbrasionProtector`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CompositeMaterial`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaFlexiblePipesBsddDictionary`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaOilField`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStab`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningActivity`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`ThreadedFitting`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ThreadedFitting`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`TopBendStiffener`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningProject`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProgram`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+
+### 📏 Regra: **`MULTIPLE_DEFINITION`** (3 ocorrências)
+- **`HCRHose`**
+  - Problema: Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`LogicalElement`**
+  - Problema: Classe tem 2 skos:definition para idioma 'pt-br' (máximo: 1)
+- **`LogicalElement`**
+  - Problema: Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+
+### 📏 Regra: **`MULTIPLE_PREFLABEL_SAME_LANG`** (14 ocorrências)
+- **`UmbilicalComponent`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Umbilical component', 'Umbilical Component']
+- **`UmbilicalComponent`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Componente Umbilical', 'Componente de umbilical']
+- **`FunctionLine`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Linha Funcional', 'Linha de função']
+- **`FunctionLine`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Function Line', 'Function line']
+- **`MetallicTubing`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubulação Metálica', 'Tubulação metálica']
+- **`MetallicTubing`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Metallic tubing', 'Metallic Tubing']
+- **`PlasticHose`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Mangueira plástica', 'Mangueira Plástica']
+- **`Filler`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Preenchimento', 'Enchimento']
+- **`ElectricalCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo elétrico', 'Cabo Elétrico']
+- **`ElectricalCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Electrical cable', 'Electrical Cable']
+- **`IntegratedPipe`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Integrated pipe', 'Integrated Pipe']
+- **`IntegratedPipe`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubo Integrado', 'Duto integrado']
+- **`OpticalFiberCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Optical Fiber Cable', 'Optical fiber cable']
+- **`OpticalFiberCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo de Fibra Óptica', 'Cabo de fibra ótica']
+
+### 📏 Regra: **`PREFLABEL_FORMAT_INVALID`** (267 ocorrências)
+*Mostrando 20 de 267 exemplos*
+- **`ProjectCode`**
+  - Problema: skos:prefLabel 'Código Identificador único do projeto da operadora da Interligação Submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'único' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`**
+  - Problema: skos:prefLabel 'Static umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`**
+  - Problema: skos:prefLabel 'Trecho estático de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estático' deve começar com maiúscula (não é stopword)
+- **`EndFitting`**
+  - Problema: skos:prefLabel 'End fitting'@en não corresponde ao padrão esperado. Causa: palavra 'fitting' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`**
+  - Problema: skos:prefLabel 'Estrutura de topo de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'topo' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`**
+  - Problema: skos:prefLabel 'FSHR upper assembly'@en não corresponde ao padrão esperado. Causa: palavra 'upper' deve começar com maiúscula (não é stopword)
+- **`InternalDiameter`**
+  - Problema: skos:prefLabel 'Diâmetro interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`SolubilityTableSolubilityCoefficient`**
+  - Problema: skos:prefLabel 'Coeficiente de solubilidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'solubilidade' deve começar com maiúscula (não é stopword)
+- **`PartNumber`**
+  - Problema: skos:prefLabel 'Número da peça do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'peça' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`**
+  - Problema: skos:prefLabel 'Carretel de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`**
+  - Problema: skos:prefLabel 'Storage spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+- **`BlockValve`**
+  - Problema: skos:prefLabel 'Válvula de bloqueio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+- **`BlockValve`**
+  - Problema: skos:prefLabel 'Block valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`VCM`**
+  - Problema: skos:prefLabel 'Módulo de conexão vertical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+- **`VCM`**
+  - Problema: skos:prefLabel 'Vertical connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`IsSpare`**
+  - Problema: skos:prefLabel 'É um sobressalente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sobressalente' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`**
+  - Problema: skos:prefLabel 'Trecho flowline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flowline' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`**
+  - Problema: skos:prefLabel 'Flowline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel 'Estrutura inferior de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inferior' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel 'FSHR lower assembly'@en não corresponde ao padrão esperado. Causa: palavra 'lower' deve começar com maiúscula (não é stopword)
+
+### 📏 Regra: **`PREFLABEL_NEEDS_CORRECTION`** (206 ocorrências)
+*Mostrando 20 de 206 exemplos*
+- **`BendMomentVsShearForceTable_BendingMoment`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexão'→'Flexão'
+- **`ReliefValve`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'alívio'→'Alívio'
+- **`OpenReceptacle`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'receptacle'→'Receptacle'; [pt-br] Title Case: 'aberto'→'Aberto'
+- **`SCM`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'submarino'→'Submarino'
+- **`PlasticHose`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'plástica'→'Plástica'
+- **`AxialStiffnessUnderTensionAtSeaLevel`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`WorkingLoadLimit`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: '(WLL)'→'(wll)'
+- **`StrIntOffPLevNomPressValRef`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPress`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`RiserSpan`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'riser'→'Riser'
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'lower'→'Lower', 'assembly'→'Assembly'; [pt-br] Title Case: 'inferior'→'Inferior', 'RHAS'→'Rhas'
+- **`GuideBase`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'Base-guia'→'Base-Guia'
+- **`UTA`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'assembly'→'Assembly'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`UTM`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`HydraulicJumper`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'hidráulico'→'Hidráulico'
+- **`TrianglePlate`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'plate'→'Plate'; [pt-br] Title Case: 'triangular'→'Triangular'
+- **`AssemblyTorque`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'montagem'→'Montagem'
+- **`WireRopeQuantity`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'cordas'→'Cordas'
+- **`HPHousing`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'High-pressure'→'High-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'alta'→'Alta', 'pressão'→'Pressão'
+- **`StorageAccessory`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'armazenamento/transporte'→'Armazenamento/transporte'
+
+- **Operação:** Geração de Arquivo de Revisão- **Arquivo Gerado:** `test-norm-autofix-enabled.ttl`- **Status:** ✅ success- **Data/Hora:** 2026-03-10T15:55:07.423743
+- **Operação:** Carregamento de Ontologia- **Arquivo:** `energy-domain-ontology.ttl`- **Status:** ✅ success- **Data/Hora:** 2026-03-10T15:55:41.381411
+
+- **Operação:** Normalização- **Status:** ⚠️ success- **Modo:** 🔧 Auto-fix (correções aplicadas)- **Total de Issues:** 1831- **Erros:** 260- **Total de Avisos:** 1571- **Correções Aplicadas:**  - 🔧 IRIs corrigidas: 63 entidades (746 ocorrências/operações)  - 📝 Identificadores corrigidos: 58 entidades  - 🏷️ PrefLabels corrigidos: 0 (0 entidades)  - 📖 Definitions corrigidas: 0 (0 entidades)  - 📊 Total de triplas modificadas: 743
+### 📋 Tabela V — Métricas de Normalização (Referência Artigo)
+| Métrica | Auto-fix habilitado (mec.) |
+|---------|----------------------|
+| Total de issues detectados | 1,831 |
+| Erros | 260 |
+| Avisos | 1,571 |
+| Correções mecânicas propostas (IRI + id.) | 804 operações |
+| ↳ IRI: 746 ocorrências (63 entidades) + id.: 58 | |
+| Correções semânticas propostas (prefLabel + def.) | 621 triplas |
+| Triplas modificadas por correções mecânicas | 743 |
+| Correções semânticas aplicadas | 0 (bloqueado) |
+- **Data/Hora:** 2026-03-10T15:55:47.167256
+
+### 🔧 Correções de IRI Aplicadas
+
+> **Formato:** Número sequencial, nome original, nome corrigido, e quantas vezes a IRI aparece na ontologia
+
+| # | **Original** | **Corrigido** | **Ocorrências** |
+|:-:|--------------|---------------|:---------------:|
+| 1 | BendingMomentTable_BendingMoment | BendingMomentTableBendingMoment | 12 |
+| 2 | BendingMomentTable_Curvature | BendingMomentTableCurvature | 12 |
+| 3 | BendMomentVsShearForceTable_BendingMoment | BendMomentVsShearForceTableBendingMoment | 12 |
+| 4 | BendMomentVsShearForceTable_Condition | BendMomentVsShearForceTableCondition | 12 |
+| 5 | BendMomentVsShearForceTable_ShearForce | BendMomentVsShearForceTableShearForce | 13 |
+| 6 | DiffusionTable_DiffusionCoefficient | DiffusionTableDiffusionCoefficient | 12 |
+| 7 | DiffusionTable_MoleculeIdentifier | DiffusionTableMoleculeIdentifier | 13 |
+| 8 | DiffusionTable_PolymerState | DiffusionTablePolymerState | 13 |
+| 9 | DiffusionTable_Temperature | DiffusionTableTemperature | 12 |
+| 10 | DomainAnnotation | domainAnnotation | 4 |
+| 11 | DomainAuxiliarAnnotation | domainAuxiliarAnnotation | 9 |
+| 12 | DomainAuxiliarProperty | domainAuxiliarProperty | 1 |
+| 13 | DomainEngineeringAnnotation | domainEngineeringAnnotation | 14 |
+| 14 | DomainRelationship | domainRelationship | 2 |
+| 15 | DrawingDimensionsTable_DimensionDescription | DrawingDimensionsTableDimensionDescription | 13 |
+| 16 | DrawingDimensionsTable_DimensionName | DrawingDimensionsTableDimensionName | 12 |
+| 17 | DrawingDimensionsTable_DimensionUnit | DrawingDimensionsTableDimensionUnit | 13 |
+| 18 | DrawingDimensionsTable_DimensionValue | DrawingDimensionsTableDimensionValue | 12 |
+| 19 | EarlyLeakMaxPressTable_Press | EarlyLeakMaxPressTablePress | 13 |
+| 20 | EarlyLeakMaxPressTable_PressIntValStrat | EarlyLeakMaxPressTablePressIntValStrat | 13 |
+| 21 | EarlyLeakMaxPressTable_PressValRef | EarlyLeakMaxPressTablePressValRef | 13 |
+| 22 | EarlyLeakMaxPressTable_PressValRefMult | EarlyLeakMaxPressTablePressValRefMult | 13 |
+| 23 | EarlyLeakMaxPressTable_TensLimit | EarlyLeakMaxPressTableTensLimit | 13 |
+| 24 | EarlyLeakMaxPressTable_TensLimitValRef | EarlyLeakMaxPressTableTensLimitValRef | 12 |
+| 25 | EarlyLeakNomPressTable_Press | EarlyLeakNomPressTablePress | 13 |
+| 26 | EarlyLeakNomPressTable_PressIntValStrat | EarlyLeakNomPressTablePressIntValStrat | 13 |
+| 27 | EarlyLeakNomPressTable_PressValRef | EarlyLeakNomPressTablePressValRef | 13 |
+| 28 | EarlyLeakNomPressTable_PressValRefMult | EarlyLeakNomPressTablePressValRefMult | 12 |
+| 29 | EarlyLeakNomPressTable_TensLimit | EarlyLeakNomPressTableTensLimit | 13 |
+| 30 | EarlyLeakNomPressTable_TensLimitValRef | EarlyLeakNomPressTableTensLimitValRef | 12 |
+| 31 | EModVsTempTable_ElasticityModulus | EmodVsTempTableElasticityModulus | 13 |
+| 32 | EModVsTempTable_Temperature | EmodVsTempTableTemperature | 11 |
+| 33 | FrictionCoefficientTighteningTable_CoefficientOfFriction | FrictionCoefficientTighteningTableCoefficientOfFriction | 12 |
+| 34 | FrictionCoefficientTighteningTable_TighteningPerTrack | FrictionCoefficientTighteningTableTighteningPerTrack | 12 |
+| 35 | InternalIncidentalPressureTable_PositionReference | InternalIncidentalPressureTablePositionReference | 13 |
+| 36 | InternalIncidentalPressureTable_Pressure | InternalIncidentalPressureTablePressure | 12 |
+| 37 | InternalIncidentalPressureTable_VPosWRTWaterline | InternalIncidentalPressureTableVposWrtwaterline | 13 |
+| 38 | LayingMinimumRadiusTable_AbsoluteExternalPressure | LayingMinimumRadiusTableAbsoluteExternalPressure | 12 |
+| 39 | LayingMinimumRadiusTable_AbsoluteInternalPressure | LayingMinimumRadiusTableAbsoluteInternalPressure | 12 |
+| 40 | LayingMinimumRadiusTable_Compression | LayingMinimumRadiusTableCompression | 13 |
+| 41 | LayingMinimumRadiusTable_MinimumAllowableBendingRadius | LayingMinimumRadiusTableMinimumAllowableBendingRadius | 12 |
+| 42 | LayingMinimumRadiusTable_SectionSupportedByRigidSupport | LayingMinimumRadiusTableSectionSupportedByRigidSupport | 12 |
+| 43 | LayingMinimumRadiusTable_TensileArmourAnnulusCondition | LayingMinimumRadiusTableTensileArmourAnnulusCondition | 13 |
+| 44 | MaxDesignAbsIntPresTable_PositionReference | MaxDesignAbsIntPresTablePositionReference | 13 |
+| 45 | MaxDesignAbsIntPresTable_Pressure | MaxDesignAbsIntPresTablePressure | 12 |
+| 46 | MaxDesignAbsIntPresTable_VPosWRTWaterline | MaxDesignAbsIntPresTableVposWrtwaterline | 13 |
+| 47 | MaximumAllowableTensionTable_MaximumAllowableTensile | MaximumAllowableTensionTableMaximumAllowableTensile | 12 |
+| 48 | MaximumAllowableTensionTable_PulleyRadius | MaximumAllowableTensionTablePulleyRadius | 12 |
+| 49 | MaximumAllowableTensionTable_PulleyVAngle | MaximumAllowableTensionTablePulleyVangle | 12 |
+| 50 | MaximumAllowableTighteningTable_AxialLoad | MaximumAllowableTighteningTableAxialLoad | 12 |
+| 51 | MaximumAllowableTighteningTable_TighteningPerTrack | MaximumAllowableTighteningTableTighteningPerTrack | 12 |
+| 52 | PermeabilityTable_MoleculeIdentifier | PermeabilityTableMoleculeIdentifier | 13 |
+| 53 | PermeabilityTable_PermeabilityCoefficient | PermeabilityTablePermeabilityCoefficient | 12 |
+| 54 | PermeabilityTable_PolymerState | PermeabilityTablePolymerState | 13 |
+| 55 | PermeabilityTable_Temperature | PermeabilityTableTemperature | 12 |
+| 56 | Planned_Start_Timestamp | PlannedStartTimestamp | 9 |
+| 57 | SolubilityTable_MoleculeIdentifier | SolubilityTableMoleculeIdentifier | 13 |
+| 58 | SolubilityTable_PolymerState | SolubilityTablePolymerState | 12 |
+| 59 | SolubilityTable_SolubilityCoefficient | SolubilityTableSolubilityCoefficient | 12 |
+| 60 | SolubilityTable_Temperature | SolubilityTableTemperature | 12 |
+| 61 | StrandsTable_SpareQuantity | StrandsTableSpareQuantity | 12 |
+| 62 | StrandsTable_StrandsLength | StrandsTableStrandsLength | 12 |
+| 63 | StrandsTable_StrandsQuantity | StrandsTableStrandsQuantity | 12 |
+
+### 📝 Correções de dcterms:identifier Aplicadas
+
+> **Total:** 58 correções
+
+> **Formato:** Nome da entidade, seguido do valor incorreto (❌) e valor corrigido (✅)
+
+**BendingMomentTable_BendingMoment**
+- ❌ `BendingMomentTable_BendingMoment`
+- ✅ `BendingMomentTableBendingMoment`
+
+**BendingMomentTable_Curvature**
+- ❌ `BendingMomentTable_Curvature`
+- ✅ `BendingMomentTableCurvature`
+
+**BendMomentVsShearForceTable_BendingMoment**
+- ❌ `BendMomentVsShearForceTable_BendingMoment`
+- ✅ `BendMomentVsShearForceTableBendingMoment`
+
+**BendMomentVsShearForceTable_Condition**
+- ❌ `BendMomentVsShearForceTable_Condition`
+- ✅ `BendMomentVsShearForceTableCondition`
+
+**BendMomentVsShearForceTable_ShearForce**
+- ❌ `BendMomentVsShearForceTable_ShearForce`
+- ✅ `BendMomentVsShearForceTableShearForce`
+
+**DiffusionTable_DiffusionCoefficient**
+- ❌ `DiffusionTable_DiffusionCoefficient`
+- ✅ `DiffusionTableDiffusionCoefficient`
+
+**DiffusionTable_MoleculeIdentifier**
+- ❌ `DiffusionTable_MoleculeIdentifier`
+- ✅ `DiffusionTableMoleculeIdentifier`
+
+**DiffusionTable_PolymerState**
+- ❌ `DiffusionTable_PolymerState`
+- ✅ `DiffusionTablePolymerState`
+
+**DiffusionTable_Temperature**
+- ❌ `DiffusionTable_Temperature`
+- ✅ `DiffusionTableTemperature`
+
+**DrawingDimensionsTable_DimensionDescription**
+- ❌ `DrawingDimensionsTable_DimensionDescription`
+- ✅ `DrawingDimensionsTableDimensionDescription`
+
+**DrawingDimensionsTable_DimensionName**
+- ❌ `DrawingDimensionsTable_DimensionName`
+- ✅ `DrawingDimensionsTableDimensionName`
+
+**DrawingDimensionsTable_DimensionUnit**
+- ❌ `DrawingDimensionsTable_DimensionUnit`
+- ✅ `DrawingDimensionsTableDimensionUnit`
+
+**DrawingDimensionsTable_DimensionValue**
+- ❌ `DrawingDimensionsTable_DimensionValue`
+- ✅ `DrawingDimensionsTableDimensionValue`
+
+**EarlyLeakMaxPressTable_Press**
+- ❌ `EarlyLeakMaxPressTable_Press`
+- ✅ `EarlyLeakMaxPressTablePress`
+
+**EarlyLeakMaxPressTable_PressIntValStrat**
+- ❌ `EarlyLeakMaxPressTable_PressIntValStrat`
+- ✅ `EarlyLeakMaxPressTablePressIntValStrat`
+
+**EarlyLeakMaxPressTable_PressValRef**
+- ❌ `EarlyLeakMaxPressTable_PressValRef`
+- ✅ `EarlyLeakMaxPressTablePressValRef`
+
+**EarlyLeakMaxPressTable_PressValRefMult**
+- ❌ `EarlyLeakMaxPressTable_PressValRefMult`
+- ✅ `EarlyLeakMaxPressTablePressValRefMult`
+
+**EarlyLeakMaxPressTable_TensLimit**
+- ❌ `EarlyLeakMaxPressTable_TensLimit`
+- ✅ `EarlyLeakMaxPressTableTensLimit`
+
+**EarlyLeakMaxPressTable_TensLimitValRef**
+- ❌ `EarlyLeakMaxPressTable_TensLimitValRef`
+- ✅ `EarlyLeakMaxPressTableTensLimitValRef`
+
+**EarlyLeakNomPressTable_Press**
+- ❌ `EarlyLeakNomPressTable_Press`
+- ✅ `EarlyLeakNomPressTablePress`
+
+**EarlyLeakNomPressTable_PressIntValStrat**
+- ❌ `EarlyLeakNomPressTable_PressIntValStrat`
+- ✅ `EarlyLeakNomPressTablePressIntValStrat`
+
+**EarlyLeakNomPressTable_PressValRef**
+- ❌ `EarlyLeakNomPressTable_PressValRef`
+- ✅ `EarlyLeakNomPressTablePressValRef`
+
+**EarlyLeakNomPressTable_PressValRefMult**
+- ❌ `EarlyLeakNomPressTable_PressValRefMult`
+- ✅ `EarlyLeakNomPressTablePressValRefMult`
+
+**EarlyLeakNomPressTable_TensLimit**
+- ❌ `EarlyLeakNomPressTable_TensLimit`
+- ✅ `EarlyLeakNomPressTableTensLimit`
+
+**EarlyLeakNomPressTable_TensLimitValRef**
+- ❌ `EarlyLeakNomPressTable_TensLimitValRef`
+- ✅ `EarlyLeakNomPressTableTensLimitValRef`
+
+**EModVsTempTable_ElasticityModulus**
+- ❌ `EModVsTempTable_ElasticityModulus`
+- ✅ `EmodVsTempTableElasticityModulus`
+
+**EModVsTempTable_Temperature**
+- ❌ `EModVsTempTable_Temperature`
+- ✅ `EmodVsTempTableTemperature`
+
+**FrictionCoefficientTighteningTable_CoefficientOfFriction**
+- ❌ `FrictionCoefficientTighteningTable_CoefficientOfFriction`
+- ✅ `FrictionCoefficientTighteningTableCoefficientOfFriction`
+
+**FrictionCoefficientTighteningTable_TighteningPerTrack**
+- ❌ `FrictionCoefficientTighteningTable_TighteningPerTrack`
+- ✅ `FrictionCoefficientTighteningTableTighteningPerTrack`
+
+**InternalIncidentalPressureTable_PositionReference**
+- ❌ `InternalIncidentalPressureTable_PositionReference`
+- ✅ `InternalIncidentalPressureTablePositionReference`
+
+**InternalIncidentalPressureTable_Pressure**
+- ❌ `InternalIncidentalPressureTable_Pressure`
+- ✅ `InternalIncidentalPressureTablePressure`
+
+**InternalIncidentalPressureTable_VPosWRTWaterline**
+- ❌ `InternalIncidentalPressureTable_VPosWRTWaterline`
+- ✅ `InternalIncidentalPressureTableVposWrtwaterline`
+
+**LayingMinimumRadiusTable_AbsoluteExternalPressure**
+- ❌ `LayingMinimumRadiusTable_AbsoluteExternalPressure`
+- ✅ `LayingMinimumRadiusTableAbsoluteExternalPressure`
+
+**LayingMinimumRadiusTable_AbsoluteInternalPressure**
+- ❌ `LayingMinimumRadiusTable_AbsoluteInternalPressure`
+- ✅ `LayingMinimumRadiusTableAbsoluteInternalPressure`
+
+**LayingMinimumRadiusTable_Compression**
+- ❌ `LayingMinimumRadiusTable_Compression`
+- ✅ `LayingMinimumRadiusTableCompression`
+
+**LayingMinimumRadiusTable_MinimumAllowableBendingRadius**
+- ❌ `LayingMinimumRadiusTable_MinimumAllowableBendingRadius`
+- ✅ `LayingMinimumRadiusTableMinimumAllowableBendingRadius`
+
+**LayingMinimumRadiusTable_SectionSupportedByRigidSupport**
+- ❌ `LayingMinimumRadiusTable_SectionSupportedByRigidSupport`
+- ✅ `LayingMinimumRadiusTableSectionSupportedByRigidSupport`
+
+**LayingMinimumRadiusTable_TensileArmourAnnulusCondition**
+- ❌ `LayingMinimumRadiusTable_TensileArmourAnnulusCondition`
+- ✅ `LayingMinimumRadiusTableTensileArmourAnnulusCondition`
+
+**MaxDesignAbsIntPresTable_PositionReference**
+- ❌ `MaxDesignAbsIntPresTable_PositionReference`
+- ✅ `MaxDesignAbsIntPresTablePositionReference`
+
+**MaxDesignAbsIntPresTable_Pressure**
+- ❌ `MaxDesignAbsIntPresTable_Pressure`
+- ✅ `MaxDesignAbsIntPresTablePressure`
+
+**MaxDesignAbsIntPresTable_VPosWRTWaterline**
+- ❌ `MaxDesignAbsIntPresTable_VPosWRTWaterline`
+- ✅ `MaxDesignAbsIntPresTableVposWrtwaterline`
+
+**MaximumAllowableTensionTable_MaximumAllowableTensile**
+- ❌ `MaximumAllowableTensionTable_MaximumAllowableTensile`
+- ✅ `MaximumAllowableTensionTableMaximumAllowableTensile`
+
+**MaximumAllowableTensionTable_PulleyRadius**
+- ❌ `MaximumAllowableTensionTable_PulleyRadius`
+- ✅ `MaximumAllowableTensionTablePulleyRadius`
+
+**MaximumAllowableTensionTable_PulleyVAngle**
+- ❌ `MaximumAllowableTensionTable_PulleyVAngle`
+- ✅ `MaximumAllowableTensionTablePulleyVangle`
+
+**MaximumAllowableTighteningTable_AxialLoad**
+- ❌ `MaximumAllowableTighteningTable_AxialLoad`
+- ✅ `MaximumAllowableTighteningTableAxialLoad`
+
+**MaximumAllowableTighteningTable_TighteningPerTrack**
+- ❌ `MaximumAllowableTighteningTable_TighteningPerTrack`
+- ✅ `MaximumAllowableTighteningTableTighteningPerTrack`
+
+**PermeabilityTable_MoleculeIdentifier**
+- ❌ `PermeabilityTable_MoleculeIdentifier`
+- ✅ `PermeabilityTableMoleculeIdentifier`
+
+**PermeabilityTable_PermeabilityCoefficient**
+- ❌ `PermeabilityTable_PermeabilityCoefficient`
+- ✅ `PermeabilityTablePermeabilityCoefficient`
+
+**PermeabilityTable_PolymerState**
+- ❌ `PermeabilityTable_PolymerState`
+- ✅ `PermeabilityTablePolymerState`
+
+**PermeabilityTable_Temperature**
+- ❌ `PermeabilityTable_Temperature`
+- ✅ `PermeabilityTableTemperature`
+
+**Planned_Start_Timestamp**
+- ❌ `Planned_Start_Timestamp`
+- ✅ `PlannedStartTimestamp`
+
+**SolubilityTable_MoleculeIdentifier**
+- ❌ `SolubilityTable_MoleculeIdentifier`
+- ✅ `SolubilityTableMoleculeIdentifier`
+
+**SolubilityTable_PolymerState**
+- ❌ `SolubilityTable_PolymerState`
+- ✅ `SolubilityTablePolymerState`
+
+**SolubilityTable_SolubilityCoefficient**
+- ❌ `SolubilityTable_SolubilityCoefficient`
+- ✅ `SolubilityTableSolubilityCoefficient`
+
+**SolubilityTable_Temperature**
+- ❌ `SolubilityTable_Temperature`
+- ✅ `SolubilityTableTemperature`
+
+**StrandsTable_SpareQuantity**
+- ❌ `StrandsTable_SpareQuantity`
+- ✅ `StrandsTableSpareQuantity`
+
+**StrandsTable_StrandsLength**
+- ❌ `StrandsTable_StrandsLength`
+- ✅ `StrandsTableStrandsLength`
+
+**StrandsTable_StrandsQuantity**
+- ❌ `StrandsTable_StrandsQuantity`
+- ✅ `StrandsTableStrandsQuantity`
+
+
+## 🔍 Issues de Qualidade (Requerem Decisão do Especialista)
+
+*Estes issues NÃO são corrigidos automaticamente. Requerem análise do especialista em ontologias.*
+
+### 🏷️ Issues de DomainAttribute
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ⚠️ Avisos para Revisão (510)
+
+- **`AbsoluteInsidePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AbsoluteInsidePressure' não possui skos:definition em português (@pt-br)
+- **`AbsoluteOutsidePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AbsoluteOutsidePressure' não possui skos:definition em português (@pt-br)
+- **`AnodeCollarsAxialSpacing`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AnodeCollarsAxialSpacing' não possui skos:definition em português (@pt-br)
+- **`AnodeCollarsQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AnodeCollarsQuantity' não possui skos:definition em português (@pt-br)
+- **`AssemblyShouldObeyModelPolarity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AssemblyShouldObeyModelPolarity' não possui skos:definition em português (@pt-br)
+- **`AssemblyTorque`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'AssemblyTorque' não possui skos:definition em português (@pt-br)
+- **`BendingMomentTableBendingMoment`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingMomentTableBendingMoment' não possui skos:definition em português (@pt-br)
+- **`BendingMomentTableCurvature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingMomentTableCurvature' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:accessRights
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendingStiffnessCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui dcterms:accessRights
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:definition em português (@pt-br)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui dcterms:identifier
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendingStiffnessTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui dcterms:accessRights
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:definition em inglês (@en)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui dcterms:identifier
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`BendMomentVsShearForceCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendMomentVsShearForceCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceTableBendingMoment`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableBendingMoment' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui skos:definition em português (@pt-br)
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+- **`BendMomentVsShearForceTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'BendMomentVsShearForceTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`BendMomentVsShearForceTableCondition`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BendMomentVsShearForceTableCondition' não possui skos:definition em português (@pt-br)
+- **`BoreDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'BoreDiameter' não possui skos:definition em português (@pt-br)
+- **`CalculatedAbsoluteBurstPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CalculatedAbsoluteBurstPressure' não possui skos:definition em português (@pt-br)
+- **`ClampInternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ClampInternalDiameter' não possui skos:definition em português (@pt-br)
+- **`CO2VolumePercentage`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CO2VolumePercentage' não possui skos:definition em português (@pt-br)
+- **`CollarInternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CollarInternalDiameter' não possui skos:definition em português (@pt-br)
+- **`CompositeLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CompositeLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`CriticalCurvatureOfSlipping`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CriticalCurvatureOfSlipping' não possui skos:definition em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui dcterms:accessRights
+- **`CrushingCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui dcterms:identifier
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTensionTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:definition em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DamagingPullInStraightLine`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DamagingPullInStraightLine' não possui skos:definition em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui dcterms:accessRights
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:definition em inglês (@en)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui dcterms:identifier
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DiffusionCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DiffusionCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DiffusionTableColumn`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+- **`DiffusionTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DiffusionTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DiffusionTableDiffusionCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionTableDiffusionCoefficient' não possui skos:definition em português (@pt-br)
+- **`DiffusionTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DiffusionTableTemperature' não possui skos:definition em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui dcterms:accessRights
+- **`DimensionsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:definition em inglês (@en)
+- **`DimensionsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:definition em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui dcterms:identifier
+- **`DimensionsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`DimensionsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`DimensionsTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DimensionsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DisplacedVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DisplacedVolume' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui dcterms:accessRights
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:definition em inglês (@en)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui dcterms:identifier
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DrawingDimensionsTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'DrawingDimensionsTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`DrawingDimensionsTableDimensionName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableDimensionName' não possui skos:definition em português (@pt-br)
+- **`DrawingDimensionsTableDimensionValue`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'DrawingDimensionsTableDimensionValue' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakMaxPressTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakMaxPressTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakMaxPressTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakMaxPressTableTensLimitValRef`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakMaxPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EarlyLeakNomPressTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EarlyLeakNomPressTablePressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTablePressValRefMult' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableTensLimitValRef`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EarlyLeakNomPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:accessRights
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em inglês (@en)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:identifier
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EModVsTempCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EModVsTempTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui dcterms:accessRights
+- **`EModVsTempTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em inglês (@en)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em português (@pt-br)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui dcterms:identifier
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EmodVsTempTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'EmodVsTempTableTemperature' não possui skos:definition em português (@pt-br)
+- **`EmodVsTempTableTemperature`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'EmodVsTempTableTemperature' não possui skos:prefLabel em português (@pt-br)
+- **`ErosionalVelocity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ErosionalVelocity' não possui skos:definition em português (@pt-br)
+- **`ExternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ExternalDiameter' não possui skos:definition em português (@pt-br)
+- **`FatMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FatMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`FatNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FatNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui dcterms:accessRights
+- **`FlangeAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'FlangeAttribute' não possui skos:definition em inglês (@en)
+- **`FlangeAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeAttribute' não possui skos:definition em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui dcterms:identifier
+- **`FlangeAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'FlangeAttribute' não possui skos:prefLabel em inglês (@en)
+- **`FlangeAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'FlangeAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`FlangeAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'FlangeAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`FlangeFaceType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeFaceType' não possui skos:definition em português (@pt-br)
+- **`FlangeType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlangeType' não possui skos:definition em português (@pt-br)
+- **`FlexibleStructureServicesList`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FlexibleStructureServicesList' não possui skos:definition em português (@pt-br)
+- **`FrictionCoefficientTighteningTableCoefficientOfFriction`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FrictionCoefficientTighteningTableCoefficientOfFriction' não possui skos:definition em português (@pt-br)
+- **`FrictionCoefficientTighteningTableTighteningPerTrack`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FrictionCoefficientTighteningTableTighteningPerTrack' não possui skos:definition em português (@pt-br)
+- **`FullyThreaded`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'FullyThreaded' não possui skos:definition em português (@pt-br)
+- **`GalvanicMaterial`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GalvanicMaterial' não possui skos:definition em português (@pt-br)
+- **`GrooveDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveDiameter' não possui skos:definition em português (@pt-br)
+- **`GrooveHeight`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveHeight' não possui skos:definition em português (@pt-br)
+- **`GrooveMinimumSupportArea`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveMinimumSupportArea' não possui skos:definition em português (@pt-br)
+- **`GrooveSupportSurfaceDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'GrooveSupportSurfaceDiameter' não possui skos:definition em português (@pt-br)
+- **`H2SVolumeConcentration`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'H2SVolumeConcentration' não possui skos:definition em português (@pt-br)
+- **`HasFaceORing`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasFaceORing' não possui skos:definition em português (@pt-br)
+- **`HasModaSensor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasModaSensor' não possui skos:definition em português (@pt-br)
+- **`HasN2InjectionPort`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasN2InjectionPort' não possui skos:definition em português (@pt-br)
+- **`HasThermalInsulation`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'HasThermalInsulation' não possui skos:definition em inglês (@en)
+- **`HasThermalInsulation`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HasThermalInsulation' não possui skos:definition em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui dcterms:accessRights
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:definition em inglês (@en)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:definition em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui dcterms:identifier
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:prefLabel em inglês (@en)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`HydrostaticPressureTestsAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'HydrostaticPressureTestsAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`IndividualAnodeMass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IndividualAnodeMass' não possui skos:definition em português (@pt-br)
+- **`InsideTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InsideTemperature' não possui skos:definition em português (@pt-br)
+- **`IntermediateValuesStrategy`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IntermediateValuesStrategy' não possui skos:definition em português (@pt-br)
+- **`InternalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalDiameter' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+- **`InternalIncidentalPressureCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'InternalIncidentalPressureCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:accessRights
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTablePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalIncidentalPressureTablePressure' não possui skos:definition em português (@pt-br)
+- **`InternalVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'InternalVolume' não possui skos:definition em português (@pt-br)
+- **`IsSpare`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'IsSpare' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui dcterms:accessRights
+- **`LayerGeometryAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em inglês (@en)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui dcterms:identifier
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayerGeometryAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayerGeometryAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayerGeometryCrossSection`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryCrossSection' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryInertiaX`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryInertiaX' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryInertiaY`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryInertiaY' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryManufacturer`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryManufacturer' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryName' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryProfileThickness' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileWidth`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryProfileWidth' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerGeometryThickness' não possui skos:definition em português (@pt-br)
+- **`LayerThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerThickness' não possui skos:definition em português (@pt-br)
+- **`LayerWatertight`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayerWatertight' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayingMinimumRadiusTableAbsoluteExternalPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableAbsoluteExternalPressure' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableAbsoluteInternalPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableAbsoluteInternalPressure' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:accessRights
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'LayingMinimumRadiusTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`LayingMinimumRadiusTableMinimumAllowableBendingRadius`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableMinimumAllowableBendingRadius' não possui skos:definition em português (@pt-br)
+- **`LayingMinimumRadiusTableSectionSupportedByRigidSupport`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LayingMinimumRadiusTableSectionSupportedByRigidSupport' não possui skos:definition em português (@pt-br)
+- **`LinearMass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LinearMass' não possui skos:definition em português (@pt-br)
+- **`Lubricant`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Lubricant' não possui skos:definition em português (@pt-br)
+- **`LubricantFrictionFactor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'LubricantFrictionFactor' não possui skos:definition em português (@pt-br)
+- **`ManufacturerDefinedMaterialName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturerDefinedMaterialName' não possui skos:definition em português (@pt-br)
+- **`ManufacturingDate`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturingDate' não possui skos:definition em português (@pt-br)
+- **`ManufacturingNonConformities`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ManufacturingNonConformities' não possui skos:definition em português (@pt-br)
+- **`Mass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Mass' não possui skos:definition em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui dcterms:accessRights
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:definition em inglês (@en)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:definition em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui dcterms:identifier
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:prefLabel em inglês (@en)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`MaterialManufacturerAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaterialManufacturerAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaterialRequest`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialRequest' não possui skos:definition em português (@pt-br)
+- **`MaterialRequestRev`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialRequestRev' não possui skos:definition em português (@pt-br)
+- **`MaterialSupplierName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaterialSupplierName' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+- **`MaxDesignAbsIntPresCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaxDesignAbsIntPresCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:accessRights
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTablePressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignAbsIntPresTablePressure' não possui skos:definition em português (@pt-br)
+- **`MaxDesignPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDesignPressure' não possui skos:definition em português (@pt-br)
+- **`MaxDynamicLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxDynamicLoad' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensileForStraightLine`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensileForStraightLine' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTableMaximumAllowableTensile`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTableMaximumAllowableTensile' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTablePulleyRadius`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTablePulleyRadius' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTensionTablePulleyVangle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTensionTablePulleyVangle' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTighteningTableAxialLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTighteningTableAxialLoad' não possui skos:definition em português (@pt-br)
+- **`MaximumAllowableTighteningTableTighteningPerTrack`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAllowableTighteningTableTighteningPerTrack' não possui skos:definition em português (@pt-br)
+- **`MaximumAmbientTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumAmbientTemperature' não possui skos:definition em português (@pt-br)
+- **`MaximumTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumTemperature' não possui skos:definition em português (@pt-br)
+- **`MaximumThermalExchangeCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaximumThermalExchangeCoefficient' não possui skos:definition em português (@pt-br)
+- **`MaxLengthTolerance`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MaxLengthTolerance' não possui skos:definition em português (@pt-br)
+- **`MetallicLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`MetallicLayerPitch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicLayerPitch' não possui skos:definition em português (@pt-br)
+- **`MetallicStrandLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicStrandLength' não possui skos:definition em português (@pt-br)
+- **`MetallicStrandSpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MetallicStrandSpareQuantity' não possui skos:definition em português (@pt-br)
+- **`MinimumBendingRadiusForStorage`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumBendingRadiusForStorage' não possui skos:definition em português (@pt-br)
+- **`MinimumTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumTemperature' não possui skos:definition em português (@pt-br)
+- **`MinimumThermalExchangeCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'MinimumThermalExchangeCoefficient' não possui skos:definition em português (@pt-br)
+- **`ModulusOfElasticity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ModulusOfElasticity' não possui skos:definition em português (@pt-br)
+- **`NominalDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'NominalDiameter' não possui skos:definition em português (@pt-br)
+- **`NominalLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'NominalLength' não possui skos:definition em português (@pt-br)
+- **`OffLeakPLevMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OffLeakPLevMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`OffLeakPLevNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OffLeakPLevNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`OuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OuterDiameter' não possui skos:definition em português (@pt-br)
+- **`OutsideTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'OutsideTemperature' não possui skos:definition em português (@pt-br)
+- **`PartNumber`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PartNumber' não possui skos:definition em português (@pt-br)
+- **`PermeabilityCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+- **`PermeabilityCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'PermeabilityCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PermeabilityTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui dcterms:accessRights
+- **`PermeabilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em inglês (@en)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui dcterms:identifier
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`PermeabilityTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PermeabilityTablePermeabilityCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTablePermeabilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PermeabilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`PitchToleranceClass`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PitchToleranceClass' não possui skos:definition em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em inglês (@en)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'PlannedStartTimestamp' não possui skos:prefLabel em português (@pt-br)
+- **`PlannedStartTimestamp`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'PlannedStartTimestamp' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`PolymericLayerMaterialType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PolymericLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`PostSlippingBendingStiffness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PostSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`PreSlippingBendingStiffness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PreSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`ProjectCode`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ProjectCode' não possui skos:definition em português (@pt-br)
+- **`ProjectDrawingRevision`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ProjectDrawingRevision' não possui skos:definition em português (@pt-br)
+- **`PullingHeadType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'PullingHeadType' não possui skos:definition em português (@pt-br)
+- **`Quantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'Quantity' não possui skos:definition em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui dcterms:accessRights
+- **`RingGasketAttribute`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:definition em inglês (@en)
+- **`RingGasketAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:definition em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui dcterms:identifier
+- **`RingGasketAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em inglês (@en)
+- **`RingGasketAttribute`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`RingGasketAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'RingGasketAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`RingGasketInnerDIameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketInnerDIameter' não possui skos:definition em português (@pt-br)
+- **`RingGasketMaterial`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketMaterial' não possui skos:definition em português (@pt-br)
+- **`RingGasketOuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketOuterDiameter' não possui skos:definition em português (@pt-br)
+- **`RingGasketPressureRating`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketPressureRating' não possui skos:definition em português (@pt-br)
+- **`RingGasketSpecification`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketSpecification' não possui skos:definition em português (@pt-br)
+- **`RingGasketStandard`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketStandard' não possui skos:definition em português (@pt-br)
+- **`RingGasketType`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RingGasketType' não possui skos:definition em português (@pt-br)
+- **`RiserConfiguration`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RiserConfiguration' não possui skos:definition em português (@pt-br)
+- **`RuptDefAlongFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RuptDefAlongFibers' não possui skos:definition em português (@pt-br)
+- **`RuptDefPerpendFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'RuptDefPerpendFibers' não possui skos:definition em português (@pt-br)
+- **`SafeWorkingLoad`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SafeWorkingLoad' não possui skos:definition em português (@pt-br)
+- **`SerialNumber`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SerialNumber' não possui skos:definition em português (@pt-br)
+- **`ShackleInnerDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleInnerDiameter' não possui skos:definition em português (@pt-br)
+- **`ShackleOpeningWidth`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleOpeningWidth' não possui skos:definition em português (@pt-br)
+- **`ShackleOuterDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleOuterDiameter' não possui skos:definition em português (@pt-br)
+- **`ShackleThickness`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ShackleThickness' não possui skos:definition em português (@pt-br)
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityCurveAttribute' não possui skos:definition em português (@pt-br)
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+- **`SolubilityCurveAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'SolubilityCurveAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`SolubilityTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui dcterms:accessRights
+- **`SolubilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:definition em inglês (@en)
+- **`SolubilityTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui dcterms:identifier
+- **`SolubilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`SolubilityTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`SolubilityTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'SolubilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`SolubilityTablePolymerState`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTablePolymerState' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableSolubilityCoefficient`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableSolubilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableTemperature`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SolubilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`SpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SpareQuantity' não possui skos:definition em português (@pt-br)
+- **`SpoolingTension`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SpoolingTension' não possui skos:definition em português (@pt-br)
+- **`StrandsTableAttribute`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableAttribute' não possui skos:definition em português (@pt-br)
+- **`StrandsTableAttribute`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'StrandsTableAttribute' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`StrandsTableColumn`** — `DOMAINATTR_ACCESSRIGHTS_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui dcterms:accessRights
+- **`StrandsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_EN`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:definition em inglês (@en)
+- **`StrandsTableColumn`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:definition em português (@pt-br)
+- **`StrandsTableColumn`** — `DOMAINATTR_IDENTIFIER_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui dcterms:identifier
+- **`StrandsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_EN`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`StrandsTableColumn`** — `DOMAINATTR_PREFLABEL_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`StrandsTableColumn`** — `DOMAINATTR_PROPERTY_MISSING`
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+  - DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`StrandsTableSpareQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableSpareQuantity' não possui skos:definition em português (@pt-br)
+- **`StrandsTableStrandsLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableStrandsLength' não possui skos:definition em português (@pt-br)
+- **`StrandsTableStrandsQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrandsTableStrandsQuantity' não possui skos:definition em português (@pt-br)
+- **`StressAtDesignPressure`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StressAtDesignPressure' não possui skos:definition em português (@pt-br)
+- **`StrIntOffPLevMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOffPLevMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOffPLevNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOffPLevNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOnNoTensMaxPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOnNoTensMaxPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StrIntOnNoTensNomPressValRefMult`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StrIntOnNoTensNomPressValRefMult' não possui skos:definition em português (@pt-br)
+- **`StructureCode`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'StructureCode' não possui skos:definition em português (@pt-br)
+- **`SubProjectId`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SubProjectId' não possui skos:definition em português (@pt-br)
+- **`SupplierProvidedMaterialName`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'SupplierProvidedMaterialName' não possui skos:definition em português (@pt-br)
+- **`TapesQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TapesQuantity' não possui skos:definition em português (@pt-br)
+- **`TechnicalNotes`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TechnicalNotes' não possui skos:definition em português (@pt-br)
+- **`TensileArmourFreeAnnulusVolume`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileArmourFreeAnnulusVolume' não possui skos:definition em português (@pt-br)
+- **`TensileWireLayAngle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileWireLayAngle' não possui skos:definition em português (@pt-br)
+- **`TensileWiresCount`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensileWiresCount' não possui skos:definition em português (@pt-br)
+- **`TensionerPadsOpeningAngle`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'TensionerPadsOpeningAngle' não possui skos:definition em português (@pt-br)
+- **`ThreadPitch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadPitch' não possui skos:definition em português (@pt-br)
+- **`ThreadsPerInch`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadsPerInch' não possui skos:definition em português (@pt-br)
+- **`ThreadStandard`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'ThreadStandard' não possui skos:definition em português (@pt-br)
+- **`UltTensStrAlongFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UltTensStrAlongFibers' não possui skos:definition em português (@pt-br)
+- **`UltTensStrPerpendFibers`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UltTensStrPerpendFibers' não possui skos:definition em português (@pt-br)
+- **`UnifilarDiagram`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UnifilarDiagram' não possui skos:definition em português (@pt-br)
+- **`UnifilarDiagramRev`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UnifilarDiagramRev' não possui skos:definition em português (@pt-br)
+- **`UpperItubeDiameter`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UpperItubeDiameter' não possui skos:definition em português (@pt-br)
+- **`UtilizationFactor`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'UtilizationFactor' não possui skos:definition em português (@pt-br)
+- **`WireRopeQuantity`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WireRopeQuantity' não possui skos:definition em português (@pt-br)
+- **`WireRopeSlingLength`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WireRopeSlingLength' não possui skos:definition em português (@pt-br)
+- **`WorkingLoadLimit`** — `DOMAINATTR_DEFINITION_MISSING_PT_BR`
+  - DomainAttribute 'WorkingLoadLimit' não possui skos:definition em português (@pt-br)
+
+### 🏗️ Issues de Classes IFC
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ❌ Erros Críticos (94)
+
+- **`AbandonmentCap`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbandonmentCap`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbrasionProtector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbrasionProtector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`BendRestrictor`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningActivity`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningActivity`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningContract`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningContract`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningDigitalProcessStep`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningDigitalProcessStep`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningEvidence`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningEvidence`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningIssue`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningIssue`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningItemCheck`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningItemCheck`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningLoopCheck`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningLoopCheck`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningPerson`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPerson`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningPreservationOrder`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPreservationOrder`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProgram`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProgram`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProject`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProject`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningResponsibleActor`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleActor`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningResponsibleGroup`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleGroup`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningTask`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningTask`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CompositeMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`DimensionsDrawing`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`DynamicUmbilicalSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ElectricalJumperConnector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalJumperConnector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ElectricalPowerJumperConnector`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalPowerJumperConnector`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Filler`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlangeAdapter`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeAdapter`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlangeConnection`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlowlineSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStab`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStab`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStabReceptacle`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStabReceptacle`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`IfcInstanciableElement`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`IfcInstanciableElement`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`IntermediateBendStiffener`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`MetallicMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`PolymericMaterial`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Project`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`Project`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`QuickConnectCoupling`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`QuickConnectCoupling`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`RigidJoint`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`RigidJoint`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`RiserSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`StaticUmbilicalSpan`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaFlexiblePipesBsddDictionary`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaFlexiblePipesBsddDictionary`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaOilField`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaUmbilical`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaUmbilicalBsddDictionary`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaUmbilicalBsddDictionary`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`ThreadedFitting`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`ThreadedFitting`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`TopBendStiffener`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalBundle`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`UmbilicalLocation`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+  - Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalPullingHead`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`UmbilicalPullingHead`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`UmbilicalStructure`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`WeldedConnection`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`WeldedConnection`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`WetChristmasTree`** — `IFC_BASE_CLASS_MISSING`
+  - Classe IFC não herda de edo:IfcInstanciableElement
+- **`WetChristmasTree`** — `IFC_REQUIRED_PROPERTY_MISSING`
+  - Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+
+### 📋 Issues Gerais (Classes/Propriedades)
+
+> **Formato de cada item:**
+> - **`Nome da Entidade`** — `CÓDIGO_DO_ERRO`
+>   - Descrição detalhada do problema encontrado
+
+#### ❌ Erros Críticos (166)
+
+- **`AdministrativeAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AdministrativeAttribute' não possui dcterms:identifier
+- **`AnyURIType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AnyURIType' não possui dcterms:identifier
+- **`ArchitecturalEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ArchitecturalEngineering' não possui dcterms:identifier
+- **`AttributeClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeClassification' não possui dcterms:identifier
+- **`AttributeDomainCategory`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeDomainCategory' não possui dcterms:identifier
+- **`AttributeNature`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeNature' não possui dcterms:identifier
+- **`AttributeScope`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeScope' não possui dcterms:identifier
+- **`AttributesGroup`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributesGroup' não possui dcterms:identifier
+- **`AttributeValueCardinality`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AttributeValueCardinality' não possui dcterms:identifier
+- **`AutomationControlEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'AutomationControlEngineering' não possui dcterms:identifier
+- **`Base64BinaryType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Base64BinaryType' não possui dcterms:identifier
+- **`BasicDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BasicDesign' não possui dcterms:identifier
+- **`BatchLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BatchLevelAttribute' não possui dcterms:identifier
+- **`BendingStiffnessCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+- **`BendingStiffnessTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendingStiffnessTableColumn' não possui dcterms:identifier
+- **`BendMomentVsShearForceCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BendMomentVsShearForceCurveAttribute' não possui dcterms:identifier
+- **`BendMomentVsShearForceTableColumn`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+- **`Biomass`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Biomass' não possui dcterms:identifier
+- **`BooleanValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'BooleanValue' não possui dcterms:identifier
+- **`CalculatedValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CalculatedValue' não possui dcterms:identifier
+- **`CivilEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CivilEngineering' não possui dcterms:identifier
+- **`Commissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Commissioning' não possui dcterms:identifier
+- **`CommissioningElement`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'CommissioningObject' não corresponde ao local name 'CommissioningElement'
+- **`ComponentElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ComponentElement' não possui dcterms:identifier
+- **`ConceptualDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConceptualDesign' não possui dcterms:identifier
+- **`ConceptualMarker`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConceptualMarker' não possui dcterms:identifier
+- **`ConstructionPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConstructionPhase' não possui dcterms:identifier
+- **`ConsumableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ConsumableElement' não possui dcterms:identifier
+- **`ContentManagementAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ContentManagementAttribute' não possui dcterms:identifier
+- **`CrushingCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingCurveAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingFrictionCoefficientTighteningAttribute' não possui dcterms:identifier
+- **`CrushingFrictionCoefficientTighteningTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTensionTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTensionTableColumn' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+- **`CrushingMaximumAllowableTighteningTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+- **`DataType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DataType' não possui dcterms:identifier
+- **`DateTimeValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DateTimeValue' não possui dcterms:identifier
+- **`DateValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DateValue' não possui dcterms:identifier
+- **`DecimalValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DecimalValue' não possui dcterms:identifier
+- **`DeclaredValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DeclaredValue' não possui dcterms:identifier
+- **`Decommissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Decommissioning' não possui dcterms:identifier
+- **`DecommissioningPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DecommissioningPhase' não possui dcterms:identifier
+- **`DesignConditionAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DesignConditionAttribute' não possui dcterms:identifier
+- **`DesignPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DesignPhase' não possui dcterms:identifier
+- **`DetailedDesign`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DetailedDesign' não possui dcterms:identifier
+- **`DiffusionCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DiffusionCurveAttribute' não possui dcterms:identifier
+- **`DiffusionTableColumn`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+- **`DimensionalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DimensionalAttribute' não possui dcterms:identifier
+- **`DimensionsTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DimensionsTableColumn' não possui dcterms:identifier
+- **`Domain`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Domain' não possui dcterms:identifier
+- **`DomainAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainAttribute' não possui dcterms:identifier
+- **`DomainClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainClassification' não possui dcterms:identifier
+- **`DomainElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DomainElement' não possui dcterms:identifier
+- **`DoubleValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DoubleValue' não possui dcterms:identifier
+- **`Downstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Downstream' não possui dcterms:identifier
+- **`DrawingDimensionsTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'DrawingDimensionsTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakMaxPressTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakMaxPressTableColumn' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+- **`EarlyLeakNomPressTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EarlyLeakNomPressTableColumn' não possui dcterms:identifier
+- **`ElectricalEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ElectricalEngineering' não possui dcterms:identifier
+- **`ElementClassification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ElementClassification' não possui dcterms:identifier
+- **`EModVsTempCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EModVsTempCurveAttribute' não possui dcterms:identifier
+- **`EModVsTempTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EModVsTempTableColumn' não possui dcterms:identifier
+- **`EnergyStorage`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EnergyStorage' não possui dcterms:identifier
+- **`EquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'EquipmentEngineering' não possui dcterms:identifier
+- **`ExternalReference`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ExternalReference' não possui dcterms:identifier
+- **`Fabrication`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Fabrication' não possui dcterms:identifier
+- **`FabricationComponent`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FabricationComponent' não possui dcterms:identifier
+- **`FEED`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FEED' não possui dcterms:identifier
+- **`FinancialAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FinancialAttribute' não possui dcterms:identifier
+- **`FlangeAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FlangeAttribute' não possui dcterms:identifier
+- **`FlexibleStructure`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FlexibleStructure' não possui dcterms:identifier
+- **`FloatValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FloatValue' não possui dcterms:identifier
+- **`FunctionalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'FunctionalAttribute' não possui dcterms:identifier
+- **`Geothermal`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Geothermal' não possui dcterms:identifier
+- **`HistoricalAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HistoricalAttribute' não possui dcterms:identifier
+- **`HVACEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HVACEngineering' não possui dcterms:identifier
+- **`HydrogenEnergy`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HydrogenEnergy' não possui dcterms:identifier
+- **`Hydropower`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Hydropower' não possui dcterms:identifier
+- **`HydrostaticPressureTestsAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'HydrostaticPressureTestsAttribute' não possui dcterms:identifier
+- **`IdentificationAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IdentificationAttribute' não possui dcterms:identifier
+- **`IfcInstanciableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IfcInstanciableElement' não possui dcterms:identifier
+- **`ImportedValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ImportedValue' não possui dcterms:identifier
+- **`Installation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Installation' não possui dcterms:identifier
+- **`InstanceLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstanceLevelAttribute' não possui dcterms:identifier
+- **`InstanciableElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstanciableElement' não possui dcterms:identifier
+- **`InstrumentationEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InstrumentationEngineering' não possui dcterms:identifier
+- **`InternalIncidentalPressureCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+- **`InternalIncidentalPressureTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+- **`IntValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'IntValue' não possui dcterms:identifier
+- **`LayerGeometryAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayerGeometryAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusCurveAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+- **`LayingMinimumRadiusTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+- **`LifecyclePhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LifecyclePhase' não possui dcterms:identifier
+- **`LocationType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LocationType' não possui dcterms:identifier
+- **`LongValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'LongValue' não possui dcterms:identifier
+- **`Maintenance`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Maintenance' não possui dcterms:identifier
+- **`MaterialManufacturerAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaterialManufacturerAttribute' não possui dcterms:identifier
+- **`MaterialType`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaterialType' não possui dcterms:identifier
+- **`MaxDesignAbsIntPresCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+- **`MaxDesignAbsIntPresTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+- **`MeasuredValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MeasuredValue' não possui dcterms:identifier
+- **`Midstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Midstream' não possui dcterms:identifier
+- **`MultiValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'MultiValue' não possui dcterms:identifier
+- **`Nuclear`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Nuclear' não possui dcterms:identifier
+- **`NuclearFuelCycle`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'NuclearFuelCycle' não possui dcterms:identifier
+- **`NuclearPowerGeneration`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'NuclearPowerGeneration' não possui dcterms:identifier
+- **`Offshore`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Offshore' não possui dcterms:identifier
+- **`OilAndGas`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'OilAndGas' não possui dcterms:identifier
+- **`Onshore`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Onshore' não possui dcterms:identifier
+- **`Operation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Operation' não possui dcterms:identifier
+- **`OperationPhase`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'OperationPhase' não possui dcterms:identifier
+- **`PackageEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PackageEquipmentEngineering' não possui dcterms:identifier
+- **`PartElement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PartElement' não possui dcterms:identifier
+- **`PerformanceAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PerformanceAttribute' não possui dcterms:identifier
+- **`PermeabilityCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+- **`PermeabilityTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PermeabilityTableColumn' não possui dcterms:identifier
+- **`PhysicalPropertyAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PhysicalPropertyAttribute' não possui dcterms:identifier
+- **`Port`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Port' não possui dcterms:identifier
+- **`PreCommissioning`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'PreCommissioning' não possui dcterms:identifier
+- **`ProcessEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessEngineering' não possui dcterms:identifier
+- **`ProcessPipeSpec`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessPipeSpec' não possui dcterms:identifier
+- **`ProcessPipingEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProcessPipingEngineering' não possui dcterms:identifier
+- **`Procurement`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Procurement' não possui dcterms:identifier
+- **`ProvenanceAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ProvenanceAttribute' não possui dcterms:identifier
+- **`Recycling`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Recycling' não possui dcterms:identifier
+- **`ReferenceDocument`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ReferenceDocument' não possui dcterms:identifier
+- **`Renewable`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Renewable' não possui dcterms:identifier
+- **`RingGasketAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'RingGasketAttribute' não possui dcterms:identifier
+- **`RotatingEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'RotatingEquipmentEngineering' não possui dcterms:identifier
+- **`SafetyLossPreventionEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SafetyLossPreventionEngineering' não possui dcterms:identifier
+- **`SingleValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SingleValue' não possui dcterms:identifier
+- **`Solar`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Solar' não possui dcterms:identifier
+- **`SolubilityCurveAttribute`** — `CLASS_IDENTIFIER_MISMATCH`
+  - dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+- **`SolubilityTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SolubilityTableColumn' não possui dcterms:identifier
+- **`SpatialAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SpatialAttribute' não possui dcterms:identifier
+- **`Specification`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Specification' não possui dcterms:identifier
+- **`StaticEquipmentEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StaticEquipmentEngineering' não possui dcterms:identifier
+- **`Status`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Status' não possui dcterms:identifier
+- **`StrandsTableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StrandsTableColumn' não possui dcterms:identifier
+- **`StringValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StringValue' não possui dcterms:identifier
+- **`StructuralEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'StructuralEngineering' não possui dcterms:identifier
+- **`SubseaEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaEngineering' não possui dcterms:identifier
+- **`SubseaFlexiblePipesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaFlexiblePipesEngineering' não possui dcterms:identifier
+- **`SubseaManifoldsEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaManifoldsEngineering' não possui dcterms:identifier
+- **`SubseaRigidPipesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaRigidPipesEngineering' não possui dcterms:identifier
+- **`SubseaRigidPipeSpec`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaRigidPipeSpec' não possui dcterms:identifier
+- **`SubseaStructuresEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaStructuresEngineering' não possui dcterms:identifier
+- **`SubseaUmbilicalsEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'SubseaUmbilicalsEngineering' não possui dcterms:identifier
+- **`Table`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Table' não possui dcterms:identifier
+- **`TableColumn`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TableColumn' não possui dcterms:identifier
+- **`TechnicalDiscipline`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TechnicalDiscipline' não possui dcterms:identifier
+- **`ThermalPower`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ThermalPower' não possui dcterms:identifier
+- **`TimeValue`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TimeValue' não possui dcterms:identifier
+- **`ToBeDeprecated`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ToBeDeprecated' não possui dcterms:identifier
+- **`Transportation`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Transportation' não possui dcterms:identifier
+- **`TypeLevelAttribute`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'TypeLevelAttribute' não possui dcterms:identifier
+- **`Upstream`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Upstream' não possui dcterms:identifier
+- **`UtilityPipingEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'UtilityPipingEngineering' não possui dcterms:identifier
+- **`ValueNature`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ValueNature' não possui dcterms:identifier
+- **`ValueOrigin`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'ValueOrigin' não possui dcterms:identifier
+- **`Version`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Version' não possui dcterms:identifier
+- **`WetChristmasTreesEngineering`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'WetChristmasTreesEngineering' não possui dcterms:identifier
+- **`Wind`** — `CLASS_IDENTIFIER_MISSING`
+  - Classe 'Wind' não possui dcterms:identifier
+
+#### ⚠️ Avisos para Revisão (697)
+
+- **`Accessory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ActuatedValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula atuada externamente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'atuada' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Externally-actuated valve'@en não corresponde ao padrão esperado. Causa: palavra 'actuated' em 'Externally-actuated' deve começar com maiúscula
+- **`ActuatedValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Externally-actuated'→'Externally-Actuated', 'valve'→'Valve'; [pt-br] Title Case: 'atuada'→'Atuada', 'externamente'→'Externamente'
+- **`Anchor`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`appliesTo`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ArmorPot`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AssemblyTorque`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Torque de montagem'@pt-br não corresponde ao padrão esperado. Causa: palavra 'montagem' deve começar com maiúscula (não é stopword)
+- **`AssemblyTorque`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'montagem'→'Montagem'
+- **`Asset`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`AttributeDomainCategory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AttributeScope`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AuxiliaryModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`AuxiliaryModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo auxiliar'@pt-br não corresponde ao padrão esperado. Causa: palavra 'auxiliar' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Auxiliary module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`AuxiliaryModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'auxiliar'→'Auxiliar'
+- **`AxialStiffnessUnderCompressionAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`AxialStiffnessUnderCompressionAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`AxialStiffnessUnderTensionAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`BatchLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`BendMomentVsShearForceTable_BendingMoment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexão'→'Flexão'
+- **`BendMomentVsShearForceTable_Condition`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexível'→'Flexível', 'dados'→'Dados', 'curva'→'Curva'
+- **`BendMomentVsShearForceTable_ShearForce`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`BendMomentVsShearForceTableBendingMoment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Momento de flexão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flexão' deve começar com maiúscula (não é stopword)
+- **`BendMomentVsShearForceTableColumn`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Bending moment vs Shear Force Table'@en não corresponde ao padrão esperado. Causa: palavra 'moment' deve começar com maiúscula (não é stopword)
+- **`BendMomentVsShearForceTableColumn`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'moment'→'Moment'
+- **`BendMomentVsShearForceTableCondition`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Condição do flexível para os dados da curva'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flexível' deve começar com maiúscula (não é stopword)
+- **`BlockValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`BlockValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula de bloqueio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Block valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`BlockValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'bloqueio'→'Bloqueio'
+- **`BOP`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Blowout preventer'@en não corresponde ao padrão esperado. Causa: palavra 'preventer' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Blowout preventer'@pt-br não corresponde ao padrão esperado. Causa: palavra 'preventer' deve começar com maiúscula (não é stopword)
+- **`BOP`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'preventer'→'Preventer'; [pt-br] Title Case: 'preventer'→'Preventer'
+- **`BsddDataDictionary`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'BSDD'→'Bsdd'; [pt-br] Title Case: 'BSDD'→'Bsdd'
+- **`BuoyancyTank`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tanque de flutuação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flutuação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Buoyancy tank'@en não corresponde ao padrão esperado. Causa: palavra 'tank' deve começar com maiúscula (não é stopword)
+- **`BuoyancyTank`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tank'→'Tank'; [pt-br] Title Case: 'flutuação'→'Flutuação'
+- **`CalculatedValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`CarcassLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`CasingHanger`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suspensor de revestimento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'revestimento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Casing hanger'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+- **`CasingHanger`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger'; [pt-br] Title Case: 'revestimento'→'Revestimento'
+- **`ChainSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tramo de corrente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'corrente' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Chain segment'@en não corresponde ao padrão esperado. Causa: palavra 'segment' deve começar com maiúscula (não é stopword)
+- **`ChainSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'segment'→'Segment'; [pt-br] Title Case: 'corrente'→'Corrente'
+- **`CheckValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChemicalInjectionUnit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChemicalInjectionUnit`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Unidade de injeção de químicos'@pt-br não corresponde ao padrão esperado. Causa: palavra 'injeção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Chemical injection unit'@en não corresponde ao padrão esperado. Causa: palavra 'injection' deve começar com maiúscula (não é stopword)
+- **`ChemicalInjectionUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'injection'→'Injection', 'unit'→'Unit'; [pt-br] Title Case: 'injeção'→'Injeção', 'químicos'→'Químicos'
+- **`ChokeModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ChokeModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de choke'@pt-br não corresponde ao padrão esperado. Causa: palavra 'choke' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Choke module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`ChokeModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'choke'→'Choke'
+- **`ChokeValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ClampInternalDiameter`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ClampInternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno do clamp'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`ClampInternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno', 'clamp'→'Clamp'
+- **`Component`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ComponentDevice`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ConnectionModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ConnectionModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Connection module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`ConnectionModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão'
+- **`CreatorId`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Creator Id'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`CreatorId`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID
+- **`CriticalCurvatureOfSlipping`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Curvatura crítica de escorregamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'crítica' deve começar com maiúscula (não é stopword)
+- **`CriticalCurvatureOfSlipping`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'crítica'→'Crítica', 'escorregamento'→'Escorregamento'
+- **`CrossoverModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`CrossoverModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cross-over module'@en não corresponde ao padrão esperado. Causa: palavra 'over' em 'Cross-over' deve começar com maiúscula
+  - skos:prefLabel 'Módulo de cross-over'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cross' em 'cross-over' deve começar com maiúscula
+- **`CrossoverModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Cross-over'→'Cross-Over', 'module'→'Module'; [pt-br] Title Case: 'cross-over'→'Cross-Over'
+- **`DeclaredValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DeploymentAccessory`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deployment accessory'@en não corresponde ao padrão esperado. Causa: palavra 'accessory' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Acessório de lançamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lançamento' deve começar com maiúscula (não é stopword)
+- **`DeploymentAccessory`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'lançamento'→'Lançamento'
+- **`DiffusionTable_DiffusionCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'difusão'→'Difusão'
+- **`DiffusionTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`DiffusionTable_PolymerState`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DiffusionTableColumn`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DiffusionTableDiffusionCoefficient`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Coeficiente de difusão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'difusão' deve começar com maiúscula (não é stopword)
+- **`DimensionalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DimensioningCriteria`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DistributionModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`DistributionModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de distribuição'@pt-br não corresponde ao padrão esperado. Causa: palavra 'distribuição' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Distribution module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+- **`DistributionModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'distribuição'→'Distribuição'
+- **`DragAnchor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Drag anchor'@en não corresponde ao padrão esperado. Causa: palavra 'anchor' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Âncora de arrasto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'arrasto' deve começar com maiúscula (não é stopword)
+- **`DragAnchor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'anchor'→'Anchor'; [pt-br] Title Case: 'arrasto'→'Arrasto'
+- **`DrawingDimensionsTable_DimensionDescription`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DrawingDimensionsTable_DimensionName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'dimensão'→'Dimensão'
+- **`DrawingDimensionsTable_DimensionValue`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'dimensão'→'Dimensão'
+- **`DrawingDimensionsTableDimensionName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome da dimensão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dimensão' deve começar com maiúscula (não é stopword)
+- **`DrawingDimensionsTableDimensionValue`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Valor da dimensão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dimensão' deve começar com maiúscula (não é stopword)
+- **`DynamicUmbilicalSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`DynamicUmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho dinâmico de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'dinâmico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Dynamic umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`DynamicUmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'umbilical'→'Umbilical', 'span'→'Span'; [pt-br] Title Case: 'dinâmico'→'Dinâmico', 'umbilical'→'Umbilical'
+- **`EarlyLeakMaxPressTable_Press`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressIntValStrat`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_PressValRefMult`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakMaxPressTable_TensLimit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_Press`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressIntValStrat`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_TensLimit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ElasticityModulusAt23Degrees`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ElasticityModulusAt23Degrees`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`ElectricalCable`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo elétrico', 'Cabo Elétrico']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Electrical cable', 'Electrical Cable']
+- **`ElectricalCable`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cabo elétrico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical cable'@en não corresponde ao padrão esperado. Causa: palavra 'cable' deve começar com maiúscula (não é stopword)
+- **`ElectricalCable`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'cable'→'Cable'; [pt-br] Title Case: 'elétrico'→'Elétrico'
+- **`ElectricalJumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ElectricalJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Jumper elétrico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+- **`ElectricalJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'elétrico'→'Elétrico'
+- **`ElectricalPowerJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Jumper elétrico de potência'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elétrico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Electrical power jumper'@en não corresponde ao padrão esperado. Causa: palavra 'power' deve começar com maiúscula (não é stopword)
+- **`ElectricalPowerJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'power'→'Power', 'jumper'→'Jumper'; [pt-br] Title Case: 'elétrico'→'Elétrico', 'potência'→'Potência'
+- **`ElectronicDevice`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Electronic device'@en não corresponde ao padrão esperado. Causa: palavra 'device' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Dispositivo eletrônico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'eletrônico' deve começar com maiúscula (não é stopword)
+- **`ElectronicDevice`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'device'→'Device'; [pt-br] Title Case: 'eletrônico'→'Eletrônico'
+- **`EModVsTempTable_ElasticityModulus`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`EndFitting`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'End fitting'@en não corresponde ao padrão esperado. Causa: palavra 'fitting' deve começar com maiúscula (não é stopword)
+- **`EndFitting`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'fitting'→'Fitting'
+- **`Equipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`EquipmentLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ErosionalVelocity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Velocidade erosional'@pt-br não corresponde ao padrão esperado. Causa: palavra 'erosional' deve começar com maiúscula (não é stopword)
+- **`ErosionalVelocity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'erosional'→'Erosional'
+- **`ExecutiveProjectRevision`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ExternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`ExternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo'
+- **`FatMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FatNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`FiberRopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tramo de cabo de fibra'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Fiber rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'rope' deve começar com maiúscula (não é stopword)
+- **`FiberRopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'rope'→'Rope', 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo', 'fibra'→'Fibra'
+- **`Filler`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Preenchimento', 'Enchimento']
+- **`FinancialAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlexibleStructure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FlexibleStructure'→'Flexiblestructure'
+- **`FloatingProductionUnit`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'FPSO'@en não segue Title Case
+  - skos:altLabel 'FPU'@en não segue Title Case
+  - skos:altLabel 'FLNG'@en não segue Title Case
+- **`FloatingProductionUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(UEP)'→'(uep)'
+- **`FlowbaseRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de BAP'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flowbase running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+- **`FlowbaseRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`FlowConnector`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Equipamento de controle de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow control equipment'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`FlowControlEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'equipment'→'Equipment'; [pt-br] Title Case: 'controle'→'Controle', 'fluxo'→'Fluxo'
+- **`FlowControlModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowControlModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de controle de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow control module'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`FlowControlModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'fluxo'→'Fluxo'
+- **`FlowLineMandrel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowLineMandrel`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Mandril das linhas de fluxo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linhas' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flow line mandrel'@en não corresponde ao padrão esperado. Causa: palavra 'line' deve começar com maiúscula (não é stopword)
+- **`FlowLineMandrel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'line'→'Line', 'mandrel'→'Mandrel'; [pt-br] Title Case: 'linhas'→'Linhas', 'fluxo'→'Fluxo'
+- **`FlowlineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FlowlineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho flowline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flowline' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Flowline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'flowline'→'Flowline'
+- **`FrictionCoefBetweenPipeAndTensioner`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'And'→'and'
+- **`FrictionCoefficientTighteningTable_CoefficientOfFriction`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'
+- **`FrictionCoefficientTighteningTable_TighteningPerTrack`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'; [pt-br] Title Case: 'lagarta'→'Lagarta'
+- **`FrictionCoefficientTighteningTableTighteningPerTrack`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Aperto por lagarta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lagarta' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estrutura inferior de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inferior' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'FSHR lower assembly'@en não corresponde ao padrão esperado. Causa: palavra 'lower' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'lower'→'Lower', 'assembly'→'Assembly'; [pt-br] Title Case: 'inferior'→'Inferior', 'RHAS'→'Rhas'
+- **`FSHRUpperAssembly`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estrutura de topo de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'topo' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'FSHR upper assembly'@en não corresponde ao padrão esperado. Causa: palavra 'upper' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'upper'→'Upper', 'assembly'→'Assembly'; [pt-br] Title Case: 'topo'→'Topo', 'RHAS'→'Rhas'
+- **`FunctionalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`FunctionLine`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Linha Funcional', 'Linha de função']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Function Line', 'Function line']
+- **`FunctionLine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Function line'@en não corresponde ao padrão esperado. Causa: palavra 'line' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Linha de função'@pt-br não corresponde ao padrão esperado. Causa: palavra 'função' deve começar com maiúscula (não é stopword)
+- **`FunctionLine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'line'→'Line'; [pt-br] Title Case: 'função'→'Função'
+- **`GroovePoint`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`GrooveSupportSurfaceDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro da superfície de apoio do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'superfície' deve começar com maiúscula (não é stopword)
+- **`GrooveSupportSurfaceDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'superfície'→'Superfície', 'apoio'→'Apoio', 'acessório'→'Acessório'
+- **`GrooveSupportSurfaceFilletRadius`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`GrooveSupportSurfaceFilletRadius`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(Superfície'→'(superfície'
+- **`GroutBag`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Grout bag'@en não corresponde ao padrão esperado. Causa: palavra 'bag' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Grout bag'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bag' deve começar com maiúscula (não é stopword)
+- **`GroutBag`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'bag'→'Bag'; [pt-br] Title Case: 'bag'→'Bag'
+- **`GrvCntrPntDstnceFrmTermFlange`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`GrvCntrPntDstnceFrmTermFlange`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'From'→'from'
+- **`GuideBase`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Base-guia'@pt-br não corresponde ao padrão esperado. Causa: palavra 'guia' em 'Base-guia' deve começar com maiúscula
+  - skos:prefLabel 'Guide base'@en não corresponde ao padrão esperado. Causa: palavra 'base' deve começar com maiúscula (não é stopword)
+- **`GuideBase`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'Base-guia'→'Base-Guia'
+- **`HangOffCollar`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Hang-Off Device'@en não segue Title Case
+  - skos:altLabel 'Hang-Off Clamp'@en não segue Title Case
+- **`HangOffCollar`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeCategory`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeGroup`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasAttributeScope`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasDiscipline`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasDomain`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLifecycleCreationPhase`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLifecycleUsagePhase`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLocationType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HasModaSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'MODA'→'Moda'
+- **`hasSubDomain`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HasThermalInsulation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Possui isolamento térmico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'isolamento' deve começar com maiúscula (não é stopword)
+- **`HasThermalInsulation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'isolamento'→'Isolamento', 'térmico'→'Térmico'
+- **`hasValueCardinality`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão horizontal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Horizontal connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`HCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'connection'→'Connection', 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão', 'horizontal'→'Horizontal'
+- **`HCRHose`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`HCRHose`** — `MULTIPLE_DEFINITION`
+  - Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`HistoricalAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HPHousing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'High-pressure housing'@en não corresponde ao padrão esperado. Causa: palavra 'pressure' em 'High-pressure' deve começar com maiúscula
+  - skos:prefLabel 'Alojador de alta pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'alta' deve começar com maiúscula (não é stopword)
+- **`HPHousing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'High-pressure'→'High-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'alta'→'Alta', 'pressão'→'Pressão'
+- **`Hub`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubBlockCap`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubBlockCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hub block cap'@en não corresponde ao padrão esperado. Causa: palavra 'block' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Capa de bloqueio de hub'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+- **`HubBlockCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'block'→'Block', 'cap'→'Cap'; [pt-br] Title Case: 'bloqueio'→'Bloqueio', 'hub'→'Hub'
+- **`HubProtectionCap`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HubProtectionCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Capa de proteção de hub'@pt-br não corresponde ao padrão esperado. Causa: palavra 'proteção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Hub protection cap'@en não corresponde ao padrão esperado. Causa: palavra 'protection' deve começar com maiúscula (não é stopword)
+- **`HubProtectionCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'protection'→'Protection', 'cap'→'Cap'; [pt-br] Title Case: 'proteção'→'Proteção', 'hub'→'Hub'
+- **`HydraulicJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hydraulic jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper hidráulico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'hidráulico' deve começar com maiúscula (não é stopword)
+- **`HydraulicJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'hidráulico'→'Hidráulico'
+- **`HydraulicPowerUnit`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HydraulicPowerUnit`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hydraulic power unit'@en não corresponde ao padrão esperado. Causa: palavra 'power' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Unidade de potência hidráulica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'potência' deve começar com maiúscula (não é stopword)
+- **`HydraulicPowerUnit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'power'→'Power', 'unit'→'Unit'; [pt-br] Title Case: 'potência'→'Potência', 'hidráulica'→'Hidráulica'
+- **`HydrostaticCollapseAbsPressDry`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`IdentificationAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IdInUnifilarDiagram`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Id In Unifilar Diagram'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`IdInUnifilarDiagram`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID
+- **`ifc_equivalentClass`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ifc_objectType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ifc_predefinedType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ImportedValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IMUX`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IMUX`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'IWIS multiplexer'@en não corresponde ao padrão esperado. Causa: palavra 'multiplexer' deve começar com maiúscula (não é stopword)
+- **`IMUX`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'IWIS'→'Iwis', 'multiplexer'→'Multiplexer'; [pt-br] Title Case: 'IWIS'→'Iwis'
+- **`InlineT`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`InlineT`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel ''T' em linha'@pt-br não corresponde ao padrão esperado. Causa: formato não corresponde ao padrão Title Case esperado
+  - skos:prefLabel 'Inline tee'@en não corresponde ao padrão esperado. Causa: palavra 'tee' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel ''T' em linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+- **`InlineT`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tee'→'Tee'; [pt-br] Title Case: ''T''→''t'', 'linha'→'Linha'
+- **`InlineValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula inline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inline' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Inline valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`InlineValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'inline'→'Inline'
+- **`InlineY`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`InlineY`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel ''Y' em linha'@pt-br não corresponde ao padrão esperado. Causa: formato não corresponde ao padrão Title Case esperado
+  - skos:prefLabel 'Inline wye'@en não corresponde ao padrão esperado. Causa: palavra 'wye' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel ''Y' em linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+- **`InlineY`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'wye'→'Wye'; [pt-br] Title Case: ''Y''→''y'', 'linha'→'Linha'
+- **`InstanceLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`IntegratedPipe`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Integrated pipe', 'Integrated Pipe']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubo Integrado', 'Duto integrado']
+- **`IntegratedPipe`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Integrated pipe'@en não corresponde ao padrão esperado. Causa: palavra 'pipe' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Duto integrado'@pt-br não corresponde ao padrão esperado. Causa: palavra 'integrado' deve começar com maiúscula (não é stopword)
+- **`IntegratedPipe`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pipe'→'Pipe'; [pt-br] Title Case: 'integrado'→'Integrado'
+- **`InternalDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`InternalDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno'
+- **`InternalIncidentalPressureTable_PositionReference`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`InternalIncidentalPressureTable_VPosWRTWaterline`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with', 'To'→'to'; [pt-br] Title Case: 'D'Água'→'d'Água'
+- **`InternalVolume`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Volume interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`InternalVolume`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno'
+- **`IsSpare`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'É um sobressalente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sobressalente' deve começar com maiúscula (não é stopword)
+- **`IsSpare`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'sobressalente'→'Sobressalente'
+- **`ITube`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'I-tube'@pt-br não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+  - skos:prefLabel 'I-tube'@en não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+- **`ITube`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: TUBE; [pt-br] acrônimos: TUBE
+- **`Jumper`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Flying lead'@en não segue Title Case
+- **`Jumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`Jumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Signal/control jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper de controle/sinal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle/sinal' deve começar com maiúscula (não é stopword)
+- **`Jumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'controle/sinal'→'Controle/sinal'
+- **`LayerAnnular`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerAnnularType`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerContinuity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayerGeometryInertiaY`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Inércia  Y da Geometria da Camada'@pt-br não corresponde ao padrão esperado. Causa: contém espaços múltiplos consecutivos
+- **`LayerGeometryInertiaY`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] formatação de texto
+- **`LayerThickness`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Espessura da camada'@pt-br não corresponde ao padrão esperado. Causa: palavra 'camada' deve começar com maiúscula (não é stopword)
+- **`LayerThickness`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'camada'→'Camada'
+- **`LayingMinimumRadiusTable_AbsoluteExternalPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'absoluta'→'Absoluta'
+- **`LayingMinimumRadiusTable_AbsoluteInternalPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interna'→'Interna', 'absoluta'→'Absoluta'
+- **`LayingMinimumRadiusTable_SectionSupportedByRigidSupport`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'By'→'by'
+- **`LayingMinimumRadiusTable_TensileArmourAnnulusCondition`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LayingMinimumRadiusTableAbsoluteExternalPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressão Externa absoluta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'absoluta' deve começar com maiúscula (não é stopword)
+- **`LayingMinimumRadiusTableAbsoluteInternalPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressão interna absoluta'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interna' deve começar com maiúscula (não é stopword)
+- **`LimpTorsionalStiffnessAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LimpTorsionalStiffnessAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`LinearLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LinearObject`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`LineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho de linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'linha' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Line span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`LineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'linha'→'Linha'
+- **`LineTermination`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LineTerminationModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de terminação de linha'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Line termination module'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+- **`LineTerminationModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'linha'→'Linha'
+- **`Location`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LogicalElement`** — `MULTIPLE_DEFINITION`
+  - Classe tem 2 skos:definition para idioma 'pt-br' (máximo: 1)
+  - Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`LogicCap`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Logic cap'@en não corresponde ao padrão esperado. Causa: palavra 'cap' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Capa lógica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'lógica' deve começar com maiúscula (não é stopword)
+- **`LogicCap`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'cap'→'Cap'; [pt-br] Title Case: 'lógica'→'Lógica'
+- **`LongTermFloatDensity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`LPHousing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Alojador de baixa pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'baixa' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Low-pressure housing'@en não corresponde ao padrão esperado. Causa: palavra 'pressure' em 'Low-pressure' deve começar com maiúscula
+- **`LPHousing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Low-pressure'→'Low-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'baixa'→'Baixa', 'pressão'→'Pressão'
+- **`LubricantFrictionFactor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Fator de atrito do lubrificante'@pt-br não corresponde ao padrão esperado. Causa: palavra 'atrito' deve começar com maiúscula (não é stopword)
+- **`LubricantFrictionFactor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'atrito'→'Atrito', 'lubrificante'→'Lubrificante'
+- **`Manifold`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ManufacturerDefinedMaterialName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome do material conforme designado pelo fabricante do item final'@pt-br não corresponde ao padrão esperado. Causa: palavra 'material' deve começar com maiúscula (não é stopword)
+- **`ManufacturerDefinedMaterialName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'material'→'Material', 'conforme'→'Conforme', 'designado'→'Designado'
+- **`MasterControlStation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MasterControlStation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Master control station'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Estação de controle mestra'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+- **`MasterControlStation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'station'→'Station'; [pt-br] Title Case: 'controle'→'Controle', 'mestra'→'Mestra'
+- **`MaterialRequest`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(RM)'→'(rm)'
+- **`MaterialRequestRev`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: '(RM)'→'(rm)'
+- **`MaterialSupplierName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome da empresa responsável por fornecer o material'@pt-br não corresponde ao padrão esperado. Causa: palavra 'empresa' deve começar com maiúscula (não é stopword)
+- **`MaterialSupplierName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'empresa'→'Empresa', 'responsável'→'Responsável', 'fornecer'→'Fornecer'
+- **`Mattress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MaxDesignAbsIntPresTable_PositionReference`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MaxDesignAbsIntPresTable_VPosWRTWaterline`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with', 'To'→'to'; [pt-br] Title Case: 'D'Água'→'d'Água'
+- **`MaxDynamicLoad`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(MDL)'→'(mdl)'; [pt-br] Title Case: '(MDL)'→'(mdl)'
+- **`MaximumAllowableTensileForStraightLine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'For'→'for'
+- **`MaximumAllowableTighteningTable_TighteningPerTrack`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'
+- **`MaximumAmbientTemperature`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Temperatura ambiente máxima'@pt-br não corresponde ao padrão esperado. Causa: palavra 'ambiente' deve começar com maiúscula (não é stopword)
+- **`MaximumAmbientTemperature`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'ambiente'→'Ambiente', 'máxima'→'Máxima'
+- **`MaximumThermalExchangeCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(TEC)'→'(tec)'; [pt-br] Title Case: '(TEC)'→'(tec)'
+- **`MaxPermissibleDeformationDynamic`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MaxPermissibleDeformationStatic`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`MeasuredValue`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MetallicStrandLength`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`MetallicTubing`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubulação Metálica', 'Tubulação metálica']
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Metallic tubing', 'Metallic Tubing']
+- **`MetallicTubing`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Metallic tubing'@en não corresponde ao padrão esperado. Causa: palavra 'tubing' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tubulação metálica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'metálica' deve começar com maiúscula (não é stopword)
+- **`MetallicTubing`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tubing'→'Tubing'; [pt-br] Title Case: 'metálica'→'Metálica'
+- **`MinimumBendingRadiusForStorage`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'For'→'for'
+- **`MinimumTemperature`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`MinimumThermalExchangeCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(TEC)'→'(tec)'; [pt-br] Title Case: '(TEC)'→'(tec)'
+- **`ModulusOfElasticity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de elasticidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'elasticidade' deve começar com maiúscula (não é stopword)
+- **`ModulusOfElasticity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'elasticidade'→'Elasticidade'
+- **`NumberOfChokeValves`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfChokeValves`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número de válvulas de estrangulamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'válvulas' deve começar com maiúscula (não é stopword)
+- **`NumberOfChokeValves`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'válvulas'→'Válvulas', 'estrangulamento'→'Estrangulamento'
+- **`NumberOfRemoteProcessIsolationValves`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfRemoteProcessIsolationValves`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número de válvulas de isolamento de processo remoto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'válvulas' deve começar com maiúscula (não é stopword)
+- **`NumberOfRemoteProcessIsolationValves`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Of'→'of'; [pt-br] Title Case: 'válvulas'→'Válvulas', 'isolamento'→'Isolamento', 'processo'→'Processo'
+- **`OffLeakPLevMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OffLeakPLevNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`OpenReceptacle`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Open receptacle'@en não corresponde ao padrão esperado. Causa: palavra 'receptacle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Receptáculo aberto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'aberto' deve começar com maiúscula (não é stopword)
+- **`OpenReceptacle`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'receptacle'→'Receptacle'; [pt-br] Title Case: 'aberto'→'Aberto'
+- **`OpticalFiberCable`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Optical Fiber Cable', 'Optical fiber cable']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo de Fibra Óptica', 'Cabo de fibra ótica']
+- **`OpticalFiberCable`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Optical fiber cable'@en não corresponde ao padrão esperado. Causa: palavra 'fiber' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Cabo de fibra ótica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'fibra' deve começar com maiúscula (não é stopword)
+- **`OpticalFiberCable`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'fiber'→'Fiber', 'cable'→'Cable'; [pt-br] Title Case: 'fibra'→'Fibra', 'ótica'→'Ótica'
+- **`OuterDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`OuterDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo'
+- **`PartNumber`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Número da peça do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'peça' deve começar com maiúscula (não é stopword)
+- **`PartNumber`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'peça'→'Peça', 'acessório'→'Acessório'
+- **`PerformanceAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PermeabilityCurveAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PermeabilityTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`PermeabilityTable_PolymerState`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PhysicalConnection`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PhysicalPropertyAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`Piggable`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipelineSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipelineSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pipeline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho de duto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'duto' deve começar com maiúscula (não é stopword)
+- **`PipelineSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'duto'→'Duto'
+- **`PipeSectionApplication`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PipeSegment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PipingSpool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PipingSpool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Piping spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho de tubulação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'tubulação' deve começar com maiúscula (não é stopword)
+- **`PipingSpool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'spool'→'Spool'; [pt-br] Title Case: 'tubulação'→'Tubulação'
+- **`PlasticHose`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Mangueira plástica', 'Mangueira Plástica']
+- **`PlasticHose`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Mangueira plástica'@pt-br não corresponde ao padrão esperado. Causa: palavra 'plástica' deve começar com maiúscula (não é stopword)
+- **`PlasticHose`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'plástica'→'Plástica'
+- **`PLEM`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PLET`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PointLocation`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PoissonRatioAt23Degrees`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PoissonRatioAt23Degrees`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`PowerMachine`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PowerMachine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Máquina de potência'@pt-br não corresponde ao padrão esperado. Causa: palavra 'potência' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Power machine'@en não corresponde ao padrão esperado. Causa: palavra 'machine' deve começar com maiúscula (não é stopword)
+- **`PowerMachine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'machine'→'Machine'; [pt-br] Title Case: 'potência'→'Potência'
+- **`PressureComponent`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Component de contenção de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'contenção' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure-containing component'@en não corresponde ao padrão esperado. Causa: palavra 'containing' em 'Pressure-containing' deve começar com maiúscula
+- **`PressureComponent`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Pressure-containing'→'Pressure-Containing', 'component'→'Component'; [pt-br] Title Case: 'contenção'→'Contenção', 'pressão'→'Pressão'
+- **`PressureEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PressureEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pressure-containing equipment'@en não corresponde ao padrão esperado. Causa: palavra 'containing' em 'Pressure-containing' deve começar com maiúscula
+  - skos:prefLabel 'Equipamentos de contenção de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'contenção' deve começar com maiúscula (não é stopword)
+- **`PressureEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Pressure-containing'→'Pressure-Containing', 'equipment'→'Equipment'; [pt-br] Title Case: 'contenção'→'Contenção', 'pressão'→'Pressão'
+- **`PressureSensor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Sensor de pressão'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure sensor'@en não corresponde ao padrão esperado. Causa: palavra 'sensor' deve começar com maiúscula (não é stopword)
+- **`PressureSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'sensor'→'Sensor'; [pt-br] Title Case: 'pressão'→'Pressão'
+- **`ProcessingModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ProcessingModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Processing module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo de processamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'processamento' deve começar com maiúscula (não é stopword)
+- **`ProcessingModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'processamento'→'Processamento'
+- **`ProjectAcronym`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ProjectCode`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Código Identificador único do projeto da operadora da Interligação Submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'único' deve começar com maiúscula (não é stopword)
+- **`ProjectCode`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'único'→'Único', 'projeto'→'Projeto', 'operadora'→'Operadora'
+- **`ProjectDrawingCode`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`PullInCollar`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Pull-In Clamp'@en não segue Title Case
+- **`PumpingModule`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`PumpingModule`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Pumping module'@en não corresponde ao padrão esperado. Causa: palavra 'module' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo de bombeamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bombeamento' deve começar com maiúscula (não é stopword)
+- **`PumpingModule`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'module'→'Module'; [pt-br] Title Case: 'bombeamento'→'Bombeamento'
+- **`QuickDisconnectionTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de desconexão rápida'@pt-br não corresponde ao padrão esperado. Causa: palavra 'desconexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Quick disconnection tool'@en não corresponde ao padrão esperado. Causa: palavra 'disconnection' deve começar com maiúscula (não é stopword)
+- **`QuickDisconnectionTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'disconnection'→'Disconnection', 'tool'→'Tool'; [pt-br] Title Case: 'desconexão'→'Desconexão', 'rápida'→'Rápida'
+- **`ReliefValve`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ReliefValve`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Válvula de alívio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'alívio' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Relief valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`ReliefValve`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'alívio'→'Alívio'
+- **`RigidJumper`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RigidJumper`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Rigid jumper'@en não corresponde ao padrão esperado. Causa: palavra 'jumper' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Jumper rígido'@pt-br não corresponde ao padrão esperado. Causa: palavra 'rígido' deve começar com maiúscula (não é stopword)
+- **`RigidJumper`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'rígido'→'Rígido'
+- **`RingGasket`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'O-Ring'@en não segue Title Case
+  - skos:altLabel ' Seal Ring'@en não segue Title Case
+- **`RiserBalcony`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`RiserSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RiserSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho riser'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Riser span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`RiserSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'riser'→'Riser'
+- **`RiserSupport`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RiserSupport`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suporte de riser'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Riser support'@en não corresponde ao padrão esperado. Causa: palavra 'support' deve começar com maiúscula (não é stopword)
+- **`RiserSupport`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'support'→'Support'; [pt-br] Title Case: 'riser'→'Riser'
+- **`RiserSupportBuoy`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Riser support buoy'@en não corresponde ao padrão esperado. Causa: palavra 'support' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Bóia de sustentação de risers'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sustentação' deve começar com maiúscula (não é stopword)
+- **`RiserSupportBuoy`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'support'→'Support', 'buoy'→'Buoy'; [pt-br] Title Case: 'sustentação'→'Sustentação', 'risers'→'Risers'
+- **`RoboticActuator`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RoboticActuator`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Atuador robótico'@pt-br não corresponde ao padrão esperado. Causa: palavra 'robótico' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Robotic actuator'@en não corresponde ao padrão esperado. Causa: palavra 'actuator' deve começar com maiúscula (não é stopword)
+- **`RoboticActuator`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'actuator'→'Actuator'; [pt-br] Title Case: 'robótico'→'Robótico'
+- **`RopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'segment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tramo de cabo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+- **`RopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo'
+- **`RotatingMachine`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Máquina rotativa'@pt-br não corresponde ao padrão esperado. Causa: palavra 'rotativa' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Rotating machine'@en não corresponde ao padrão esperado. Causa: palavra 'machine' deve começar com maiúscula (não é stopword)
+- **`RotatingMachine`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'machine'→'Machine'; [pt-br] Title Case: 'rotativa'→'Rotativa'
+- **`ROVTool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ROVTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'ROV tool'@en não corresponde ao padrão esperado. Causa: palavra 'tool' deve começar com maiúscula (não é stopword)
+- **`ROVTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tool'→'Tool'
+- **`RunningTool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`RunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta submarina de instalação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'submarina' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Subsea running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+- **`RunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'submarina'→'Submarina', 'instalação'→'Instalação'
+- **`RunOfRiver`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Hidrelétrica a Fio d’Água'@pt-br não corresponde ao padrão esperado. Causa: contém caracteres inválidos: ['’']
+  - skos:prefLabel 'Hidrelétrica a Fio d’Água'@pt-br não corresponde ao padrão esperado. Causa: palavra 'd’Água' deve começar com maiúscula (não é stopword)
+- **`RunOfRiver`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Run-of-River'→'Run-Of-River'; [pt-br] Title Case: 'd’Água'→'D’água'
+- **`RuptDefAlongFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deformação de Ruptura longitudinalmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'longitudinalmente' deve começar com maiúscula (não é stopword)
+- **`RuptDefAlongFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'longitudinalmente'→'Longitudinalmente', 'fibras'→'Fibras'
+- **`RuptDefPerpendFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Deformação de Ruptura perpendicularmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'perpendicularmente' deve começar com maiúscula (não é stopword)
+- **`RuptDefPerpendFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'To'→'to'; [pt-br] Title Case: 'perpendicularmente'→'Perpendicularmente', 'fibras'→'Fibras'
+- **`SandDetector`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Detector de areia'@pt-br não corresponde ao padrão esperado. Causa: palavra 'areia' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Sand detector'@en não corresponde ao padrão esperado. Causa: palavra 'detector' deve começar com maiúscula (não é stopword)
+- **`SandDetector`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'detector'→'Detector'; [pt-br] Title Case: 'areia'→'Areia'
+- **`SCM`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de controle submarino'@pt-br não corresponde ao padrão esperado. Causa: palavra 'controle' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Subsea control module'@en não corresponde ao padrão esperado. Causa: palavra 'control' deve começar com maiúscula (não é stopword)
+- **`SCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'submarino'→'Submarino'
+- **`SCMMB`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SCMMB`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'SCM mounting base'@en não corresponde ao padrão esperado. Causa: palavra 'mounting' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Base de montagem de SCM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'montagem' deve começar com maiúscula (não é stopword)
+- **`SCMMB`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'mounting'→'Mounting', 'base'→'Base'; [pt-br] Title Case: 'montagem'→'Montagem'
+- **`SCMRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'SCM running tool'@en não corresponde ao padrão esperado. Causa: palavra 'running' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Ferramenta de instalação de SCM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+- **`SCMRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`SDU`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Subsea distribution unit'@en não corresponde ao padrão esperado. Causa: palavra 'distribution' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Unidade de distribuição submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'distribuição' deve começar com maiúscula (não é stopword)
+- **`SDU`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'distribution'→'Distribution', 'unit'→'Unit'; [pt-br] Title Case: 'distribuição'→'Distribuição', 'submarina'→'Submarina'
+- **`SEM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Subsea electronic module'@en não corresponde ao padrão esperado. Causa: palavra 'electronic' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Módulo eletrônico submarino'@pt-br não corresponde ao padrão esperado. Causa: palavra 'eletrônico' deve começar com maiúscula (não é stopword)
+- **`SEM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'electronic'→'Electronic', 'module'→'Module'; [pt-br] Title Case: 'eletrônico'→'Eletrônico', 'submarino'→'Submarino'
+- **`SeparatorVessel`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Seaparator vessel'@en não corresponde ao padrão esperado. Causa: palavra 'vessel' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Vaso separador'@pt-br não corresponde ao padrão esperado. Causa: palavra 'separador' deve começar com maiúscula (não é stopword)
+- **`SeparatorVessel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'vessel'→'Vessel'; [pt-br] Title Case: 'separador'→'Separador'
+- **`Service`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`Shackle`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'D-Shackle'@en não segue Title Case
+  - skos:altLabel 'U-Bolt'@en não segue Title Case
+- **`Shackle`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ShackleInnerDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro interno da furação do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`ShackleInnerDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'interno'→'Interno', 'furação'→'Furação', 'olhal'→'Olhal'
+- **`ShackleOuterDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro externo do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'externo' deve começar com maiúscula (não é stopword)
+- **`ShackleOuterDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'externo'→'Externo', 'olhal'→'Olhal'
+- **`ShackleThickness`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Espessura do olhal'@pt-br não corresponde ao padrão esperado. Causa: palavra 'olhal' deve começar com maiúscula (não é stopword)
+- **`ShackleThickness`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'olhal'→'Olhal'
+- **`ShearableRiserJoint`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Junta riser cisalhável'@pt-br não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Shearable riser joint'@en não corresponde ao padrão esperado. Causa: palavra 'riser' deve começar com maiúscula (não é stopword)
+- **`ShearableRiserJoint`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'riser'→'Riser', 'joint'→'Joint'; [pt-br] Title Case: 'riser'→'Riser', 'cisalhável'→'Cisalhável'
+- **`Socket`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SolidLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SolubilityCurveAttribute`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(Specific'→'(specific'; [pt-br] Title Case: '(Específica'→'(específica'
+- **`SolubilityTable_MoleculeIdentifier`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final; acrônimos em minúsculo: CH4, CO2, H2O, H2S
+- **`SolubilityTable_SolubilityCoefficient`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'solubilidade'→'Solubilidade'
+- **`SolubilityTableSolubilityCoefficient`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Coeficiente de solubilidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'solubilidade' deve começar com maiúscula (não é stopword)
+- **`SpecialRequirements`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpecificHeatCapacity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpecificWeight`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`SpliceBox`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Splice box'@en não corresponde ao padrão esperado. Causa: palavra 'box' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Caixa de emenda'@pt-br não corresponde ao padrão esperado. Causa: palavra 'emenda' deve começar com maiúscula (não é stopword)
+- **`SpliceBox`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'box'→'Box'; [pt-br] Title Case: 'emenda'→'Emenda'
+- **`StaticUmbilicalSpan`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StaticUmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Static umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Trecho estático de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estático' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'umbilical'→'Umbilical', 'span'→'Span'; [pt-br] Title Case: 'estático'→'Estático', 'umbilical'→'Umbilical'
+- **`StiffTorsionalStiffnessAtSeaLevel`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StiffTorsionalStiffnessAtSeaLevel`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StorageAccessory`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Storage/transportation accessory'@en não corresponde ao padrão esperado. Causa: palavra 'accessory' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Acessório de armazenamento/transporte'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento/transporte' deve começar com maiúscula (não é stopword)
+- **`StorageAccessory`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'armazenamento/transporte'→'Armazenamento/transporte'
+- **`StorageBox`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Caixa de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Storage box'@en não corresponde ao padrão esperado. Causa: palavra 'box' deve começar com maiúscula (não é stopword)
+- **`StorageBox`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'box'→'Box'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StorageSkid`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StorageSkid`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Storage skid'@en não corresponde ao padrão esperado. Causa: palavra 'skid' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Skid de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+- **`StorageSkid`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'skid'→'Skid'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StorageSpool`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StorageSpool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Carretel de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Storage spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'spool'→'Spool'; [pt-br] Title Case: 'armazenamento'→'Armazenamento'
+- **`StressAtDesignPressure`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão na pressão de projeto'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+- **`StressAtDesignPressure`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'; [pt-br] Title Case: 'pressão'→'Pressão', 'projeto'→'Projeto'
+- **`StrIntOffPLevMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOnNoTensMaxPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensMaxPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensMaxPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensMaxPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensMaxPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPress`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPressValRef`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPressValRef`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`StrIntOnNoTensNomPressValRefMult`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'With'→'with'
+- **`Structure`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StructureApplicationsList`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StructureCode`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Código da estrutura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estrutura' deve começar com maiúscula (não é stopword)
+- **`StructureCode`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'estrutura'→'Estrutura'
+- **`SubProjectId`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Id do Subprojeto'@pt-br não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+  - skos:prefLabel 'Sub Project Id'@en não corresponde ao padrão esperado. Causa: acrônimo 'Id' deve ser maiúsculo: ID
+- **`SubProjectId`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: ID; [pt-br] acrônimos: ID
+- **`SubseaEquipment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SuctionPile`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`SuctionPile`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Suction pile'@en não corresponde ao padrão esperado. Causa: palavra 'pile' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Estaca de sucção'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sucção' deve começar com maiúscula (não é stopword)
+- **`SuctionPile`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pile'→'Pile'; [pt-br] Title Case: 'sucção'→'Sucção'
+- **`SupplierProvidedMaterialName`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Nome do material conforme designado pelo fornecedor original do material'@pt-br não corresponde ao padrão esperado. Causa: palavra 'material' deve começar com maiúscula (não é stopword)
+- **`SupplierProvidedMaterialName`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'material'→'Material', 'conforme'→'Conforme', 'designado'→'Designado'
+- **`SupportRegion`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Região de suporte no Modelo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'suporte' deve começar com maiúscula (não é stopword)
+- **`SupportRegion`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'suporte'→'Suporte'
+- **`TapesQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] whitespace extra
+- **`TapesQuantity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Quantidade de fitas'@pt-br não corresponde ao padrão esperado. Causa: palavra 'fitas' deve começar com maiúscula (não é stopword)
+- **`TapesQuantity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'fitas'→'Fitas'
+- **`TemperatureSensor`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Temperature sensor'@en não corresponde ao padrão esperado. Causa: palavra 'sensor' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Sensor de temperatura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'temperatura' deve começar com maiúscula (não é stopword)
+- **`TemperatureSensor`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'sensor'→'Sensor'; [pt-br] Title Case: 'temperatura'→'Temperatura'
+- **`TensileArmourAnnulusCondition`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensileArmourFreeAnnulusVolume`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Volume livre do anular das armaduras de tração'@pt-br não corresponde ao padrão esperado. Causa: palavra 'livre' deve começar com maiúscula (não é stopword)
+- **`TensileArmourFreeAnnulusVolume`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'livre'→'Livre', 'anular'→'Anular', 'armaduras'→'Armaduras'
+- **`TensionerPadsMaterial`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensionerPadsShape`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensionerTracksQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TestBase`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Base de teste'@pt-br não corresponde ao padrão esperado. Causa: palavra 'teste' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Test base'@en não corresponde ao padrão esperado. Causa: palavra 'base' deve começar com maiúscula (não é stopword)
+- **`TestBase`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'teste'→'Teste'
+- **`TestConditions`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TestEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Test equipment'@en não corresponde ao padrão esperado. Causa: palavra 'equipment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Equipamento de teste'@pt-br não corresponde ao padrão esperado. Causa: palavra 'teste' deve começar com maiúscula (não é stopword)
+- **`TestEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'equipment'→'Equipment'; [pt-br] Title Case: 'teste'→'Teste'
+- **`ThermalConductivityCoefficient`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`ThreadsPerInch`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`ThreadsPerInch`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Per'→'per'
+- **`TieIn`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tie-in'@pt-br não corresponde ao padrão esperado. Causa: palavra 'in' em 'Tie-in' deve começar com maiúscula
+- **`TieIn`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Tie-in'→'Tie-In'; [pt-br] Title Case: 'Tie-in'→'Tie-In'
+- **`TieInEquipment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tie-in equipment'@en não corresponde ao padrão esperado. Causa: palavra 'equipment' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Equipamento de interligação'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interligação' deve começar com maiúscula (não é stopword)
+- **`TieInEquipment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'Tie-in'→'Tie-In', 'equipment'→'Equipment'; [pt-br] Title Case: 'interligação'→'Interligação'
+- **`TorpedoPile`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`TorpedoPile`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Estaca-torpedo'@pt-br não corresponde ao padrão esperado. Causa: palavra 'torpedo' em 'Estaca-torpedo' deve começar com maiúscula
+  - skos:prefLabel 'Torpedo pile'@en não corresponde ao padrão esperado. Causa: palavra 'pile' deve começar com maiúscula (não é stopword)
+- **`TorpedoPile`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'pile'→'Pile'; [pt-br] Title Case: 'Estaca-torpedo'→'Estaca-Torpedo'
+- **`TPT`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Sensor de pressão e temperatura'@pt-br não corresponde ao padrão esperado. Causa: palavra 'pressão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Pressure and temperature sensor'@en não corresponde ao padrão esperado. Causa: palavra 'temperature' deve começar com maiúscula (não é stopword)
+- **`TPT`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'temperature'→'Temperature', 'sensor'→'Sensor'; [pt-br] Title Case: 'pressão'→'Pressão', 'temperatura'→'Temperatura'
+- **`TransportLineSegment`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TreeRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de ANM'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wet Christmas tree running tool'@en não corresponde ao padrão esperado. Causa: palavra 'tree' deve começar com maiúscula (não é stopword)
+- **`TreeRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tree'→'Tree', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação', 'ANM'→'Anm'
+- **`TrianglePlate`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Triangle plate'@en não corresponde ao padrão esperado. Causa: palavra 'plate' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Placa triangular'@pt-br não corresponde ao padrão esperado. Causa: palavra 'triangular' deve começar com maiúscula (não é stopword)
+- **`TrianglePlate`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'plate'→'Plate'; [pt-br] Title Case: 'triangular'→'Triangular'
+- **`TubingHanger`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`TubingHanger`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tubing hanger'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Suspensor de coluna'@pt-br não corresponde ao padrão esperado. Causa: palavra 'coluna' deve começar com maiúscula (não é stopword)
+- **`TubingHanger`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger'; [pt-br] Title Case: 'coluna'→'Coluna'
+- **`TubingHangerRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de TH'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tubing hanger running tool'@en não corresponde ao padrão esperado. Causa: palavra 'hanger' deve começar com maiúscula (não é stopword)
+- **`TubingHangerRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'hanger'→'Hanger', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação'
+- **`TypeLevelAttribute`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UltimateTensileStress`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`UltTensStrAlongFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão máxima de tração longitudinalmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'máxima' deve começar com maiúscula (não é stopword)
+- **`UltTensStrAlongFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'máxima'→'Máxima', 'tração'→'Tração', 'longitudinalmente'→'Longitudinalmente'
+- **`UltTensStrPerpendFibers`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Tensão máxima de tração perpendicularmente às fibras'@pt-br não corresponde ao padrão esperado. Causa: palavra 'máxima' deve começar com maiúscula (não é stopword)
+- **`UltTensStrPerpendFibers`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'To'→'to'; [pt-br] Title Case: 'máxima'→'Máxima', 'tração'→'Tração', 'perpendicularmente'→'Perpendicularmente'
+- **`UmbilicalComponent`** — `MULTIPLE_PREFLABEL_SAME_LANG`
+  - Classe tem 2 skos:prefLabel para idioma 'en': ['Umbilical component', 'Umbilical Component']
+  - Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Componente Umbilical', 'Componente de umbilical']
+- **`UmbilicalComponent`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical component'@en não corresponde ao padrão esperado. Causa: palavra 'component' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Componente de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`UmbilicalComponent`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'component'→'Component'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UmbilicalLocation`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical location'@en não corresponde ao padrão esperado. Causa: palavra 'location' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Local de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`UmbilicalLocation`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'location'→'Location'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UmbilicalPullingHead`** — `ALTLABEL_TITLECASE_VIOLATION`
+  - skos:altLabel 'Cabeça de Manuseio para Umbilical'@pt-br não segue Title Case
+- **`UmbilicalSpan`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Trecho de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`UmbilicalSpan`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'umbilical'→'Umbilical'
+- **`UpperItubeDiameter`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Diâmetro do I-TUBE superior'@pt-br não corresponde ao padrão esperado. Causa: palavra 'superior' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Upper I-tube Diameter'@en não corresponde ao padrão esperado. Causa: acrônimo 'I-tube' deve ser maiúsculo: I-TUBE
+- **`UpperItubeDiameter`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] acrônimos: TUBE; [pt-br] Title Case: 'superior'→'Superior'
+- **`UTA`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UTA`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Umbilical termination assembly'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Conjunto de terminação de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+- **`UTA`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'assembly'→'Assembly'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`UTM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de terminação de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'terminação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Umbilical termination module'@en não corresponde ao padrão esperado. Causa: palavra 'termination' deve começar com maiúscula (não é stopword)
+- **`UTM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`validValues`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`ValueOrigin`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`VCM`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Módulo de conexão vertical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Vertical connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`VCM`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'connection'→'Connection', 'module'→'Module'; [pt-br] Title Case: 'conexão'→'Conexão', 'vertical'→'Vertical'
+- **`WasteToEnergy`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Energia a partir de Resíduos'@pt-br não corresponde ao padrão esperado. Causa: palavra 'partir' deve começar com maiúscula (não é stopword)
+- **`WasteToEnergy`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'partir'→'Partir'
+- **`WearBushing`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`WearBushingRunningTool`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Ferramenta de instalação de BD'@pt-br não corresponde ao padrão esperado. Causa: palavra 'instalação' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wear bushing running tool'@en não corresponde ao padrão esperado. Causa: palavra 'bushing' deve começar com maiúscula (não é stopword)
+- **`WearBushingRunningTool`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'bushing'→'Bushing', 'running'→'Running', 'tool'→'Tool'; [pt-br] Title Case: 'instalação'→'Instalação', 'BD'→'Bd'
+- **`Wellhead`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Cabeça de poço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'poço' deve começar com maiúscula (não é stopword)
+- **`Wellhead`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'poço'→'Poço'
+- **`WetChristmasTree`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`WetChristmasTree`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Árvore de Natal molhada'@pt-br não corresponde ao padrão esperado. Causa: palavra 'molhada' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Wet Christmas tree'@en não corresponde ao padrão esperado. Causa: palavra 'tree' deve começar com maiúscula (não é stopword)
+- **`WetChristmasTree`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'tree'→'Tree'; [pt-br] Title Case: 'molhada'→'Molhada'
+- **`WireRopeQuantity`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [en] falta ponto final
+- **`WireRopeQuantity`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Quantidade de cordas de Aço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cordas' deve começar com maiúscula (não é stopword)
+- **`WireRopeQuantity`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'cordas'→'Cordas'
+- **`WireRopeSegment`** — `PREFLABEL_FORMAT_INVALID`
+  - skos:prefLabel 'Wire rope segment'@en não corresponde ao padrão esperado. Causa: palavra 'rope' deve começar com maiúscula (não é stopword)
+  - skos:prefLabel 'Tramo de cabo de aço'@pt-br não corresponde ao padrão esperado. Causa: palavra 'cabo' deve começar com maiúscula (não é stopword)
+- **`WireRopeSegment`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: 'rope'→'Rope', 'segment'→'Segment'; [pt-br] Title Case: 'cabo'→'Cabo', 'aço'→'Aço'
+- **`WireRopeSlingDiameter`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`WorkingLoadLimit`** — `PREFLABEL_NEEDS_CORRECTION`
+  - skos:prefLabel precisa correção. Causa: [en] Title Case: '(WLL)'→'(wll)'
+- **`WoundLayer`** — `DEFINITION_NEEDS_CORRECTION`
+  - skos:definition precisa correção. Causa: [pt-br] falta ponto final
+
+#### 📖 Legenda dos Códigos
+
+**DomainAttribute:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `DOMAINATTR_ACCESSRIGHTS_MISSING` | DomainAttribute não possui dcterms:accessRights |
+| `DOMAINATTR_IDENTIFIER_MISSING` | DomainAttribute não possui dcterms:identifier |
+| `DOMAINATTR_IDENTIFIER_MISMATCH` | dcterms:identifier não corresponde ao local name |
+| `DOMAINATTR_DEFINITION_MISSING_EN` | Falta skos:definition em inglês (@en) |
+| `DOMAINATTR_DEFINITION_MISSING_PT_BR` | Falta skos:definition em português (@pt-br) |
+| `DOMAINATTR_DEFINITION_TOO_MANY_PER_LANG` | Múltiplos skos:definition no mesmo idioma |
+| `DOMAINATTR_PREFLABEL_MISSING_EN` | Falta skos:prefLabel em inglês (@en) |
+| `DOMAINATTR_PREFLABEL_MISSING_PT_BR` | Falta skos:prefLabel em português (@pt-br) |
+| `DOMAINATTR_PREFLABEL_DUPLICATE_PER_LANG` | Múltiplos skos:prefLabel no mesmo idioma |
+| `DOMAINATTR_PROPERTY_MISSING` | Propriedade obrigatória ausente (hasAttributeScope, etc.) |
+
+**Classes IFC:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `IFC_REQUIRED_PROPERTY_MISSING` | Classe IFC sem propriedade obrigatória |
+| `IFC_BASE_CLASS_MISSING` | Classe IFC não herda da classe base esperada |
+
+**Geral:**
+| **Código** | **Descrição** |
+|------------|---------------|
+| `CLASS_IDENTIFIER_MISSING` | Classe não possui dcterms:identifier |
+| `CLASS_IDENTIFIER_MISMATCH` | dcterms:identifier não corresponde ao local name |
+| `MULTIPLE_PREFLABEL_SAME_LANG` | Múltiplos skos:prefLabel no mesmo idioma |
+| `MULTIPLE_DEFINITION` | Múltiplos skos:definition no mesmo idioma |
+| `ALTLABEL_TITLECASE_VIOLATION` | skos:altLabel não segue Title Case |
+| `PREFLABEL_FORMAT_INVALID` | skos:prefLabel não corresponde ao padrão esperado |
+| `PREFLABEL_NEEDS_CORRECTION` | skos:prefLabel precisa correção (capitalização, acrônimos) |
+| `DEFINITION_NEEDS_CORRECTION` | skos:definition precisa correção (ponto final, acrônimos) |
+
+### 📈 Estatísticas de Erros por Categoria
+#### Por Severidade:
+- 🟡 **WARNING:** 1207 ocorrências
+- 🔴 **ERROR:** 260 ocorrências
+
+#### Top 10 Regras/Códigos Mais Violados:
+- `PREFLABEL_FORMAT_INVALID`: 267 ocorrências
+- `PREFLABEL_NEEDS_CORRECTION`: 206 ocorrências
+- `DOMAINATTR_DEFINITION_MISSING_PT_BR`: 203 ocorrências
+- `DEFINITION_NEEDS_CORRECTION`: 195 ocorrências
+- `CLASS_IDENTIFIER_MISSING`: 159 ocorrências
+- `DOMAINATTR_PROPERTY_MISSING`: 142 ocorrências
+- `IFC_REQUIRED_PROPERTY_MISSING`: 62 ocorrências
+- `DOMAINATTR_DEFINITION_MISSING_EN`: 33 ocorrências
+- `DOMAINATTR_PREFLABEL_MISSING_PT_BR`: 33 ocorrências
+- `IFC_BASE_CLASS_MISSING`: 32 ocorrências
+
+---
+
+## 🔍 Detalhamento de Erros
+
+### 📏 Regra: **`ALTLABEL_TITLECASE_VIOLATION`** (12 ocorrências)
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FPSO'@en não segue Title Case
+  - Correção: `Fpso`
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FPU'@en não segue Title Case
+  - Correção: `Fpu`
+- **`FloatingProductionUnit`**
+  - Problema: skos:altLabel 'FLNG'@en não segue Title Case
+  - Correção: `Flng`
+- **`RingGasket`**
+  - Problema: skos:altLabel 'O-Ring'@en não segue Title Case
+  - Correção: `O-ring`
+- **`RingGasket`**
+  - Problema: skos:altLabel ' Seal Ring'@en não segue Title Case
+  - Correção: `Seal Ring`
+- **`UmbilicalPullingHead`**
+  - Problema: skos:altLabel 'Cabeça de Manuseio para Umbilical'@pt-br não segue Title Case
+  - Correção: `Cabeça De Manuseio Para Umbilical`
+- **`Shackle`**
+  - Problema: skos:altLabel 'D-Shackle'@en não segue Title Case
+  - Correção: `D-shackle`
+- **`Shackle`**
+  - Problema: skos:altLabel 'U-Bolt'@en não segue Title Case
+  - Correção: `U-bolt`
+- **`Jumper`**
+  - Problema: skos:altLabel 'Flying lead'@en não segue Title Case
+  - Correção: `Flying Lead`
+- **`HangOffCollar`**
+  - Problema: skos:altLabel 'Hang-Off Device'@en não segue Title Case
+  - Correção: `Hang-off Device`
+- **`HangOffCollar`**
+  - Problema: skos:altLabel 'Hang-Off Clamp'@en não segue Title Case
+  - Correção: `Hang-off Clamp`
+- **`PullInCollar`**
+  - Problema: skos:altLabel 'Pull-In Clamp'@en não segue Title Case
+  - Correção: `Pull-in Clamp`
+
+### 📏 Regra: **`CLASS_IDENTIFIER_MISMATCH`** (7 ocorrências)
+- **`InternalIncidentalPressureCurveAttribute`**
+  - Problema: dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+  - Correção: `InternalIncidentalPressureCurveAttribute`
+- **`DiffusionTableColumn`**
+  - Problema: dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+  - Correção: `DiffusionTableColumn`
+- **`MaxDesignAbsIntPresCurveAttribute`**
+  - Problema: dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+  - Correção: `MaxDesignAbsIntPresCurveAttribute`
+- **`CommissioningElement`**
+  - Problema: dcterms:identifier 'CommissioningObject' não corresponde ao local name 'CommissioningElement'
+  - Correção: `CommissioningElement`
+- **`PermeabilityCurveAttribute`**
+  - Problema: dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+  - Correção: `PermeabilityCurveAttribute`
+- **`BendMomentVsShearForceTableColumn`**
+  - Problema: dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+  - Correção: `BendMomentVsShearForceTableColumn`
+- **`SolubilityCurveAttribute`**
+  - Problema: dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+  - Correção: `SolubilityCurveAttribute`
+
+### 📏 Regra: **`CLASS_IDENTIFIER_MISSING`** (159 ocorrências)
+*Mostrando 20 de 159 exemplos*
+- **`Base64BinaryType`**
+  - Problema: Classe 'Base64BinaryType' não possui dcterms:identifier
+  - Correção: `Base64BinaryType`
+- **`DecimalValue`**
+  - Problema: Classe 'DecimalValue' não possui dcterms:identifier
+  - Correção: `DecimalValue`
+- **`ConstructionPhase`**
+  - Problema: Classe 'ConstructionPhase' não possui dcterms:identifier
+  - Correção: `ConstructionPhase`
+- **`PermeabilityTableColumn`**
+  - Problema: Classe 'PermeabilityTableColumn' não possui dcterms:identifier
+  - Correção: `PermeabilityTableColumn`
+- **`PartElement`**
+  - Problema: Classe 'PartElement' não possui dcterms:identifier
+  - Correção: `PartElement`
+- **`FunctionalAttribute`**
+  - Problema: Classe 'FunctionalAttribute' não possui dcterms:identifier
+  - Correção: `FunctionalAttribute`
+- **`Downstream`**
+  - Problema: Classe 'Downstream' não possui dcterms:identifier
+  - Correção: `Downstream`
+- **`PackageEquipmentEngineering`**
+  - Problema: Classe 'PackageEquipmentEngineering' não possui dcterms:identifier
+  - Correção: `PackageEquipmentEngineering`
+- **`EModVsTempTableColumn`**
+  - Problema: Classe 'EModVsTempTableColumn' não possui dcterms:identifier
+  - Correção: `EModVsTempTableColumn`
+- **`ImportedValue`**
+  - Problema: Classe 'ImportedValue' não possui dcterms:identifier
+  - Correção: `ImportedValue`
+- **`StrandsTableColumn`**
+  - Problema: Classe 'StrandsTableColumn' não possui dcterms:identifier
+  - Correção: `StrandsTableColumn`
+- **`PhysicalPropertyAttribute`**
+  - Problema: Classe 'PhysicalPropertyAttribute' não possui dcterms:identifier
+  - Correção: `PhysicalPropertyAttribute`
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: Classe 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+  - Correção: `MaxDesignAbsIntPresTableColumn`
+- **`AttributeNature`**
+  - Problema: Classe 'AttributeNature' não possui dcterms:identifier
+  - Correção: `AttributeNature`
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: Classe 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+  - Correção: `InternalIncidentalPressureTableColumn`
+- **`Geothermal`**
+  - Problema: Classe 'Geothermal' não possui dcterms:identifier
+  - Correção: `Geothermal`
+- **`InstrumentationEngineering`**
+  - Problema: Classe 'InstrumentationEngineering' não possui dcterms:identifier
+  - Correção: `InstrumentationEngineering`
+- **`StringValue`**
+  - Problema: Classe 'StringValue' não possui dcterms:identifier
+  - Correção: `StringValue`
+- **`Operation`**
+  - Problema: Classe 'Operation' não possui dcterms:identifier
+  - Correção: `Operation`
+- **`LongValue`**
+  - Problema: Classe 'LongValue' não possui dcterms:identifier
+  - Correção: `LongValue`
+
+### 📏 Regra: **`DEFINITION_NEEDS_CORRECTION`** (195 ocorrências)
+*Mostrando 20 de 195 exemplos*
+- **`Hub`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StrIntOnNoTensNomPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`DynamicUmbilicalSpan`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`GrvCntrPntDstnceFrmTermFlange`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final
+- **`FlowLineMandrel`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`EarlyLeakNomPressTable_PressValRef`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttributeScope`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`NumberOfRemoteProcessIsolationValves`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`HydraulicPowerUnit`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`hasLocationType`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`validValues`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`LongTermFloatDensity`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`OffLeakPLevMaxPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`hasAttributeGroup`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`UTA`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`StrIntOffPLevNomPress`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`TensileArmourAnnulusCondition`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`StrIntOffPLevMaxPressValRef`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+- **`Accessory`**
+  - Problema: skos:definition precisa correção. Causa: [en] falta ponto final; [pt-br] falta ponto final
+- **`MaxPermissibleDeformationDynamic`**
+  - Problema: skos:definition precisa correção. Causa: [pt-br] falta ponto final
+
+### 📏 Regra: **`DOMAINATTR_ACCESSRIGHTS_MISSING`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui dcterms:accessRights
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui dcterms:accessRights
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui dcterms:accessRights
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:accessRights
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:accessRights
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:accessRights
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:accessRights
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui dcterms:accessRights
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui dcterms:accessRights
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui dcterms:accessRights
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:accessRights
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:accessRights
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:accessRights
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui dcterms:accessRights
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui dcterms:accessRights
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:accessRights
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:accessRights
+
+### 📏 Regra: **`DOMAINATTR_DEFINITION_MISSING_EN`** (33 ocorrências)
+*Mostrando 20 de 33 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em inglês (@en)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em inglês (@en)
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui skos:definition em inglês (@en)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:definition em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:definition em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:definition em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:definition em inglês (@en)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:definition em inglês (@en)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:definition em inglês (@en)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:definition em inglês (@en)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:definition em inglês (@en)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:definition em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:definition em inglês (@en)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:definition em inglês (@en)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:definition em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:definition em inglês (@en)
+
+### 📏 Regra: **`DOMAINATTR_DEFINITION_MISSING_PT_BR`** (203 ocorrências)
+*Mostrando 20 de 203 exemplos*
+- **`MetallicStrandLength`**
+  - Problema: DomainAttribute 'MetallicStrandLength' não possui skos:definition em português (@pt-br)
+- **`ProjectCode`**
+  - Problema: DomainAttribute 'ProjectCode' não possui skos:definition em português (@pt-br)
+- **`NominalDiameter`**
+  - Problema: DomainAttribute 'NominalDiameter' não possui skos:definition em português (@pt-br)
+- **`UtilizationFactor`**
+  - Problema: DomainAttribute 'UtilizationFactor' não possui skos:definition em português (@pt-br)
+- **`PolymericLayerMaterialType`**
+  - Problema: DomainAttribute 'PolymericLayerMaterialType' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:definition em português (@pt-br)
+- **`IndividualAnodeMass`**
+  - Problema: DomainAttribute 'IndividualAnodeMass' não possui skos:definition em português (@pt-br)
+- **`InternalDiameter`**
+  - Problema: DomainAttribute 'InternalDiameter' não possui skos:definition em português (@pt-br)
+- **`PostSlippingBendingStiffness`**
+  - Problema: DomainAttribute 'PostSlippingBendingStiffness' não possui skos:definition em português (@pt-br)
+- **`SolubilityTableSolubilityCoefficient`**
+  - Problema: DomainAttribute 'SolubilityTableSolubilityCoefficient' não possui skos:definition em português (@pt-br)
+- **`FlangeFaceType`**
+  - Problema: DomainAttribute 'FlangeFaceType' não possui skos:definition em português (@pt-br)
+- **`PartNumber`**
+  - Problema: DomainAttribute 'PartNumber' não possui skos:definition em português (@pt-br)
+- **`H2SVolumeConcentration`**
+  - Problema: DomainAttribute 'H2SVolumeConcentration' não possui skos:definition em português (@pt-br)
+- **`LinearMass`**
+  - Problema: DomainAttribute 'LinearMass' não possui skos:definition em português (@pt-br)
+- **`PermeabilityTableTemperature`**
+  - Problema: DomainAttribute 'PermeabilityTableTemperature' não possui skos:definition em português (@pt-br)
+- **`IsSpare`**
+  - Problema: DomainAttribute 'IsSpare' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryManufacturer`**
+  - Problema: DomainAttribute 'LayerGeometryManufacturer' não possui skos:definition em português (@pt-br)
+- **`EarlyLeakNomPressTableTensLimitValRef`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableTensLimitValRef' não possui skos:definition em português (@pt-br)
+- **`LayerGeometryProfileThickness`**
+  - Problema: DomainAttribute 'LayerGeometryProfileThickness' não possui skos:definition em português (@pt-br)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:definition em português (@pt-br)
+
+### 📏 Regra: **`DOMAINATTR_IDENTIFIER_MISMATCH`** (6 ocorrências)
+- **`InternalIncidentalPressureCurveAttribute`**
+  - Problema: dcterms:identifier 'InternalIncidentalPressureTable' não corresponde ao local name 'InternalIncidentalPressureCurveAttribute'
+  - Correção: `InternalIncidentalPressureCurveAttribute`
+- **`DiffusionTableColumn`**
+  - Problema: dcterms:identifier 'DiffusionTable' não corresponde ao local name 'DiffusionTableColumn'
+  - Correção: `DiffusionTableColumn`
+- **`MaxDesignAbsIntPresCurveAttribute`**
+  - Problema: dcterms:identifier 'MaxDesignAbsIntPresTable' não corresponde ao local name 'MaxDesignAbsIntPresCurveAttribute'
+  - Correção: `MaxDesignAbsIntPresCurveAttribute`
+- **`PermeabilityCurveAttribute`**
+  - Problema: dcterms:identifier 'PermeabilityTable' não corresponde ao local name 'PermeabilityCurveAttribute'
+  - Correção: `PermeabilityCurveAttribute`
+- **`BendMomentVsShearForceTableColumn`**
+  - Problema: dcterms:identifier 'BendMomentVsShearForceTable' não corresponde ao local name 'BendMomentVsShearForceTableColumn'
+  - Correção: `BendMomentVsShearForceTableColumn`
+- **`SolubilityCurveAttribute`**
+  - Problema: dcterms:identifier 'SolubilityTable' não corresponde ao local name 'SolubilityCurveAttribute'
+  - Correção: `SolubilityCurveAttribute`
+
+### 📏 Regra: **`DOMAINATTR_IDENTIFIER_MISSING`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui dcterms:identifier
+  - Correção: `PermeabilityTableColumn`
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui dcterms:identifier
+  - Correção: `EModVsTempTableColumn`
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui dcterms:identifier
+  - Correção: `StrandsTableColumn`
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui dcterms:identifier
+  - Correção: `MaxDesignAbsIntPresTableColumn`
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui dcterms:identifier
+  - Correção: `InternalIncidentalPressureTableColumn`
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui dcterms:identifier
+  - Correção: `CrushingFrictionCoefficientTighteningTableColumn`
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTighteningAttribute`
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui dcterms:identifier
+  - Correção: `EarlyLeakNomPressTableAttribute`
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui dcterms:identifier
+  - Correção: `LayingMinimumRadiusCurveAttribute`
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTensionAttribute`
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui dcterms:identifier
+  - Correção: `RingGasketAttribute`
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui dcterms:identifier
+  - Correção: `CrushingCurveAttribute`
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui dcterms:identifier
+  - Correção: `SolubilityTableColumn`
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui dcterms:identifier
+  - Correção: `BendingStiffnessCurveAttribute`
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui dcterms:identifier
+  - Correção: `EModVsTempCurveAttribute`
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui dcterms:identifier
+  - Correção: `LayingMinimumRadiusTableColumn`
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui dcterms:identifier
+  - Correção: `LayerGeometryAttribute`
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui dcterms:identifier
+  - Correção: `DimensionsTableColumn`
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui dcterms:identifier
+  - Correção: `EarlyLeakMaxPressTableAttribute`
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui dcterms:identifier
+  - Correção: `CrushingMaximumAllowableTighteningTableColumn`
+
+### 📏 Regra: **`DOMAINATTR_PREFLABEL_MISSING_EN`** (31 ocorrências)
+*Mostrando 20 de 31 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em inglês (@en)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em inglês (@en)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em inglês (@en)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em inglês (@en)
+- **`EarlyLeakMaxPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakMaxPressTableAttribute' não possui skos:prefLabel em inglês (@en)
+- **`CrushingMaximumAllowableTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningTableColumn' não possui skos:prefLabel em inglês (@en)
+
+### 📏 Regra: **`DOMAINATTR_PREFLABEL_MISSING_PT_BR`** (33 ocorrências)
+*Mostrando 20 de 33 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui skos:prefLabel em português (@pt-br)
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTighteningAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTighteningAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EmodVsTempTableTemperature`**
+  - Problema: DomainAttribute 'EmodVsTempTableTemperature' não possui skos:prefLabel em português (@pt-br)
+- **`EarlyLeakNomPressTableAttribute`**
+  - Problema: DomainAttribute 'EarlyLeakNomPressTableAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusCurveAttribute`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingMaximumAllowableTensionAttribute`**
+  - Problema: DomainAttribute 'CrushingMaximumAllowableTensionAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`RingGasketAttribute`**
+  - Problema: DomainAttribute 'RingGasketAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`CrushingCurveAttribute`**
+  - Problema: DomainAttribute 'CrushingCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`SolubilityTableColumn`**
+  - Problema: DomainAttribute 'SolubilityTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`BendingStiffnessCurveAttribute`**
+  - Problema: DomainAttribute 'BendingStiffnessCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`EModVsTempCurveAttribute`**
+  - Problema: DomainAttribute 'EModVsTempCurveAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`LayingMinimumRadiusTableColumn`**
+  - Problema: DomainAttribute 'LayingMinimumRadiusTableColumn' não possui skos:prefLabel em português (@pt-br)
+- **`LayerGeometryAttribute`**
+  - Problema: DomainAttribute 'LayerGeometryAttribute' não possui skos:prefLabel em português (@pt-br)
+- **`DimensionsTableColumn`**
+  - Problema: DomainAttribute 'DimensionsTableColumn' não possui skos:prefLabel em português (@pt-br)
+
+### 📏 Regra: **`DOMAINATTR_PROPERTY_MISSING`** (142 ocorrências)
+*Mostrando 20 de 142 exemplos*
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`PermeabilityTableColumn`**
+  - Problema: DomainAttribute 'PermeabilityTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`EModVsTempTableColumn`**
+  - Problema: DomainAttribute 'EModVsTempTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`PlannedStartTimestamp`**
+  - Problema: DomainAttribute 'PlannedStartTimestamp' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasLifecycleCreationPhase
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`StrandsTableColumn`**
+  - Problema: DomainAttribute 'StrandsTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`MaxDesignAbsIntPresTableColumn`**
+  - Problema: DomainAttribute 'MaxDesignAbsIntPresTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasTypedValue
+- **`InternalIncidentalPressureTableColumn`**
+  - Problema: DomainAttribute 'InternalIncidentalPressureTableColumn' não possui propriedade obrigatória: edo:hasValueCardinality
+- **`CrushingFrictionCoefficientTighteningTableColumn`**
+  - Problema: DomainAttribute 'CrushingFrictionCoefficientTighteningTableColumn' não possui propriedade obrigatória: edo:hasAttributeScope
+
+### 📏 Regra: **`IFC_BASE_CLASS_MISSING`** (32 ocorrências)
+*Mostrando 20 de 32 exemplos*
+- **`AbandonmentCap`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`Project`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`AbrasionProtector`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`SubseaFlexiblePipesBsddDictionary`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`HotStab`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningActivity`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`ThreadedFitting`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProject`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningProgram`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeAdapter`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`ElectricalPowerJumperConnector`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`IfcInstanciableElement`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningItemCheck`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`UmbilicalPullingHead`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningPerson`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleActor`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`FlangeConnection`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningResponsibleGroup`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningEvidence`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+- **`CommissioningIssue`**
+  - Problema: Classe IFC não herda de edo:IfcInstanciableElement
+
+### 📏 Regra: **`IFC_REQUIRED_PROPERTY_MISSING`** (62 ocorrências)
+*Mostrando 20 de 62 exemplos*
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`StaticUmbilicalSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbandonmentCap`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_equivalentClass
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`FlowlineSpan`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`Project`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_objectType
+- **`Project`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`AbrasionProtector`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CompositeMaterial`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`SubseaFlexiblePipesBsddDictionary`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`SubseaOilField`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`HotStab`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningActivity`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`ThreadedFitting`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`ThreadedFitting`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`TopBendStiffener`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:ifc_predefinedType
+- **`CommissioningProject`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+- **`CommissioningProgram`**
+  - Problema: Classe IFC sem propriedade obrigatória: edo:hasDiscipline
+
+### 📏 Regra: **`MULTIPLE_DEFINITION`** (3 ocorrências)
+- **`HCRHose`**
+  - Problema: Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+- **`LogicalElement`**
+  - Problema: Classe tem 2 skos:definition para idioma 'pt-br' (máximo: 1)
+- **`LogicalElement`**
+  - Problema: Classe tem 2 skos:definition para idioma 'en' (máximo: 1)
+
+### 📏 Regra: **`MULTIPLE_PREFLABEL_SAME_LANG`** (14 ocorrências)
+- **`UmbilicalComponent`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Umbilical component', 'Umbilical Component']
+- **`UmbilicalComponent`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Componente Umbilical', 'Componente de umbilical']
+- **`FunctionLine`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Linha Funcional', 'Linha de função']
+- **`FunctionLine`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Function Line', 'Function line']
+- **`MetallicTubing`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubulação Metálica', 'Tubulação metálica']
+- **`MetallicTubing`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Metallic tubing', 'Metallic Tubing']
+- **`PlasticHose`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Mangueira plástica', 'Mangueira Plástica']
+- **`Filler`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Preenchimento', 'Enchimento']
+- **`ElectricalCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo elétrico', 'Cabo Elétrico']
+- **`ElectricalCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Electrical cable', 'Electrical Cable']
+- **`IntegratedPipe`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Integrated pipe', 'Integrated Pipe']
+- **`IntegratedPipe`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Tubo Integrado', 'Duto integrado']
+- **`OpticalFiberCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'en': ['Optical Fiber Cable', 'Optical fiber cable']
+- **`OpticalFiberCable`**
+  - Problema: Classe tem 2 skos:prefLabel para idioma 'pt-br': ['Cabo de Fibra Óptica', 'Cabo de fibra ótica']
+
+### 📏 Regra: **`PREFLABEL_FORMAT_INVALID`** (267 ocorrências)
+*Mostrando 20 de 267 exemplos*
+- **`ProjectCode`**
+  - Problema: skos:prefLabel 'Código Identificador único do projeto da operadora da Interligação Submarina'@pt-br não corresponde ao padrão esperado. Causa: palavra 'único' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`**
+  - Problema: skos:prefLabel 'Static umbilical span'@en não corresponde ao padrão esperado. Causa: palavra 'umbilical' deve começar com maiúscula (não é stopword)
+- **`StaticUmbilicalSpan`**
+  - Problema: skos:prefLabel 'Trecho estático de umbilical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'estático' deve começar com maiúscula (não é stopword)
+- **`EndFitting`**
+  - Problema: skos:prefLabel 'End fitting'@en não corresponde ao padrão esperado. Causa: palavra 'fitting' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`**
+  - Problema: skos:prefLabel 'Estrutura de topo de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'topo' deve começar com maiúscula (não é stopword)
+- **`FSHRUpperAssembly`**
+  - Problema: skos:prefLabel 'FSHR upper assembly'@en não corresponde ao padrão esperado. Causa: palavra 'upper' deve começar com maiúscula (não é stopword)
+- **`InternalDiameter`**
+  - Problema: skos:prefLabel 'Diâmetro interno'@pt-br não corresponde ao padrão esperado. Causa: palavra 'interno' deve começar com maiúscula (não é stopword)
+- **`SolubilityTableSolubilityCoefficient`**
+  - Problema: skos:prefLabel 'Coeficiente de solubilidade'@pt-br não corresponde ao padrão esperado. Causa: palavra 'solubilidade' deve começar com maiúscula (não é stopword)
+- **`PartNumber`**
+  - Problema: skos:prefLabel 'Número da peça do acessório'@pt-br não corresponde ao padrão esperado. Causa: palavra 'peça' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`**
+  - Problema: skos:prefLabel 'Carretel de armazenamento'@pt-br não corresponde ao padrão esperado. Causa: palavra 'armazenamento' deve começar com maiúscula (não é stopword)
+- **`StorageSpool`**
+  - Problema: skos:prefLabel 'Storage spool'@en não corresponde ao padrão esperado. Causa: palavra 'spool' deve começar com maiúscula (não é stopword)
+- **`BlockValve`**
+  - Problema: skos:prefLabel 'Válvula de bloqueio'@pt-br não corresponde ao padrão esperado. Causa: palavra 'bloqueio' deve começar com maiúscula (não é stopword)
+- **`BlockValve`**
+  - Problema: skos:prefLabel 'Block valve'@en não corresponde ao padrão esperado. Causa: palavra 'valve' deve começar com maiúscula (não é stopword)
+- **`VCM`**
+  - Problema: skos:prefLabel 'Módulo de conexão vertical'@pt-br não corresponde ao padrão esperado. Causa: palavra 'conexão' deve começar com maiúscula (não é stopword)
+- **`VCM`**
+  - Problema: skos:prefLabel 'Vertical connection module'@en não corresponde ao padrão esperado. Causa: palavra 'connection' deve começar com maiúscula (não é stopword)
+- **`IsSpare`**
+  - Problema: skos:prefLabel 'É um sobressalente'@pt-br não corresponde ao padrão esperado. Causa: palavra 'sobressalente' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`**
+  - Problema: skos:prefLabel 'Trecho flowline'@pt-br não corresponde ao padrão esperado. Causa: palavra 'flowline' deve começar com maiúscula (não é stopword)
+- **`FlowlineSpan`**
+  - Problema: skos:prefLabel 'Flowline span'@en não corresponde ao padrão esperado. Causa: palavra 'span' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel 'Estrutura inferior de RHAS'@pt-br não corresponde ao padrão esperado. Causa: palavra 'inferior' deve começar com maiúscula (não é stopword)
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel 'FSHR lower assembly'@en não corresponde ao padrão esperado. Causa: palavra 'lower' deve começar com maiúscula (não é stopword)
+
+### 📏 Regra: **`PREFLABEL_NEEDS_CORRECTION`** (206 ocorrências)
+*Mostrando 20 de 206 exemplos*
+- **`BendMomentVsShearForceTable_BendingMoment`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'flexão'→'Flexão'
+- **`ReliefValve`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'valve'→'Valve'; [pt-br] Title Case: 'alívio'→'Alívio'
+- **`OpenReceptacle`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'receptacle'→'Receptacle'; [pt-br] Title Case: 'aberto'→'Aberto'
+- **`SCM`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'control'→'Control', 'module'→'Module'; [pt-br] Title Case: 'controle'→'Controle', 'submarino'→'Submarino'
+- **`PlasticHose`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'plástica'→'Plástica'
+- **`AxialStiffnessUnderTensionAtSeaLevel`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`WorkingLoadLimit`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: '(WLL)'→'(wll)'
+- **`StrIntOffPLevNomPressValRef`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`StrIntOffPLevMaxPress`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'At'→'at'
+- **`RiserSpan`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'span'→'Span'; [pt-br] Title Case: 'riser'→'Riser'
+- **`FSHRLowerAssembly`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'FSHR'→'Fshr', 'lower'→'Lower', 'assembly'→'Assembly'; [pt-br] Title Case: 'inferior'→'Inferior', 'RHAS'→'Rhas'
+- **`GuideBase`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'base'→'Base'; [pt-br] Title Case: 'Base-guia'→'Base-Guia'
+- **`UTA`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'assembly'→'Assembly'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`UTM`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'termination'→'Termination', 'module'→'Module'; [pt-br] Title Case: 'terminação'→'Terminação', 'umbilical'→'Umbilical'
+- **`HydraulicJumper`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'jumper'→'Jumper'; [pt-br] Title Case: 'hidráulico'→'Hidráulico'
+- **`TrianglePlate`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'plate'→'Plate'; [pt-br] Title Case: 'triangular'→'Triangular'
+- **`AssemblyTorque`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'montagem'→'Montagem'
+- **`WireRopeQuantity`**
+  - Problema: skos:prefLabel precisa correção. Causa: [pt-br] Title Case: 'cordas'→'Cordas'
+- **`HPHousing`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'High-pressure'→'High-Pressure', 'housing'→'Housing'; [pt-br] Title Case: 'alta'→'Alta', 'pressão'→'Pressão'
+- **`StorageAccessory`**
+  - Problema: skos:prefLabel precisa correção. Causa: [en] Title Case: 'accessory'→'Accessory'; [pt-br] Title Case: 'armazenamento/transporte'→'Armazenamento/transporte'
+
+- **Operação:** Geração de Arquivo de Revisão- **Arquivo Gerado:** `test-norm-autofix-enabled-canon.ttl`- **Status:** ✅ success- **Data/Hora:** 2026-03-10T15:56:08.232625
+
+---
+*Relatório gerado automaticamente em 2026-03-10 15:56:08*
