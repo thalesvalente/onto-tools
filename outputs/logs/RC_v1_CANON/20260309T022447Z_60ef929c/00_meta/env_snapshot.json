@@ -1,0 +1,10 @@
+{
+  "rc_version": "RC_v1_CANON",
+  "execution_id": "20260309T022447Z_60ef929c",
+  "python_version": "3.12.12",
+  "input_file": "data\\examples\\energy-domain-ontology.ttl",
+  "input_sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+  "input_triples": 6803,
+  "input_size_bytes": 658838,
+  "coverage_threshold": 95.0
+}

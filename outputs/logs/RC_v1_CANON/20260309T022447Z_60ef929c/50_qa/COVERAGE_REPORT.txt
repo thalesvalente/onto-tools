@@ -1,0 +1,36 @@
+# Coverage Report — RC_v1_CANON
+# Source: 40_tests/pytest_full.txt + 40_tests/pytest_summary.json
+# Total Coverage: 95.04%
+# Threshold: 95.0%
+# Passed: True
+
+Name                                                         Stmts   Miss Branch BrPart   Cover   Missing
+---------------------------------------------------------------------------------------------------------
+src\onto_tools\domain\ontology\quality_validator.py            435     28    250     34  89.49%   221->exit, 271, 274, 278, 297->296, 334, 344->343, 385, 437->436, 471->470, 543, 546-553, 579->585, 620->exit, 681, 700, 718-722, 738, 762, 769, 791, 798, 816->exit, 844, 849->848, 857->869, 869->882, 882->exit, 906, 911->910, 919->931, 931->944, 944->exit, 969
+src\onto_tools\adapters\reporting\audit_formatter.py           314     21    108     19  90.05%   65, 101-104, 113-116, 137-138, 144-145, 211->241, 243->273, 268, 300, 359->375, 375->383, 383->397, 419, 422->429, 429->435, 436-438, 453, 455->457, 466
+src\onto_tools\application\verification\manifest_writer.py     132     12      6      0  91.30%   138-139, 294-300, 359-364
+src\onto_tools\application\facade.py                           244      9     90     13  93.41%   385-392, 421->425, 563->593, 596->552, 641->640, 646-651, 656->607, 680, 682-683, 735->739, 739->743
+src\onto_tools\application\verification\rc_workflow.py         145      9     28      2  93.64%   128->127, 304-310, 394, 444-446
+src\onto_tools\domain\ontology\uri_resolver.py                 108      3     62      3  96.47%   258, 264->262, 274-275
+src\onto_tools\adapters\rdf\rdflib_adapter.py                   51      2      6      0  96.49%   39-40
+src\onto_tools\domain\ontology\normalizer.py                   383     10    186      7  97.01%   37-38, 456-460, 479->478, 492->496, 506->478, 513->478, 565-566, 870-871
+src\onto_tools\domain\ontology\naming_validator.py             287      3    124      9  97.08%   152->135, 274, 394->360, 411, 429->431, 434->438, 441, 455->457, 460->464
+src\onto_tools\adapters\rdf\protege_serializer.py              160      3     62      3  97.30%   188, 247, 349
+src\onto_tools\domain\ontology\canonicalizer.py                144      2     42      3  97.31%   205->202, 303, 338
+src\onto_tools\adapters\cli\commands.py                        264      4     66      2  98.18%   156-157, 168-169
+src\onto_tools\domain\ontology\graph.py                        189      1     62      2  98.80%   94, 278->277
+src\onto_tools\__init__.py                                       1      0      0      0 100.00%
+src\onto_tools\adapters\__init__.py                              0      0      0      0 100.00%
+src\onto_tools\adapters\cli\__init__.py                          2      0      0      0 100.00%
+src\onto_tools\adapters\logging\__init__.py                      2      0      0      0 100.00%
+src\onto_tools\adapters\logging\audit_logger.py                 52      0      8      0 100.00%
+src\onto_tools\adapters\rdf\__init__.py                          0      0      0      0 100.00%
+src\onto_tools\adapters\reporting\__init__.py                    2      0      0      0 100.00%
+src\onto_tools\application\verification\__init__.py              6      0      0      0 100.00%
+src\onto_tools\application\verification\evidence_writer.py      85      0      2      0 100.00%
+src\onto_tools\application\verification\hasher.py               25      0     10      0 100.00%
+src\onto_tools\application\verification\idempotency.py          92      0     14      0 100.00%
+src\onto_tools\application\verification\isomorphism.py          79      0     22      0 100.00%
+src\onto_tools\domain\ontology\__init__.py                       6      0      0      0 100.00%
+---------------------------------------------------------------------------------------------------------
+TOTAL                                                         3208    107   1148     97  95.04%

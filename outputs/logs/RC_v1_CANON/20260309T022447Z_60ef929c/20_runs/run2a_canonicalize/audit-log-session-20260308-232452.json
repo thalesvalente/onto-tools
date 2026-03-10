@@ -1,0 +1,126 @@
+{
+    "session_id": "20260308-232452",
+    "started_at": "2026-03-08T23:24:52.186544",
+    "ops": [
+        {
+            "batch_id": "batch-2026-03-08-0001",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 1,
+            "type": "load_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:52.331365",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:load_ontology",
+                "predicate": "details",
+                "object": "{\"file\": \"H:\\\\certi\\\\bim\\\\onto-tools-prp\\\\outputs\\\\logs\\\\RC_v1_CANON\\\\20260309T022447Z_60ef929c\\\\20_runs\\\\run2a_canonicalize\\\\canonical_output_run2a.ttl\", \"status\": \"success\"}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0002",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 2,
+            "type": "canonicalize_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:52.490272",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:canonicalize_ontology",
+                "predicate": "details",
+                "object": "{\"status\": \"success\", \"is_idempotent\": true, \"triple_count\": 6803, \"prefix_count\": 31, \"processing_time_ms\": 157.8567000105977}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0003",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 3,
+            "type": "generate_review_output",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:52.600169",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:generate_review_output",
+                "predicate": "details",
+                "object": "{\"output\": \"C:\\\\Users\\\\selah\\\\AppData\\\\Local\\\\Temp\\\\tmp54kc1lyg\\\\first_result.ttl\", \"pre_canon_path\": null, \"status\": \"success\", \"canonized\": false, \"verification_enabled\": false, \"manifest_generated\": false}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0004",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 4,
+            "type": "load_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:52.795567",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:load_ontology",
+                "predicate": "details",
+                "object": "{\"file\": \"C:\\\\Users\\\\selah\\\\AppData\\\\Local\\\\Temp\\\\tmp54kc1lyg\\\\first_result.ttl\", \"status\": \"success\"}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0005",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 5,
+            "type": "canonicalize_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:52.922820",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:canonicalize_ontology",
+                "predicate": "details",
+                "object": "{\"status\": \"success\", \"is_idempotent\": true, \"triple_count\": 6803, \"prefix_count\": 31, \"processing_time_ms\": 124.30360005237162}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0006",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 6,
+            "type": "generate_review_output",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:53.045378",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:generate_review_output",
+                "predicate": "details",
+                "object": "{\"output\": \"C:\\\\Users\\\\selah\\\\AppData\\\\Local\\\\Temp\\\\tmp54kc1lyg\\\\second_result.ttl\", \"pre_canon_path\": null, \"status\": \"success\", \"canonized\": false, \"verification_enabled\": false, \"manifest_generated\": false}",
+                "language": ""
+            }
+        }
+    ]
+}

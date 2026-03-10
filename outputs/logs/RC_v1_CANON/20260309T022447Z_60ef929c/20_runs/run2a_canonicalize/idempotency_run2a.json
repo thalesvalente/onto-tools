@@ -1,0 +1,9 @@
+{
+  "is_idempotent": true,
+  "input_path": "H:\\certi\\bim\\onto-tools-prp\\outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\20_runs\\run2a_canonicalize\\canonical_output_run2a.ttl",
+  "first_result_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+  "second_result_hash": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+  "hashes_match": true,
+  "isomorphism_report": null,
+  "error": null
+}

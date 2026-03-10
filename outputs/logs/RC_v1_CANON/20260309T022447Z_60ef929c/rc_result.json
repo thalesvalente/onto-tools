@@ -1,0 +1,28 @@
+{
+  "rc_version": "RC_v1_CANON",
+  "execution_id": "20260309T022447Z_60ef929c",
+  "bundle_path": "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c",
+  "status": "SUCCESS",
+  "input_sha256": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+  "input_triples": 6803,
+  "canon_sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+  "canon_triples": 6803,
+  "run3_sha256": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+  "run4_sha256": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D",
+  "gates": {
+    "determinism": "PASS",
+    "isomorphism": "PASS",
+    "idempotency": "PASS"
+  },
+  "tests": {
+    "passed": 973,
+    "failed": 0,
+    "coverage": 95.04
+  },
+  "total_duration_seconds": 72.32,
+  "sources": {
+    "gates": "30_gates/*.json",
+    "tests": "40_tests/pytest_summary.json",
+    "baseline_post": "10_proofs/BASELINE_POST_SHA256.json"
+  }
+}

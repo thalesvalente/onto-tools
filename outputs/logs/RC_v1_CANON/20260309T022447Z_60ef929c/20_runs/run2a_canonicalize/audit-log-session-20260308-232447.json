@@ -1,0 +1,66 @@
+{
+    "session_id": "20260308-232447",
+    "started_at": "2026-03-08T23:24:47.787408",
+    "ops": [
+        {
+            "batch_id": "batch-2026-03-08-0001",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 1,
+            "type": "load_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:47.971965",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:load_ontology",
+                "predicate": "details",
+                "object": "{\"file\": \"H:\\\\certi\\\\bim\\\\onto-tools-prp\\\\data\\\\examples\\\\energy-domain-ontology.ttl\", \"status\": \"success\"}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0002",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 2,
+            "type": "canonicalize_ontology",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:48.107778",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:canonicalize_ontology",
+                "predicate": "details",
+                "object": "{\"status\": \"success\", \"is_idempotent\": true, \"triple_count\": 6803, \"prefix_count\": 35, \"processing_time_ms\": 134.46039997506887}",
+                "language": ""
+            }
+        },
+        {
+            "batch_id": "batch-2026-03-08-0003",
+            "onto_name": "unknown",
+            "onto_version": "unknown",
+            "op_id": 3,
+            "type": "generate_review_output",
+            "status": "success",
+            "applied_at": "2026-03-08T23:24:48.221346",
+            "time_ms": 0,
+            "checks": {
+                "precondition": "none",
+                "precondition_result": true
+            },
+            "triple": {
+                "subject": "operation:generate_review_output",
+                "predicate": "details",
+                "object": "{\"output\": \"H:\\\\certi\\\\bim\\\\onto-tools-prp\\\\outputs\\\\logs\\\\RC_v1_CANON\\\\20260309T022447Z_60ef929c\\\\20_runs\\\\run2a_canonicalize\\\\canonical_output_run2a.ttl\", \"pre_canon_path\": null, \"status\": \"success\", \"canonized\": false, \"verification_enabled\": false, \"manifest_generated\": false}",
+                "language": ""
+            }
+        }
+    ]
+}

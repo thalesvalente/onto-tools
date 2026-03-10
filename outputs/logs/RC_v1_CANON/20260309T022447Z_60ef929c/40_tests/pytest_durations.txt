@@ -1,0 +1,15 @@
+# Durations — tests/1-uc-ontology
+# source: extracted from 40_tests/pytest_full.txt
+
+============================ slowest 10 durations =============================
+11.57s setup    tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCrossScenarioEquivalences::test_ec1_c1_equals_c5
+6.68s call     tests/1-uc-ontology/e2e/test_canonicalization_e2e.py::TestRoundtripE2E::test_multiple_roundtrips
+5.99s call     tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCLISimulationScenarios::test_scenario_c5_normalize_nofix_then_canonicalize
+4.74s call     tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCLISimulationScenarios::test_scenario_c4_normalize_autofix_then_canonicalize
+4.72s call     tests/1-uc-ontology/e2e/test_canonicalization_e2e.py::TestCanonicalizationE2E::test_canonicalization_is_idempotent
+3.51s call     tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCLISimulationScenarios::test_scenario_c2_normalize_with_autofix
+2.77s call     tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCLISimulationScenarios::test_scenario_c3_normalize_without_autofix
+2.63s call     tests/1-uc-ontology/e2e/test_canonicalization_e2e.py::TestCanonicalizationE2E::test_canonicalize_sample_ontology
+2.40s call     tests/1-uc-ontology/unit/test_canonicalizer_determinism_v9.py::TestByteDeterminism::test_canonicalization_is_byte_deterministic
+2.33s call     tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py::TestCLISimulationScenarios::test_scenario_c1_pure_canonicalization
+======================= 973 passed in 64.61s (0:01:04) ========================

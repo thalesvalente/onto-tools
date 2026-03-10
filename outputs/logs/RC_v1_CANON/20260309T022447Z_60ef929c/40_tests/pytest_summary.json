@@ -1,0 +1,32 @@
+{
+  "test_suite": "tests/1-uc-ontology",
+  "command": "PYTHONPATH=H:\\certi\\bim\\onto-tools-prp\\src C:\\Users\\selah\\.conda\\envs\\onto-tools-artigo\\python.exe -m pytest tests/1-uc-ontology -v --no-header --tb=short --durations=10 --junitxml=H:\\certi\\bim\\onto-tools-prp\\outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\junit.xml --cov=src/onto_tools --cov-report=term --cov-report=xml:H:\\certi\\bim\\onto-tools-prp\\outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage.xml --cov-report=json:H:\\certi\\bim\\onto-tools-prp\\outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage.json --cov-report=html:H:\\certi\\bim\\onto-tools-prp\\outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage_html",
+  "cwd": "H:\\certi\\bim\\onto-tools-prp",
+  "timestamp": "2026-03-09T02:25:59.417439+00:00",
+  "pytest_version": "7.4.4",
+  "python_version": "3.12.12",
+  "results": {
+    "collected": 973,
+    "passed": 973,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "duration_seconds": 65.53
+  },
+  "coverage": {
+    "total_percent": 95.04,
+    "threshold_required": 95.0,
+    "passed": true
+  },
+  "returncode": 0,
+  "sources": [
+    "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\pytest_full.txt",
+    "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\pytest_cmd.txt"
+  ],
+  "coverage_reports": {
+    "xml": "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage.xml",
+    "json": "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage.json",
+    "html": "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\coverage_html"
+  },
+  "junit_xml": "outputs\\logs\\RC_v1_CANON\\20260309T022447Z_60ef929c\\40_tests\\junit.xml"
+}

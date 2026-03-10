@@ -1,0 +1,9 @@
+{
+  "baseline_type": "pre",
+  "created_at": "20260309T022447Z_60ef929c",
+  "rc_version": "RC_v1_CANON",
+  "note": "State snapshot before pipeline runs.",
+  "sources": [
+    "00_meta/env_snapshot.json"
+  ]
+}

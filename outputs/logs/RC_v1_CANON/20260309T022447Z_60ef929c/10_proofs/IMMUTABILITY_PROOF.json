@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "type": "immutability_proof",
+    "version": "RC_v1_CANON",
+    "generated_at": "2026-03-09T02:26:00.097029+00:00",
+    "git_commit": "3a94380745cce8347a89e4a5e714614d66f9cdcf",
+    "sources": [
+      "rc_result.json",
+      "30_gates/gate_determinism.json",
+      "30_gates/gate_isomorphism.json",
+      "30_gates/gate_idempotency.json",
+      "40_tests/pytest_summary.json",
+      "10_proofs/BASELINE_POST_SHA256.json"
+    ]
+  },
+  "key_hashes": {
+    "input_ontology": "A772AE732EF041B951B7AF0C27D4A62A611C09C0DFC0A8D0F2477BF4EEE2A8AE",
+    "canonical_output": "E1F9622F50AF55FAC807DE0ED64790F234D6057CC42BC5DFD6252BEB9BC1DF49",
+    "auto_fix_output": "B28D98AC2A22E4C763BD97EF98A37296FA089D78E681C587C90FE5700D0A498D"
+  },
+  "gates": {
+    "determinism": "PASS",
+    "isomorphism": "PASS",
+    "idempotency": "PASS"
+  },
+  "tests": {
+    "passed": 973,
+    "failed": 0,
+    "coverage_percent": 95.04,
+    "coverage_passed": true
+  }
+}
