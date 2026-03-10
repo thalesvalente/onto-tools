@@ -18,7 +18,7 @@
 ```bash
 conda create -n onto-tools-artigo python=3.12
 conda activate onto-tools-artigo
-conda run -n onto-tools-artigo pip install -e .
+pip install -e .
 ```
 
 Verifique:
