@@ -232,6 +232,30 @@ pytest tests/1-uc-ontology/ -v
 pytest tests/1-uc-ontology/ --cov=src/onto_tools --cov-report=term-missing
 ```
 
+O suite cobre unit, integration e E2E. Além de verificações por propriedade isolada
+(determinismo, idempotência, isomorfismo), inclui uma camada de **coerência entre modos
+de governança** que exercita os três operadores user-facing através de cinco workflows:
+
+| ID | Workflow | `auto_fix` |
+|----|----------|-----------|
+| C1 | Load → Canonicalize → Save | — |
+| C2 | Load → Normalize → Save | ON |
+| C3 | Load → Normalize → Save | OFF |
+| C4 | Load → Normalize → Canonicalize → Save | ON |
+| C5 | Load → Normalize → Canonicalize → Save | OFF |
+
+As equivalências cruzadas verificam que a composição das operações é consistente:
+
+| ID | Asserção | Semântica |
+|----|---------|-----------|
+| EC-1 | `C1 == C5` | `fix=OFF` é pass-through — canonizar direto equivale a normalizar (sem alterar) e canonizar |
+| EC-2 | `canon(C2) == C4` | Composição `normalize(fix=ON) → canon` é associativa |
+| EC-3 | `canon(C3) == C5` | Composição `normalize(fix=OFF) → canon` é associativa |
+| EC-4 | `C4 != C5` | `auto_fix=ON` produz mudanças semânticas observáveis |
+
+Arquivo: `tests/1-uc-ontology/e2e/test_cli_simulation_scenarios.py`  
+Documentação técnica completa: `materials_support/PRP_verification_rc_pipeline.md` (Seção K)
+
 ---
 
 ## Dependências principais
